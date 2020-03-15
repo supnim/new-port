@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 
 const Photo = () => (
     <div className="container">
-        <p>hello</p>
+        <p>hello world</p>
         <Hero />
     </div>
 )
