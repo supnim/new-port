@@ -7,9 +7,9 @@
 
     /* Colours */
     --color-primary: #3eb0ef;
-    --color-base: #131313;
+    --color-base: black;
     --color-border: #ddd;
-    --color-bg: #f8f8f8;
+    --color-bg: white;
 
     /* Fonts */
     --font-sans-serif: 'Muli', sans-serif;

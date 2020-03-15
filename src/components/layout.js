@@ -10,7 +10,7 @@ const Layout = props => {
         <div className="site-head-container">
           <a
             className="nav-burger"
-            href={`#`}
+            href={`//#region `}
             onClick={() => setToggleNav(!toggleNav)}
           >
             <div
@@ -25,50 +25,28 @@ const Layout = props => {
             </div>
           </a>
           <nav id="swup" class="site-head-left">
-            <ul className="nav" role="menu">
-              <li className="nav-home nav-current" role="menuitem">
-                <Link to={`/`}>Home</Link>
-              </li>
-              <li className="nav-about" role="menuitem">
-                <Link to={`/about`}>About</Link>
-              </li>
-              <li className="nav-elements" role="menuitem">
-                <Link to={`/elements`}>Elements</Link>
-              </li>
-            </ul>
-          </nav>
-          <div className="site-head-center">
             <Link className="site-head-logo" to={`/`}>
               {title}
             </Link>
-          </div>
+            </nav>
           <div className="site-head-right">
-            <div className="social-links">
-              <a
-                href="https://www.facebook.com"
-                title="Facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </a>
-              <a
-                href="https://twitter.com"
-                title="Twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-              <Link
-                to={`/rss.xml`}
-                title="RSS"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                RSS
-              </Link>
-            </div>
+          <ul className="nav" role="menu">
+              <li className="nav-home" role="menuitem">
+                <Link to={`/`}>home</Link>
+              </li>
+              <li className="nav-work" role="menuitem">
+                <Link to={`/work`}>work</Link>
+              </li>
+              <li className="nav-photo" role="menuitem">
+                <Link to={`/photo`}>photo</Link>
+              </li>
+              <li className="nav-video" role="menuitem">
+                <Link to={`/video`}>video</Link>
+              </li>
+              <li className="nav-contact" role="menuitem">
+                <Link to={`/contact`}>contact</Link>
+              </li>
+            </ul>
           </div>
         </div>
       </header>
@@ -79,13 +57,13 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        Built with{" "}
+        handmade with {" "}
         <a
           href="https://gatsbyjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Gatsby
+          ♥︎
         </a>
       </footer>
     </div>
