@@ -1,6 +1,7 @@
 import React from 'react'
-import Img from 'gatsby-image'
+// import Image from 'gatsby-image'
 import "../utils/css/components/hero.scss"
+// import { graphql } from "gatsby"
 
 // import "..css/components/hero.css"
 
@@ -9,7 +10,7 @@ const hero = () => {
     <div className="container">
         <h1>I am a dickhead</h1>
         <div className="hero-image">
-            <Img />
+            {/* <Img /> */}
         </div>
         <div className="intro">
             <h3>Brief</h3>
@@ -20,3 +21,23 @@ const hero = () => {
 }
 
 export default hero;
+
+// const bioQuery = graphql`
+//   query BioQuery {
+//     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+//       childImageSharp {
+//         fixed(width: 50, height: 50) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//     site {
+//       siteMetadata {
+//         author
+//         social {
+//           twitter
+//         }
+//       }
+//     }
+//   }
+// 
