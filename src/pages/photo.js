@@ -12,6 +12,7 @@ const Photo = () => (
       />
     <div className="container">
         <Hero />
+        <Hero />
     </div>
     </Layout>
 )
