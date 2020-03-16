@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix, withAssetPrefix } from "gatsby"
 
 const Layout = props => {
   const { title, children } = props
@@ -56,15 +56,22 @@ const Layout = props => {
         </div>
       </main>
       <footer className="site-foot">
-        &copy; {new Date().getFullYear()} <Link to={`/`}>{title}</Link> &mdash;
-        handmade with {" "}
-        <a
-          href="https://gatsbyjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          ♥︎
-        </a>
+        <div className="footer-logo">
+          <Link className="site-head-logo" to={`/`}>
+                {title}
+          </Link>
+        </div>
+        <div className="footer-links">
+          <a href="/">work</a>
+          <a href="/">work</a>
+          <a href="/">work</a>
+          <a href="/">work</a>
+          <a href="/">work</a>
+        </div>
+        <div className="footer">
+          &copy; {new Date().getFullYear()} &mdash;
+          handmade with {" ♥︎ "}
+        </div>
       </footer>
     </div>
   )
