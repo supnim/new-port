@@ -1,9 +1,9 @@
-import React from "react"
-import { Link, withPrefix, withAssetPrefix } from "gatsby"
+import React from "react";
+import { Link, withPrefix, withAssetPrefix } from "gatsby";
 
 const Layout = props => {
-  const { title, children } = props
-  const [toggleNav, setToggleNav] = React.useState(false)
+  const { title, children } = props;
+  const [toggleNav, setToggleNav] = React.useState(false);
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -28,9 +28,9 @@ const Layout = props => {
             <Link className="site-head-logo" to={`/`}>
               {title}
             </Link>
-            </nav>
+          </nav>
           <div className="site-head-right">
-          <ul className="nav">
+            <ul className="nav">
               <li className="nav-home">
                 <Link to={`/`}>home</Link>
               </li>
@@ -58,23 +58,22 @@ const Layout = props => {
       <footer className="site-foot">
         <div className="footer-logo">
           <Link className="site-head-logo" to={`/`}>
-                {title}
+            {title}
           </Link>
         </div>
         <div className="footer-links">
-          <a href="/">work</a>
-          <a href="/">work</a>
-          <a href="/">work</a>
-          <a href="/">work</a>
-          <a href="/">work</a>
+          <a href="/">bookwise</a>
+          <a href="/">knowhere</a>
+          <a href="/">design system</a>
+          <a href="/">pagebuilder</a>
+          <a href="/">primefitness</a>
         </div>
         <div className="footer">
-          &copy; {new Date().getFullYear()} &mdash;
-          handmade with {" ♥︎ "}
+          &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
