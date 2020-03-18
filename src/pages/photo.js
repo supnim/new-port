@@ -1,20 +1,24 @@
 import React from "react"
-import Hero from "../components/hero";
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Project from "../templates/project"
 
-const Photo = () => (
-        <Layout>
-      <SEO
-        title="photos"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
-    <div className="container">
-        <Hero />
-        <Hero />
+
+function Photo() {
+  return (
+    <div>
+      <Layout >
+        <SEO
+          title="photos"
+          keywords={[`blog`, `gatsby`, `javascript`, `react`]}/>
+        <Project />
+      </Layout>
     </div>
-    </Layout>
-)
+  )
+}
 
 export default Photo
+
+
+
+// const siteTitle = data.site.siteMetadata.title

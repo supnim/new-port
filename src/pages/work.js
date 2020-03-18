@@ -14,7 +14,7 @@ const ElementsPage = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="All posts"
+        title="work"
         keywords={[`blog`, `gatsby`, `javascript`, `react`]}
       />
 
