@@ -11,6 +11,7 @@ module.exports = {
       twitter: siteConfig.twitter,
     },
   },
+  
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

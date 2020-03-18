@@ -30,20 +30,20 @@ const Layout = props => {
             </Link>
             </nav>
           <div className="site-head-right">
-          <ul className="nav" role="menu">
-              <li className="nav-home" role="menuitem">
+          <ul className="nav">
+              <li className="nav-home">
                 <Link to={`/`}>home</Link>
               </li>
-              <li className="nav-work" role="menuitem">
+              <li className="nav-work">
                 <Link to={`/work`}>work</Link>
               </li>
-              <li className="nav-photo" role="menuitem">
+              <li className="nav-photo">
                 <Link to={`/photo`}>photo</Link>
               </li>
-              <li className="nav-video" role="menuitem">
+              <li className="nav-video">
                 <Link to={`/video`}>video</Link>
               </li>
-              <li className="nav-contact" role="menuitem">
+              <li className="nav-contact">
                 <Link to={`/contact`}>contact</Link>
               </li>
             </ul>

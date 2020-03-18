@@ -1,7 +1,7 @@
 import React from "react"
 import Hero from "../components/hero"
 import Card from "../components/card"
-import project from "../utils/css/project.scss"
+import "../utils/css/project.scss"
 
 
 function template() {
