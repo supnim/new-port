@@ -4,6 +4,9 @@ import { graphql, StaticQuery } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
+import "../utils/css/components/theme.scss"
+import scrollIcon from "/Users/nimesh/Desktop/new-port/content/assets/scrollIcon.svg"
+import Icon from "../components/scroll"
 
 // import "../utils/global.scss"
 import "../utils/normalize.css"
@@ -20,14 +23,23 @@ const BlogIndex = ({ data }, location) => {
         title="home"
         keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
       />
-      {/* <Bio /> */}
+
+      {/* onLoad hero component */}
+
       {data.site.siteMetadata.description && (
         <header className="page-head">
-          <h2 className="page-head-title">
-            {data.site.siteMetadata.description}
-          </h2>
+          <div>
+            <h1>Nimesh</h1>
+            <h2 className="page-head-title">
+              {data.site.siteMetadata.description}
+            </h2>
+            <br />
+            <img src={scrollIcon} alt="scrollicon"></img>
+            {/* <Icon /> */}
+          </div>
         </header>
       )}
+
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++

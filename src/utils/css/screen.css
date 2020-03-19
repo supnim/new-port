@@ -57,17 +57,17 @@ body {
   }
 }
 
-.page-head {
+/*moved to utlis/css/components/theme.scss
+/* .page-head {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 13vw 0;
-  max-width: 70%;
   margin: auto;
   text-align: center;
   height: 100vh;
-}
+} */
 
 .error-head {
   height: 75vh;
@@ -94,11 +94,13 @@ body {
   text-decoration: underline;
 }
 
-.page-head-title {
+/* moved to  theme.scss
+
+/* .page-head-title {
   margin: 0;
   font-size: 3rem;
   color: var(--color-base);
-}
+} */
 @media (max-width: 500px) {
   .page-head-title {
     font-size: 2rem;
@@ -733,11 +735,9 @@ body {
   text-align: center;
 }
 
-/* Video
+/* Video Page
 /* ---------------------------------------------------------- */
 
-.video {
-  justify-content: center;
-  margin: 0 auto;
+.video-page {
   text-align: center;
 }

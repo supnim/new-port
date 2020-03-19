@@ -1,11 +1,18 @@
-import React from "react";
-import "../utils/css/screen.css";
+import React from "react"
+import "../utils/css/screen.css"
 
 const videoBox = ({ description, url }) => (
-  <div className="video">
-    <iframe src={url} width="800" height="400"></iframe>
+  <div>
+    <iframe
+      title="videosComponent"
+      src={url}
+      width="800"
+      height="400"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
     <p>{description}</p>
   </div>
-);
+)
 
-export default videoBox;
+export default videoBox

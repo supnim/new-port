@@ -6,7 +6,7 @@ export default [
   },
   {
     id: 2,
-    description: "camping trip in the lake district",
+    desription: "camping trip in the lake district",
     url: "https://youtu.be/UWNQKA1omRY"
   },
   {
