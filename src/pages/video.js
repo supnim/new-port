@@ -8,11 +8,11 @@ function Video() {
   const videoUrl = path.map(video => (
     <VideoBox description={video.description} url={video.url} id={video.id} />
   ))
-
   return (
     <div className="video-page">
       <Layout>
-        <h2>videography</h2>
+        <h3>videography</h3>
+        <br />
         {videoUrl}
       </Layout>
     </div>

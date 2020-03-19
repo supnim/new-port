@@ -741,3 +741,11 @@ body {
 .video-page {
   text-align: center;
 }
+
+.video-page p {
+  padding: 8px;
+}
+
+.video-page iframe {
+  border-radius: 2px;
+}

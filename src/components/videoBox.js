@@ -7,7 +7,7 @@ const videoBox = ({ description, url }) => (
       title="videosComponent"
       src={url}
       width="800"
-      height="400"
+      height="450"
       frameborder="0"
       allowfullscreen
     ></iframe>
