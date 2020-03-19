@@ -23,10 +23,16 @@ production stylesheet in assets/built/screen.css using gulp dev
 /* ---------------------------------------------------------- */
 
 body {
-  font-family: "Muli", sans-serif;
+  font-family: "Lato", "Open Sans", sans-serif;
   background: var(--color-bg);
   transition: background 0.3s ease-out;
   transition-delay: 0.25;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.4px;
 }
 
 .img {
@@ -748,4 +754,33 @@ body {
 
 .video-page iframe {
   border-radius: 2px;
+}
+
+/* Contact Page
+/* ---------------------------------------------------------- */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  margin: 0 2vw;
+}
+
+.aboutMe {
+  width: 60%;
+  padding: 3.2rem;
+}
+.aboutMeTitle {
+  text-align: left !important;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0.8em 0 0.4em 0;
+}
+
+.contactImg {
+  border-radius: 2px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1507499739999-097706ad8914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1235&q=80);
 }
