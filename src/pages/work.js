@@ -13,10 +13,7 @@ const ElementsPage = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <SEO
-        title="work"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title="work" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
 
       <article className="post-content page-template no-image">
         <div className="post-content-body">
@@ -384,7 +381,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 12
@@ -397,7 +394,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 3
@@ -408,7 +405,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 9
@@ -421,7 +418,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 6
@@ -432,7 +429,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 6
@@ -445,7 +442,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -456,7 +453,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -467,7 +464,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -480,7 +477,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -491,7 +488,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -502,7 +499,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto
@@ -513,7 +510,7 @@ const ElementsPage = ({ data }, location) => {
                 style={{
                   padding: "1rem 0",
                   textAlign: "center",
-                  background: "#eee",
+                  background: "#eee"
                 }}
               >
                 auto

@@ -199,7 +199,6 @@ p {
   margin: 0;
   padding: 10px 12px;
   color: var(--color-base);
-  font-weight: 600;
   opacity: 0.4;
 }
 
@@ -750,6 +749,7 @@ p {
 
 .video-page p {
   padding: 8px;
+  padding-bottom: 8rem;
 }
 
 .video-page iframe {
@@ -762,7 +762,7 @@ p {
 .contact {
   display: flex;
   flex-direction: row;
-  margin: 0 2vw;
+  margin: 1.6rem;
 }
 
 .aboutMe {
@@ -783,4 +783,18 @@ p {
   background-position: center;
   width: 100%;
   background-image: url(https://images.unsplash.com/photo-1507499739999-097706ad8914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1235&q=80);
+}
+
+.contactButtons {
+  display: flex;
+  padding: 0.1rem 0.8rem;
+}
+
+.contactButtons * {
+  padding: 0;
+  margin: 0px;
+}
+
+.contactSpan {
+  letter-spacing: -4px;
 }

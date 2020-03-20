@@ -18,8 +18,8 @@ const AboutPage = ({ data }, location) => {
         keywords={[`product`, `designer`, `london`, `nimesh`]}
       />
 
-      <article className="page-template no-image">
-        <div className="post-content-body contact row">
+      <article className="page-template">
+        <div className="post-content-body contact">
           <div className="contactImg col-6">
             <figure className="aboutMePic">
               {/* <Img
@@ -33,7 +33,7 @@ const AboutPage = ({ data }, location) => {
               hi, i am nimesh a conceptual creative based in london
             </h3>
             <p>
-              practising in the field of digital products and ui/ux. i enjoy the
+              practising in the field of digital products and UI/UX. I enjoy the
               process of taking an idea from concept to completion through a
               variety of different methods and journeys. i am constantly
               striving to better myself, a drive that is reflected in my work.
@@ -43,26 +43,40 @@ const AboutPage = ({ data }, location) => {
               different disciplines and build my skill set.
             </p>
             <p>
-              in my downtime, i play with different mediums including; music,
+              In my downtime, i play with different mediums including; music,
               still and motion pictures, and designing and developing websites.
             </p>
             <p>
-              born in kuwait and brought up in kerala, india, grew into an
-              interactive media designer (imd) at northumbria university in
-              newcastle. now practising at <a href="https://www.tes.com">tes</a>{" "}
-              in london
+              Born in Kuwait and brought up in Kerala, India, grew into an
+              interactive media designer (IMD) at Northumbria University in
+              Newcastle. now practising at <a href="https://www.tes.com">Tes</a>{" "}
+              in London.
             </p>
-            <p>––––––––––––––––</p>
+            <span className="contactSpan">––––––––––––––––––––––</span>
             <p>
               hope you have enjoyed looking through my work. if you'd like to
               dicuss new projects or opportunities; get in touch or find me on{" "}
               <a href="https://www.linkedin.com/in/nimeshreghunandanan/">
-                linkedin
+                linkedin.
               </a>{" "}
             </p>
           </div>
         </div>
       </article>
+      <section className="contactButtons contact">
+        <ul className="actions fit">
+          <li>
+            <a href="/" className="cv button large primary">
+              CV
+            </a>
+          </li>
+          <li>
+            <a href="/" className="button large">
+              Get in touch
+            </a>
+          </li>
+        </ul>
+      </section>
     </Layout>
   )
 }
