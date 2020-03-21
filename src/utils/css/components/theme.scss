@@ -3,17 +3,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 13vw 0;
+  padding: 8vw 4vw;
   margin: auto;
   text-align: center;
   height: 100vh;
-  //   background-color: yellowgreen;
+  background-color: black;
 }
 
 .page-head-title {
+  font-size: 64pt;
+  color: white;
+  margin-bottom: 8px;
+  letter-spacing: 2px;
+}
+
+.page-head-sub {
   margin: 0;
-  font-size: 2.4rem;
+  font-size: 16pt;
   font-weight: 500;
+  line-height: 24pt;
+  letter-spacing: 0.4pt;
+  color: white;
 }
 
 $themes: (

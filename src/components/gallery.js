@@ -1,6 +1,6 @@
 import React from "react"
 import "../utils/css/components/gallery.scss"
-// import Img from "gatsby-image"
+import Img from "gatsby-image"
 
 function Gallery() {
   return (
@@ -11,7 +11,7 @@ function Gallery() {
           <div className="masonry">
             <div className="item">
               <div className="item__content item">
-                {/* <Img src="photo/1.jpg" alt="shadown shirt girl" /> */}
+                {/* <Img fluid={featuredImgFluid} /> */}
                 <h1>image</h1>
               </div>
             </div>

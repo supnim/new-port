@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-london",
+  "name": "supnim.com",
   "private": true,
-  "description": "A custom, image-centric theme for Gatsby",
+  "description": "Product designer based in London",
   "version": "1.0.0",
-  "author": "Imed Adel <aadelimed@gmail.com>",
+  "author": "Nimesh Reghunandanan <hello@supnim.com>",
   "bugs": {
     "url": "https://github.com/ImedAdel/gatsby-london/issues"
   },

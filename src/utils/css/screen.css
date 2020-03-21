@@ -126,7 +126,7 @@ p {
 }
 
 .site-foot {
-  margin: 3vw 0 0vw;
+  margin: 0;
   text-align: center;
   color: white;
   font-size: 1.4rem;
@@ -345,6 +345,7 @@ p {
     order: 2;
     margin: 0;
     width: 100%;
+    margin-left: 70vw;
   }
   .site-head-center {
     order: 1;
@@ -397,12 +398,12 @@ p {
     opacity: 0.5;
   }
   .site-head-open .site-foot {
-    display: block;
+    /* display: block; */
     position: fixed;
     z-index: 9999;
     bottom: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-    transform: translateY(-4vw);
+    width: 100%;
   }
 }
 
@@ -417,10 +418,11 @@ p {
 
 .post-card {
   position: relative;
+  /* flex: 0 0 50%; */
   flex: 1 1 50%;
   display: flex;
   position: relative;
-  height: 35vw;
+  height: 25vw;
   background: linear-gradient(135deg, #1f1f1f 0%, #111 100%) center center;
   background-size: cover;
   overflow: hidden;
@@ -454,7 +456,7 @@ p {
   bottom: 0;
   left: 0;
   color: #fff;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 1;
   transition: opacity 0.5s cubic-bezier(0.33, 0, 0.2, 1);
 }
