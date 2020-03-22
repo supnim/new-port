@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, StaticQuery } from "gatsby"
+// import { graphql, useStaticQuery, StaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/layout"
@@ -10,6 +10,20 @@ import "../utils/css/screen.css"
 
 const AboutPage = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
+
+  // const image = useStaticQuery(graphql`
+  //   query {
+  //     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 300) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
+  // console.log(image)
 
   return (
     <Layout title={siteTitle}>
@@ -81,30 +95,30 @@ const AboutPage = ({ data }, location) => {
   )
 }
 
-const indexQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-  }
-`
+// const indexQuery = graphql`
+//   query {
+//     site {
+//       siteMetadata {
+//         title
+//       }
+//     }
+//     benchAccounting: file(
+//       relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
+//     ) {
+//       childImageSharp {
+//         fluid(maxWidth: 1360) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `
 
-export default props => (
-  <StaticQuery
-    query={indexQuery}
-    render={data => (
-      <AboutPage location={props.location} data={data} {...props} />
-    )}
-  />
-)
+// export default props => (
+//   <StaticQuery
+//     query={indexQuery}
+//     render={data => (
+//       <AboutPage location={props.location} data={data} {...props} />
+//     )}
+//   />
+// )
