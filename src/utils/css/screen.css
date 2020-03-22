@@ -18,11 +18,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/actions.css";
 @import "components/hamburger.css";
 @import "components/animations.css";
-
-/* Main - Theme styles
-/* ---------------------------------------------------------- */
-
-body {
+@import "components/theme.scss"
+  /* Main - Theme styles
+ ---------------------------------------------------------- */
+  body {
   font-family: "Lato", "Open Sans", sans-serif;
   background: var(--color-bg);
   transition: background 0.3s ease-out;
@@ -161,8 +160,10 @@ p {
 .site-head {
   position: relative;
   z-index: 300;
-  margin: 32px;
+  padding: 32px;
   font-size: 1.5rem;
+  background-color: black;
+  /* theme color var */
 }
 
 .site-head-container {
@@ -198,14 +199,15 @@ p {
   display: block;
   margin: 0;
   padding: 10px 12px;
-  color: var(--color-base);
-  opacity: 0.4;
+  color: white;
+  opacity: 1;
+  /*theme color var*/
 }
 
 .nav-current a,
 .site-head a:hover {
   text-decoration: none;
-  opacity: 1;
+  opacity: 0.4;
 }
 
 .site-head-center {
@@ -303,7 +305,7 @@ p {
   .site-head-container {
     flex-direction: column;
     justify-content: flex-start;
-    height: 40px;
+    height: 100px;
     background: rgba(255, 255, 255, 0);
     z-index: -1;
     transition: all 0.4s ease-out;
@@ -323,7 +325,6 @@ p {
     padding: 1px 0;
     font-size: 2.6rem;
     line-height: 1.15em;
-    font-weight: 200;
     opacity: 0;
     transition: transform 0.3s cubic-bezier(0.4, 0.01, 0.165, 0.99),
       opacity 0.2s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -375,6 +376,7 @@ p {
   .site-head-open .site-head-container {
     height: 100vh;
     transition: height 0.2s ease-in;
+    margin: 0 32px;
   }
 
   .site-head-open .site-head-left,
@@ -390,12 +392,16 @@ p {
     transition: transform 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99),
       opacity 0.9s cubic-bezier(0.4, 0.01, 0.165, 0.99);
     transform: scale(1) translateY(0px);
+    font-weight: 400;
+    color: white;
+    /* theme color var */
   }
   .site-head-open .nav-current a {
     border-bottom: var(--color-base) 2px solid;
   }
   .site-head-open .site-head-right a {
     opacity: 0.5;
+    font-weight: 400;
   }
   .site-head-open .site-foot {
     /* display: block; */

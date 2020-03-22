@@ -4,6 +4,7 @@ window.onload = function() {
     window.location.pathname == "/index.html"
   ) {
     const numberOfThemes = 8
+
     // don't change below
     document
       .querySelector("page-head")

@@ -1,7 +1,7 @@
 // load page 64px down
-$(document).ready(function() {
-  $("html,body").scrollTop(64)
-})
+// $(document).ready(function() {
+//   $("html,body").scrollTop(64)
+// })
 
 // typing heading
 function typeEffect(element, speed) {

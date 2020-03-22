@@ -1,15 +1,21 @@
+// Base
 import React from "react"
 import { graphql, StaticQuery } from "gatsby"
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
 
+// Skelton
+import Helmet from "react-helmet"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostCard from "../components/postCard"
+
+// onLoad + theme.scss
+// import "../components/onLoad"
+import "../script/typing"
 import "../utils/css/components/theme.scss"
 import scrollIcon from "/Users/nimesh/Desktop/new-port/content/assets/scrollIcon.svg"
 
-// import "../utils/global.scss"
-import "../utils/normalize.css"
-import "../utils/css/screen.css"
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title
@@ -18,6 +24,9 @@ const BlogIndex = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
+      <Helmet>
+        <script type="text/javascript" src="src/components/onLoad.js"></script>
+      </Helmet>
       <SEO
         title="home"
         keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
@@ -25,7 +34,7 @@ const BlogIndex = ({ data }, location) => {
 
       {/* onLoad hero component */}
       {data.site.siteMetadata.description && (
-        <header className="page-head">
+        <header src="../script/typing.js" className="page-head">
           <div>
             <h1 className="page-head-title">Nimesh</h1>
             <h2 className="page-head-sub">
