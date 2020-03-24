@@ -1,5 +1,5 @@
-import React from "react"
-import "../utils/css/screen.css"
+import React from "react";
+import "../utils/css/screen.css";
 
 const videoBox = ({ description, url }) => (
   <div>
@@ -13,6 +13,6 @@ const videoBox = ({ description, url }) => (
     ></iframe>
     <p>{description}</p>
   </div>
-)
+);
 
-export default videoBox
+export default videoBox;

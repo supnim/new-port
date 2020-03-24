@@ -1,5 +1,5 @@
-import React from "react"
-import "../utils/css/components/theme.scss"
+import React from "react";
+import "../utils/css/components/theme.scss";
 
 function Icon() {
   return (
@@ -25,7 +25,7 @@ function Icon() {
         ></path>
       </g>
     </svg>
-  )
+  );
 }
 
-export default Icon
+export default Icon;

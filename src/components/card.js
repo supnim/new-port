@@ -1,5 +1,5 @@
-import React from "react"
-import "../utils/css/components/card.scss"
+import React from "react";
+import "../utils/css/components/card.scss";
 
 const Card = () => {
   // const styleV = {
@@ -15,7 +15,7 @@ const Card = () => {
         <p className="paragraphy">here where all the words would go</p>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;

@@ -39,4 +39,4 @@ export default [
     description: "Dalaro – Take my heart ",
     url: "https://www.youtube.com/embed/EEJy-wmabiA"
   }
-]
+];

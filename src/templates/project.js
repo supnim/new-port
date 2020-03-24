@@ -1,40 +1,39 @@
-import React from "react"
-import Hero from "../components/hero"
-import Card from "../components/card"
-import "../utils/css/project.scss"
-
+import React from "react";
+import Hero from "../components/hero";
+import Card from "../components/card";
+import "../utils/css/project.scss";
 
 function template() {
-    return(
-        <div>
-            <Hero />
-            <container>
-                <section className="row divid-3">
-                    <div className="col-3">
-                    <Card />
-                    </div>
-                    
-                    <div className="col-3">
-                    <Card />
-                    </div>
-                    
-                    <div className="col-3">
-                    <Card />
-                    </div>
-                </section>
+  return (
+    <div>
+      <Hero />
+      <container>
+        <section className="row divid-3">
+          <div className="col-3">
+            <Card />
+          </div>
 
-                <section className="row divid-2">
-                    <div className="col-6">
-                    <Card />
-                    </div>
-                    
-                    <div className="col-6">
-                    <Card />
-                    </div>
-                </section>
-            </container>
+          <div className="col-3">
+            <Card />
+          </div>
+
+          <div className="col-3">
+            <Card />
+          </div>
+        </section>
+
+        <section className="row divid-2">
+          <div className="col-6">
+            <Card />
+          </div>
+
+          <div className="col-6">
+            <Card />
+          </div>
+        </section>
+      </container>
     </div>
-    )
+  );
 }
 
-export default template
+export default template;

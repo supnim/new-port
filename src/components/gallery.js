@@ -1,7 +1,7 @@
-import React from "react"
-import "../utils/css/components/gallery.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import "../utils/css/components/gallery.scss";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
 
 function Gallery() {
   const data = useStaticQuery(graphql`
@@ -14,8 +14,8 @@ function Gallery() {
         }
       }
     }
-  `)
-  console.log(data)
+  `);
+  console.log(data);
 
   return (
     <section>
@@ -33,7 +33,7 @@ function Gallery() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;
