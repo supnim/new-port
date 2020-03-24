@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://gatsby-london.netlify.com">
-    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" />
+  <!-- <a href="https://gatsby-london.netlify.com">
+    <img alt="Gatsby" src="./content/assets/screenshot-desktop.jpg" /> -->
   </a>
 </p>
 

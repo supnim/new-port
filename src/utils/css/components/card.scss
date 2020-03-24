@@ -1,20 +1,33 @@
 .container {
-    margin: 0 auto;
+  margin: 0 auto;
+}
+.vertical {
 }
 
 .img {
-    background-color: rgb(95, 156, 37);
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+  background-color: yellowgreen;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
 }
 .title {
-    text-align: center;
-
+  text-align: center;
 }
 
 .paragraphy {
-    text-align: center;
+  text-align: center;
+}
+
+.half {
+  display: flex;
+  flex-direction: row;
+  flex-grow: auto;
+  margin: auto;
+}
+.half1,
+.half2 {
+  padding: auto;
+  margin: auto;
 }
 
 // alter Orientation

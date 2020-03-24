@@ -6,7 +6,7 @@ import Img from "gatsby-image"
 function Gallery() {
   const data = useStaticQuery(graphql`
     query {
-      fashion: file(relativePath: { eq: "1.jpg" }) {
+      fileName: file(relativePath: { eq: "../images/1.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
@@ -25,7 +25,7 @@ function Gallery() {
           <div className="masonry">
             <div className="item">
               <div className="item__content item">
-                {/* <Img fluid={data.fashion.childImageSharp.fluid} /> */}
+                {/* <Img fluid={data.fileName.childImageSharp.fluid} /> */}
                 <h1>image</h1>
               </div>
             </div>

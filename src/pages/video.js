@@ -5,6 +5,7 @@ import "../utils/css/screen.css"
 import Layout from "../components/layout"
 import VideoBox from "../components/videoBox"
 import path from "../components/videoPaths.js"
+import { Frame, Scroll, useCycle } from "framer"
 
 const Video = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
