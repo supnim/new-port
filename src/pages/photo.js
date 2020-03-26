@@ -8,14 +8,30 @@ import Gallery from "../components/gallery"
 const Photo = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title
 
+  const image = graphql`
+    query {
+      allImageSharp {
+        edges {
+          node {
+            fluid(maxWidth: 320) {
+              src
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  `
+
   return (
     <div>
       <Layout title={siteTitle}>
         <SEO
           title="photos"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[`photography`, `nightlife`, `fashion`, `band`]}
         />
-        <Gallery />
+        <h1>gallery goes here</h1>
+        {/* <Gallery fluid={image.url} /> */}
       </Layout>
     </div>
   )

@@ -13,7 +13,7 @@ const AboutPage = ({ data }, location) => {
   // const image = useStaticQuery(graphql`
   //   query {
   //     profilePic: file(relativePath: { eq: "images/profilePic.jpg" }) {
-  //       childImageSharp {
+  //       childImageSarp {
   //         fluid(maxWidth: 1000) {
   //           ...GatsbyImageSharpFluid
   //         }
@@ -32,12 +32,12 @@ const AboutPage = ({ data }, location) => {
       <article className="page-template">
         <div className="post-content-body contact">
           <div className="contactImg col-6">
-            <figure className="aboutMePic">
-              {/* <Img
+            {/* <figure className="aboutMePic"> */}
+            {/* <Img
                 className="aboutMePic"
                 fluid={image.profilePic.childImageSharp.fluid}
               /> */}
-            </figure>
+            {/* </figure> */}
           </div>
           <div className="aboutMe col-6">
             <h3 className="aboutMeTitle">
@@ -97,15 +97,6 @@ const indexQuery = graphql`
     site {
       siteMetadata {
         title
-      }
-    }
-    benchAccounting: file(
-      relativePath: { eq: "bench-accounting-49909-unsplash.jpg" }
-    ) {
-      childImageSharp {
-        fluid(maxWidth: 1360) {
-          ...GatsbyImageSharpFluid
-        }
       }
     }
   }

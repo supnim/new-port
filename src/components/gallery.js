@@ -3,19 +3,7 @@ import "../utils/css/components/gallery.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-function Gallery() {
-  const data = useStaticQuery(graphql`
-    query {
-      fileName: file(relativePath: { eq: "images/1.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
-
+function Gallery({ url, caption }) {
   return (
     <section>
       <div className="container-fluid">
@@ -24,8 +12,9 @@ function Gallery() {
           <div className="masonry">
             <div className="item">
               <div className="item__content item">
-                <Img fluid={data.fileName.childImageSharp.fluid} />
+                <Img fluid={url} />
                 <hp>image</hp>
+                <h1>{caption}</h1>
               </div>
             </div>
           </div>
