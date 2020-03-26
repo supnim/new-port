@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from "react"
+import { Link } from "gatsby"
 
 const Layout = props => {
-  const { title, children } = props;
-  const [toggleNav, setToggleNav] = React.useState(false);
+  const { title, children } = props
+  const [toggleNav, setToggleNav] = React.useState(false)
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -46,6 +46,9 @@ const Layout = props => {
               <li className="nav-contact">
                 <Link to={`/contact`}>contact</Link>
               </li>
+              <li className="nav-contact">
+                <Link to={`/playground`}>playground</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -73,7 +76,7 @@ const Layout = props => {
         </div>
       </footer>
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

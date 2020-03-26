@@ -1,29 +1,26 @@
-import React from "react";
-import { graphql, useStaticQuery, StaticQuery } from "gatsby";
-import Img from "gatsby-image";
+import React from "react"
+import { graphql, useStaticQuery, StaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 
-import "../utils/normalize.css";
-import "../utils/css/screen.css";
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
 
 const AboutPage = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+  const siteTitle = data.site.siteMetadata.title
   // const image = useStaticQuery(graphql`
   //   query {
-  //     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+  //     profilePic: file(relativePath: { eq: "images/profilePic.jpg" }) {
   //       childImageSharp {
-  //         fluid(maxWidth: 300) {
+  //         fluid(maxWidth: 1000) {
   //           ...GatsbyImageSharpFluid
   //         }
   //       }
   //     }
   //   }
   // `)
-
-  // console.log(image)
 
   return (
     <Layout title={siteTitle}>
@@ -38,7 +35,7 @@ const AboutPage = ({ data }, location) => {
             <figure className="aboutMePic">
               {/* <Img
                 className="aboutMePic"
-                fluid={data.benchAccounting.childImageSharp.fluid}
+                fluid={image.profilePic.childImageSharp.fluid}
               /> */}
             </figure>
           </div>
@@ -92,8 +89,8 @@ const AboutPage = ({ data }, location) => {
         </ul>
       </section>
     </Layout>
-  );
-};
+  )
+}
 
 const indexQuery = graphql`
   query {
@@ -112,7 +109,7 @@ const indexQuery = graphql`
       }
     }
   }
-`;
+`
 
 export default props => (
   <StaticQuery
@@ -121,4 +118,4 @@ export default props => (
       <AboutPage location={props.location} data={data} {...props} />
     )}
   />
-);
+)
