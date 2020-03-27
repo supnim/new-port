@@ -1,9 +1,13 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
+
+import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg"
+import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg"
 
 const Layout = props => {
   const { title, children } = props
   const [toggleNav, setToggleNav] = React.useState(false)
+
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
       <header className="site-head">
@@ -64,15 +68,35 @@ const Layout = props => {
             {title}
           </Link>
         </div>
-        <div className="footer-links">
-          <a href="/">bookwise</a>
-          <a href="/">knowhere</a>
-          <a href="/">design system</a>
-          <a href="/">pagebuilder</a>
-          <a href="/">primefitness</a>
+        <div className="footer-text">
+          <div className="footer-links">
+            <a href="/">bookwise</a>
+            <a href="/">knowhere</a>
+            <a href="/">design system</a>
+            <a href="/">pagebuilder</a>
+            <a href="/">primefitness</a>
+          </div>
+          <div className="footer-love">
+            &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
+          </div>
         </div>
-        <div className="footer">
-          &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
+        <div>
+          <ul className="actions fit">
+            <li>
+              <a href="/" className="cv button large primary">
+                CV
+              </a>
+            </li>
+            <li>
+              <a href="/" className="button large footer">
+                Get in touch
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-image">
+          <Mug />
+          <Jumper />
         </div>
       </footer>
     </div>

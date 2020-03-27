@@ -124,22 +124,34 @@ p {
   }
 }
 
+/*Footer 
+/*---------------------------------------------------------- */
+
 .site-foot {
   margin: 0;
   text-align: center;
   color: white;
   font-size: 1.4rem;
-  height: 240px;
+  height: 101vh;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
+.site-head-logo {
+  mix-blend-mode: difference;
+}
+
 .footer-logo {
   align-self: flex-start;
-  padding-left: 40px;
+  padding-left: 16em;
 }
+.footer-logo a {
+  color: white;
+  margin-bottom: 8rem;
+}
+
 .footer-links {
   display: flex;
   flex-direction: row;
@@ -152,6 +164,20 @@ p {
 
 .site-foot a:hover {
   text-decoration: underline;
+}
+.footer-text {
+  z-index: 1;
+  position: absolute;
+  padding-bottom: 8rem;
+}
+.footer-image {
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.footer-image * {
+  margin: 0 20vw;
 }
 
 /* Site Navigation

@@ -1,25 +1,27 @@
 import React from "react"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
-import { graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
+// import { graphql, useStaticQuery } from "gatsby"
+// import Img from "gatsby-image"
+
+// import Jumper from "../footer/jumper.svg"
 
 import Project from "../templates/project"
 
 const Grounds = () => {
-  const image = useStaticQuery(graphql`
-    query {
-      profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `)
+  // const image = useStaticQuery(graphql`
+  //   query {
+  //     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 1000) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
 
-  console.log(image)
+  // console.log(image)
 
   return (
     <div>
@@ -27,13 +29,13 @@ const Grounds = () => {
         <Hero />
         <div className="contactImg col-6">
           <figure className="aboutMePic">
-            <Img
+            {/* <Img
               className="aboutMePic"
               fluid={image.profilePic.childImageSharp.fluid}
-            />
+            /> */}
           </figure>
         </div>
-
+        {/* <Jumper /> */}
         <Project />
       </Layout>
     </div>
