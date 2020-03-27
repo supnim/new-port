@@ -1,12 +1,18 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import { Link, graphql } from "gatsby";
 
-import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg"
-import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg"
+// macbook
+// import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg"
+// import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg"
+
+//nimeshreghunandanan imac . nimesh macbook
+
+import Jumper from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/jumper.svg";
+import Mug from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/mug.svg";
 
 const Layout = props => {
-  const { title, children } = props
-  const [toggleNav, setToggleNav] = React.useState(false)
+  const { title, children } = props;
+  const [toggleNav, setToggleNav] = React.useState(false);
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
@@ -100,7 +106,7 @@ const Layout = props => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
