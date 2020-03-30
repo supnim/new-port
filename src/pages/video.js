@@ -7,16 +7,13 @@ import VideoBox from "../components/videoBox";
 import path from "../components/videoPaths.js";
 
 const Video = ({ data }) => {
-  const photoStyle = {
-    backgroundColor: "green"
-  };
   const siteTitle = data.site.siteMetadata.title;
   const videoUrl = path.map(video => (
     <VideoBox description={video.description} url={video.url} id={video.id} />
   ));
   return (
     <div className="video-page">
-      <Layout title={siteTitle} style={photoStyle}>
+      <Layout title={siteTitle}>
         <h3>videography</h3>
         <br />
         {videoUrl}

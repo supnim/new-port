@@ -14,7 +14,7 @@ import PostCard from "../components/postCard";
 // import "../components/onLoad"
 import "../script/typing";
 import "../utils/css/components/theme.scss";
-import scrollIcon from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/scrollIcon.svg";
+// import scrollIcon from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/scrollIcon.svg";
 // import Scroll from "../pages/scrollIcon.svg"
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
@@ -43,7 +43,7 @@ const BlogIndex = ({ data }, location) => {
             </h2>
             <br />
             {/* <Scroll /> */}
-            <img src={scrollIcon} alt="scrollicon"></img>
+            {/* <img src={scrollIcon} alt="scrollicon"></img> */}
           </div>
         </header>
       )}

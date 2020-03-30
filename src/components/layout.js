@@ -2,13 +2,13 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 
 // macbook
-// import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg"
-// import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg"
+import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg";
+import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg";
 
 //nimeshreghunandanan imac . nimesh macbook
 
-import Jumper from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/jumper.svg";
-import Mug from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/mug.svg";
+// import Jumper from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/jumper.svg";
+// import Mug from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/mug.svg";
 
 const Layout = props => {
   const { title, children } = props;

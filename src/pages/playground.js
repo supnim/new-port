@@ -1,45 +1,43 @@
-import React from "react"
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-// import { graphql, useStaticQuery } from "gatsby"
-// import Img from "gatsby-image"
+import React from "react";
+import Layout from "../components/layout";
+// import Hero from "../components/hero"
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
-// import Jumper from "../footer/jumper.svg"
-
-import Project from "../templates/project"
+// import Project from "../templates/project"
+// import Meth from "/Users/nimesh/Desktop/new-port/src/components/methData.js"
+import MethCard from "../components/methCard";
 
 const Grounds = () => {
-  // const image = useStaticQuery(graphql`
-  //   query {
-  //     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
-  //       childImageSharp {
-  //         fluid(maxWidth: 1000) {
-  //           ...GatsbyImageSharpFluid
-  //         }
-  //       }
-  //     }
-  //   }
-  // `)
-
-  // console.log(image)
+  const image = useStaticQuery(graphql`
+    query {
+      profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
 
   return (
     <div>
       <Layout>
-        <Hero />
         <div className="contactImg col-6">
           <figure className="aboutMePic">
-            {/* <Img
+            <Img
               className="aboutMePic"
               fluid={image.profilePic.childImageSharp.fluid}
-            /> */}
+            />
           </figure>
+          <figcaption>UXCONFRENCE</figcaption>
+          {/* <Meth /> */}
+          <MethCard />
         </div>
-        {/* <Jumper /> */}
-        <Project />
       </Layout>
     </div>
-  )
-}
+  );
+};
 
-export default Grounds
+export default Grounds;
