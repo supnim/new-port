@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
 
 // macbook
 import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg";

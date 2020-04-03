@@ -1,12 +1,10 @@
 import React from "react";
 import Layout from "../components/layout";
-// import Hero from "../components/hero"
+
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 // import Project from "../templates/project"
-import Meth from "/Users/nimesh/Desktop/new-port/src/components/methData.js";
-import MethCard from "../components/methCard";
 
 function Grounds() {
   const image = useStaticQuery(graphql`
@@ -32,8 +30,6 @@ function Grounds() {
             />
           </figure>
           <figcaption>UXCONFRENCE</figcaption>
-          <Meth />
-          {/* <MethCard /> */}
         </div>
       </Layout>
     </div>

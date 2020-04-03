@@ -800,35 +800,44 @@ p {
   flex-direction: row;
   margin: 1.6rem;
 }
-
+.contactBox {
+  background-color: black !important;
+  color: white;
+}
 .aboutMe {
   width: 60%;
   padding: 3.2rem;
+}
+.aboutMe a {
+  color: white;
+  font-weight: 700;
 }
 .aboutMeTitle {
   text-align: left !important;
   font-weight: 500;
   line-height: 1.2;
   margin: 0.8em 0 0.4em 0;
+  color: white !important;
 }
-
+.aboutMePic {
+  height: 100%;
+  width: 100%;
+}
 .contactImg {
   border-radius: 2px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  background-image: url(https://images.unsplash.com/photo-1507499739999-097706ad8914?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1235&q=80);
 }
 
 .contactButtons {
   display: flex;
-  /* padding: 0.1rem 0.8rem; */
 }
 
 .contactButtons * {
   padding: 0;
-  margin: 0px;
+  margin: 0.2rem 0.8rem;
 }
 
 .contactSpan {
