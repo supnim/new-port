@@ -1,7 +1,7 @@
-import React from "react"
-import "../utils/css/components/gallery.scss"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from "react";
+import "../utils/css/components/gallery.scss";
+// import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image";
 
 function Gallery({ url, caption }) {
   return (
@@ -21,7 +21,7 @@ function Gallery({ url, caption }) {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default Gallery
+export default Gallery;

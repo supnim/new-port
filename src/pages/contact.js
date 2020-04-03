@@ -16,7 +16,6 @@ const AboutPage = ({ data }) => {
       profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
-            srcWebp
             ...GatsbyImageSharpFluid
           }
         }

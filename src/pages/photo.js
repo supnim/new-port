@@ -3,12 +3,13 @@ import Layout from "../components/layout";
 import { graphql, StaticQuery } from "gatsby";
 
 import SEO from "../components/seo";
-// import Gallery from "../components/gallery"
+import Gallery from "../components/gallery";
+import Img from "gatsby-image";
 
 const Photo = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
 
-  // const image = graphql`
+  // const Image = graphql`
   //   query {
   //     allImageSharp {
   //       edges {
@@ -31,7 +32,8 @@ const Photo = ({ data }) => {
           keywords={[`photography`, `nightlife`, `fashion`, `band`]}
         />
         <h1>gallery goes here</h1>
-        {/* <Gallery fluid={image.url} /> */}
+        <Gallery />
+        {/* <Img fluid={photos.allImage.imageSharp.fluid} /> */}
       </Layout>
     </div>
   );

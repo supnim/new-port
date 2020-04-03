@@ -1,5 +1,5 @@
-const urljoin = require("url-join")
-const siteConfig = require("./siteConfig")
+const urljoin = require("url-join");
+const siteConfig = require("./siteConfig");
 
 module.exports = {
   siteMetadata: {
@@ -25,6 +25,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/assets`,
         name: `assets`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/assets/images`,
+        name: `images`
       }
     },
     {
@@ -115,4 +122,4 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`
   ]
-}
+};
