@@ -1,11 +1,11 @@
 import React from "react";
-import "../utils/css/components/card.scss";
+import "../utils/css/components/meth.scss";
 
-const MethCard = ({ title, standfirst, icon }) => (
+const MethCard = props => (
   <div className="methCard">
-    {/* <img>{icon}</img> */}
-    <h3 className="methTitle">{title}</h3>
-    <p className="methParagraph">{standfirst}</p>
+    <div className="methImg">{props.icon}</div>
+    <h3 className="methTitle">{props.title}</h3>
+    <p className="methParagraph">{props.standfirst}</p>
   </div>
 );
 

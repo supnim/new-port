@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="40px" viewBox="0 0 30 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>test</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M22.5,10.625 L22.5,0 L6.875,0 C5.8359375,0 5,0.8359375 5,1.875 L5,38.125 C5,39.1640625 5.8359375,40 6.875,40 L33.125,40 C34.1640625,40 35,39.1640625 35,38.125 L35,12.5 L24.375,12.5 C23.34375,12.5 22.5,11.65625 22.5,10.625 Z M35,9.5234375 L35,10 L25,10 L25,0 L25.4765625,0 C25.9765625,0 26.453125,0.1953125 26.8046875,0.546875 L34.453125,8.203125 C34.8046875,8.5546875 35,9.03125 35,9.5234375 Z" id="path-1"></path>
+    </defs>
+    <g id="website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="test" transform="translate(-29.000000, -49.000000)">
+            <g id="Solid/file" transform="translate(24.000000, 49.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Mask"></g>
+                <g id="Color/Black" mask="url(#mask-2)" fill="#242A42" fill-rule="evenodd">
+                    <rect id="Black" x="0" y="0" width="40" height="40"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

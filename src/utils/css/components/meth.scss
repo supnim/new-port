@@ -1,0 +1,78 @@
+.board {
+  width: 100%;
+  padding: 32px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+
+  //   justify-content: space-between;
+}
+.methContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80%;
+}
+
+.methCard {
+  background-color: #ffffff;
+  border: 4px solid #ffffff;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  margin: 3rem;
+  width: 180px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-end;
+  transition-duration: 160ms;
+}
+
+.methCard:hover {
+  background-color: black;
+  border: 4px solid black;
+  border: 2px solid white;
+  .methTitle,
+  .methParagraph,
+  .icon {
+    color: white;
+    fill: white;
+  }
+}
+.methImg {
+  height: 8vh;
+  width: 8vh;
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 8px 0;
+}
+.methTitle {
+  padding: 0px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin: 0;
+}
+.methHeader {
+  align-self: baseline;
+}
+.methParagraph {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: black;
+}
+
+#design:hover #methContainer {
+  background-color: yellow;
+}

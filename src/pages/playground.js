@@ -5,10 +5,10 @@ import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
 // import Project from "../templates/project"
-// import Meth from "/Users/nimesh/Desktop/new-port/src/components/methData.js"
+import Meth from "/Users/nimesh/Desktop/new-port/src/components/methData.js";
 import MethCard from "../components/methCard";
 
-const Grounds = () => {
+function Grounds() {
   const image = useStaticQuery(graphql`
     query {
       profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
@@ -32,12 +32,12 @@ const Grounds = () => {
             />
           </figure>
           <figcaption>UXCONFRENCE</figcaption>
-          {/* <Meth /> */}
-          <MethCard />
+          <Meth />
+          {/* <MethCard /> */}
         </div>
       </Layout>
     </div>
   );
-};
+}
 
 export default Grounds;

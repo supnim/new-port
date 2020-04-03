@@ -59,6 +59,9 @@ const Layout = props => {
               <li className="nav-contact">
                 <Link to={`/playground`}>playground</Link>
               </li>
+              <li className="nav-contact">
+                <Link to={`/anotherOne`}>anotherOne</Link>
+              </li>
             </ul>
           </div>
         </div>
