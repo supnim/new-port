@@ -2,6 +2,8 @@ import React from "react";
 import "../utils/css/components/meth.scss";
 import MethCard from "../components/methCard";
 
+import { motion } from "framer-motion";
+
 import {
   FaBraille,
   FaBicycle,
@@ -18,13 +20,17 @@ function MethologyBoard() {
     <div id="board" className="board">
       <h2 className="methHeader">methology.</h2>
       <div className="methContainer" id="methContainer">
-        <div id="design" f er24 frf vrf>
+        <motion.div
+          insitial={{ scale: 1.5 }}
+          animate={{ scale: 2 }}
+          id="design"
+        >
           <MethCard
             icon={<FaEye className="icon" />}
             title="understand"
             standfirst="find out goals  and strategy, collect information, ask questions"
           />
-        </div>
+        </motion.div>
         <MethCard
           icon={<FaBicycle className="icon" />}
           title="explore"
