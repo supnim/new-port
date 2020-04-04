@@ -18,7 +18,7 @@ function MethologyBoard() {
     <div id="board" className="board">
       <h2 className="methHeader">methology.</h2>
       <div className="methContainer" id="methContainer">
-        <div id="design">
+        <div id="design" f er24 frf vrf>
           <MethCard
             icon={<FaEye className="icon" />}
             title="understand"
