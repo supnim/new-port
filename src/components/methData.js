@@ -1,50 +1,65 @@
 export default [
   {
     id: 1,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "a day in oxford in 3 second clips"
+    background: "background1",
+    icon: "FaEye",
+    title: "understand",
+    standfirst:
+      "find out goals  and strategy, collect information, ask questions"
   },
   {
     id: 2,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "a little camping trip in the lake district"
+    icon: "FaBicycle",
+    title: "explore",
+    background: "background2",
+    standfirst:
+      "envision, hypothesise and ideate, develop lots of solutions with all parts of business"
   },
   {
     id: 3,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "how to kill 17 hours in dubai"
+    icon: "FaBraille",
+    title: "plan",
+    background: "background3",
+    standfirst:
+      "choose the best, wirefrime idea and project the products coming journey"
   },
   {
     id: 4,
-    // icon: "meth-icon/1.svg",
+    icon: "FaObjectGroup",
     title: "design",
-    standfirst: "pride in london in 360"
+    background: "background4",
+    standfirst:
+      "bring ideas to life, prototype, focusing on usability and experiment"
   },
   {
     id: 5,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "celebrating 3 birthdays in berlin"
+    icon: "FaFile",
+    title: "test",
+    background: "background5",
+    standfirst:
+      "show prototypes to users outside of co. learn what doesn’t work "
   },
   {
     id: 6,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "21st in budapest"
+    icon: "FaCubes",
+    title: "develop",
+    background: "background6",
+    standfirst: "break-down and organise to build MVP (Minimum Viable Product)"
   },
   {
     id: 7,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "Dalaro – Empty Apartments"
+    icon: "FaFileAlt",
+    title: "test again",
+    background: "background7",
+    standfirst:
+      "use data, understand behaviours, A/B test, new ideas and start V2"
   },
   {
     id: 8,
-    // icon: "meth-icon/1.svg",
-    title: "design",
-    standfirst: "Dalaro – Take my heart "
+    icon: "FaSyncAlt",
+    title: "loop",
+    background: "background8",
+    standfirst:
+      "fairly simple, start gain. new goals new needs a never ending cycle of iteration"
   }
 ];
