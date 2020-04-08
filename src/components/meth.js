@@ -2,7 +2,11 @@ import React from "react";
 import "../utils/css/components/meth.scss";
 import MethCard from "../components/methCard";
 
+import { Frame } from "framer";
 import { motion } from "framer-motion";
+
+import { graphql } from "gatsby";
+import Img from "gatsby-image";
 
 import {
   FaBraille,
@@ -15,22 +19,55 @@ import {
   FaSyncAlt
 } from "react-icons/fa";
 
+// var backgroundImage = graphql`
+//   query {
+//     allFile(
+//       filter: {
+//         extension: { regex: "/(jpeg|jpg|gif|png)/" }
+//         sourceInstanceName: { eq: "assets/methBackgrounds" }
+//       }
+//     ) {
+//       edges {
+//         node {
+//           childImageSharp {
+//             fluid(maxWidth: 1000) {
+//               ...GatsbyImageSharpFluid
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
+
+const variants = {
+  active: {
+    backgroundColor: "blue"
+  },
+  inactive: {
+    backgroundColor: "yellow",
+    transition: { duration: 2 }
+  }
+};
+
 function MethologyBoard() {
   return (
     <div id="board" className="board">
       <h2 className="methHeader">methology.</h2>
-      <div className="methContainer" id="methContainer">
-        <motion.div
-          insitial={{ scale: 1.5 }}
-          animate={{ scale: 2 }}
-          id="design"
-        >
-          <MethCard
-            icon={<FaEye className="icon" />}
-            title="understand"
-            standfirst="find out goals  and strategy, collect information, ask questions"
-          />
-        </motion.div>
+      <img height="200px" width="200px" />
+      {/* <Img src={backgroundImage} /> */}
+      {/* <HoverTest /> */}
+      <motion.div
+        variants={variants}
+        animate="inactive"
+        className="methContainer"
+        id="methContainer"
+      >
+        <MethCard
+          icon={<FaEye className="icon" />}
+          title="understand"
+          standfirst="find out goals  and strategy, collect information, ask questions"
+        />
         <MethCard
           icon={<FaBicycle className="icon" />}
           title="explore"
@@ -66,7 +103,7 @@ function MethologyBoard() {
           title="loop"
           standfirst="fairly simple, start gain. new goals new needs a never ending cycle of iteration"
         />
-      </div>
+      </motion.div>
     </div>
   );
 }
@@ -99,3 +136,7 @@ export default MethologyBoard;
 //     )
 //   }
 // }
+
+// Background
+
+// <Frame image="https://source.unsplash.com/random" image={background..childImageSharp.fluid} />

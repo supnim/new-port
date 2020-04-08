@@ -1,14 +1,8 @@
 import React from "react";
 import { Link } from "gatsby";
 
-// macbook
-// import Jumper from "/Users/nimesh/Desktop/new-port/content/assets/footer/jumper.svg";
-// import Mug from "/Users/nimesh/Desktop/new-port/content/assets/footer/mug.svg";
-
-//nimeshreghunandanan imac . nimesh macbook
-
-import Jumper from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/jumper.svg";
-import Mug from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/footer/mug.svg";
+// import Jumper from "../../content/assets/footer/jumper.svg"
+// import Mug from "../../content/assets/footer/mug.svg"
 
 const Layout = props => {
   const { title, children } = props;
@@ -103,10 +97,10 @@ const Layout = props => {
             </li>
           </ul>
         </div>
-        <div className="footer-image">
+        {/* <div className="footer-image">
           <Mug />
           <Jumper />
-        </div>
+        </div> */}
       </footer>
     </div>
   );

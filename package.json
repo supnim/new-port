@@ -48,10 +48,12 @@
     "typeface-montserrat": "0.0.54",
     "typeface-nunito": "^0.0.72",
     "typescript": "^3.8.3",
-    "url-join": "^4.0.0"
+    "url-join": "^4.0.0",
+    "url-loader": "^4.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
+    "file-loader": "^6.0.0",
     "husky": "^2.2.0",
     "postcss-color-function": "^4.1.0",
     "postcss-custom-properties": "^8.0.10",

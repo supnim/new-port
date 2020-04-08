@@ -132,12 +132,12 @@ p {
   text-align: center;
   color: white;
   font-size: 1.4rem;
-  height: 101vh;
+  height: 50vh;
   background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-evenly;
 }
 .site-head-logo {
   mix-blend-mode: difference;
