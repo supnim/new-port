@@ -10,7 +10,7 @@
 }
 
 .actions li {
-  /* padding: 0 0 0 calc(var(--margin) * 0.5); */
+  padding: 0 0 0 calc(var(--margin) * 0.5);
   vertical-align: middle;
 }
 

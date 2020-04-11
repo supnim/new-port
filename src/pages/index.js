@@ -5,17 +5,15 @@ import "../utils/normalize.css";
 import "../utils/css/screen.css";
 
 // Skelton
-import Helmet from "react-helmet";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PostCard from "../components/postCard";
 
 // onLoad + theme.scss
-// import "../components/onLoad"
 import "../script/typing";
 import "../utils/css/components/theme.scss";
-// import scrollIcon from "/Users/nimeshreghunandanan/Desktop/new-port/content/assets/scrollIcon.svg";
-// import Scroll from "../pages/scrollIcon.svg"
+// import OnLoad from "../components/onLoad"
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
@@ -25,15 +23,13 @@ const BlogIndex = ({ data }, location) => {
 
   return (
     <Layout title={siteTitle}>
-      <Helmet>
-        <script type="text/javascript" src="src/components/onLoad.js"></script>
-      </Helmet>
       <SEO
         title="home"
         keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
       />
 
       {/* onLoad hero component */}
+      {/* <OnLoad /> */}
       {data.site.siteMetadata.description && (
         <header src="../script/typing.js" className="page-head">
           <div>
@@ -42,8 +38,16 @@ const BlogIndex = ({ data }, location) => {
               {data.site.siteMetadata.description}
             </h2>
             <br />
-            {/* <Scroll /> */}
-            {/* <img src={scrollIcon} alt="scrollicon"></img> */}
+            <FaAngleDoubleDown
+              alt="scrollicon"
+              style={{
+                fill: "white",
+                marginTop: "4rem",
+                height: "24px",
+                width: "24px",
+                paddingTop: "1rem"
+              }}
+            />
           </div>
         </header>
       )}

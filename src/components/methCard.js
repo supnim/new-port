@@ -10,7 +10,9 @@ const MethCard = props => (
     whileTap={{ scale: 0.98, y: 0 }}
     transition={{ duration: 0.1 }}
   >
-    <div className="methImg">{props.icon}</div>
+    <div className="methImg" className="icon">
+      {props.icon}
+    </div>
     <h3 className="methTitle">{props.title}</h3>
     <p className="methParagraph">{props.standfirst}</p>
   </motion.div>
