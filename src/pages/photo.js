@@ -6,10 +6,8 @@ import SEO from "../components/seo";
 import Gallery from "../components/gallery";
 import Img from "gatsby-image";
 
-const Photo = ({ Data }) => {
-  const siteTitle = Data.site.siteMetadata.title;
-
-  const imageData = graphql`
+const Photo = ({ data }) => {
+  const siteTitle = graphql`
     query {
       profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
         childImageSharp {
@@ -35,7 +33,7 @@ const Photo = ({ Data }) => {
         />
         <h1>gallery goes here</h1>
         <Gallery />
-        <Img fluid={imageData.profilePic.childrenImageSharp.fluid} />
+        {/* <Img fluid={imageData.profilePic.childrenImageSharp.fluid} /> */}
       </Layout>
     </div>
   );

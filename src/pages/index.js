@@ -8,12 +8,16 @@ import "../utils/css/screen.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import PostCard from "../components/postCard";
+import { Link } from "gatsby";
 
-// onLoad + theme.scss
+// Component + theme
 import "../script/typing";
 import "../utils/css/components/theme.scss";
+import ScrollIcon from "../../content/assets/scrollIcon.svg";
+import Amazon from "../../content/assets/thumbnails/amazon_logo.svg";
+import Tes from "../../content/assets/thumbnails/tes.svg";
+import Methodogly from "../components/meth";
 // import OnLoad from "../components/onLoad"
-import { FaAngleDoubleDown } from "react-icons/fa";
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const BlogIndex = ({ data }, location) => {
@@ -31,27 +35,41 @@ const BlogIndex = ({ data }, location) => {
       {/* onLoad hero component */}
       {/* <OnLoad /> */}
       {data.site.siteMetadata.description && (
-        <header src="../script/typing.js" className="page-head">
-          <div>
+        <header className="page-head">
+          <div src="../script/typing.js">
             <h1 className="page-head-title">Nimesh</h1>
             <h2 className="page-head-sub">
               {data.site.siteMetadata.description}
             </h2>
             <br />
-            <FaAngleDoubleDown
+            <ScrollIcon
               alt="scrollicon"
               style={{
                 fill: "white",
                 marginTop: "4rem",
-                height: "24px",
-                width: "24px",
+                height: "40px",
+                width: "40px",
                 paddingTop: "1rem"
               }}
             />
           </div>
         </header>
       )}
-
+      <div className="row jobs">
+        <div className="col-7 tes">
+          <Tes />
+        </div>
+        <div className="col-5 amazon">
+          <Amazon
+            alt="amazon"
+            style={{
+              fill: "white",
+              margin: "auto 0",
+              width: "100%"
+            }}
+          />
+        </div>
+      </div>
       <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++;
@@ -64,6 +82,16 @@ const BlogIndex = ({ data }, location) => {
             />
           );
         })}
+      </div>
+
+      <Methodogly />
+      <div className="watchLook row">
+        <Link className="col-6 watch" to={`/video`}>
+          <p>WATCH</p>
+        </Link>
+        <Link className="col-6 look" to={`/photo`}>
+          <p>LOOK</p>
+        </Link>
       </div>
     </Layout>
   );

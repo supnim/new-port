@@ -49,6 +49,17 @@ module.exports = {
             }
           },
           {
+            resolve: "gatsby-remark-embed-video",
+            options: {
+              width: 800,
+              height: 450,
+              related: false,
+              noIframeBorder: true
+              // allowfullscreen: true
+            }
+          },
+
+          {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`
@@ -68,6 +79,8 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-remark-embed-video`,
+    `gatsby-remark-responsive-iframe`,
     {
       resolve: `gatsby-plugin-postcss`,
       options: {

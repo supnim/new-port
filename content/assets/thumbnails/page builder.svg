@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="500px" viewBox="0 0 700 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>page builder</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0218181818 0.242545455 30.8483636 0.242545455 30.8483636 38.8483636 0.0218181818 38.8483636"></polygon>
+    </defs>
+    <g id="page-builder" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="pagebuilder" font-family="Effra-Medium, Effra" font-size="100" font-weight="400" fill="#2C85CA">
+            <tspan x="89.1" y="274">pagebuilder</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#2C85CA" x="65.5" y="188.5" width="571" height="123"></rect>
+        <rect id="Rectangle" stroke="#2C85CA" fill="#FFFFFF" x="61" y="184" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-3" stroke="#2C85CA" fill="#FFFFFF" x="347" y="184" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-6" stroke="#2C85CA" fill="#FFFFFF" x="633" y="184" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy" stroke="#2C85CA" fill="#FFFFFF" x="61" y="246" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-7" stroke="#2C85CA" fill="#FFFFFF" x="633" y="246" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-2" stroke="#2C85CA" fill="#FFFFFF" x="61" y="308" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-5" stroke="#2C85CA" fill="#FFFFFF" x="347" y="308" width="8" height="8"></rect>
+        <rect id="Rectangle-Copy-8" stroke="#2C85CA" fill="#FFFFFF" x="633" y="308" width="8" height="8"></rect>
+        <g id="hand_cursor_free_vector" transform="translate(469.000000, 310.500000) rotate(-26.000000) translate(-469.000000, -310.500000) translate(453.000000, 290.000000)">
+            <g id="Group-4" transform="translate(0.000000, 1.090909)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <polyline id="Fill-1" fill="#FFFFFE" mask="url(#mask-2)" points="8.18181818 1.63636364 8.60618182 18.3636364 6.36363636 18.3636364 4.84836364 17.0301818 0.909090909 16.6665455 1.03018182 19.8181818 2.12109091 21.4545455 4.36363636 23.4545455 4.788 26.1210909 6.60618182 27.8789091 6.90909091 29.5756364 8 30.9090909 8.72727273 33.3938182 9.63636364 34.6061818 10.0607273 38.4243636 27.0909091 38.8483636 27.3334545 34.9090909 28.9698182 33.0909091 29.5756364 29.1516364 30.8483636 27.5756364 30.5454545 16.4243636 27.0909091 13.5152727 24.788 12.3029091 23.6970909 11.6970909 19.3938182 10.8483636 18.3029091 9.63636364 14.4847273 9.09090909 13.7574545 2.12109091 12.1210909 0.302909091 10.4847273 0.242545455 8.18181818 1.63636364"></polyline>
+                <polygon id="Fill-3" fill="#2C85CA" mask="url(#mask-2)" points="0.0218181818 21.0301818 1.69709091 21.0301818 1.69709091 15.5756364 0.0218181818 15.5756364"></polygon>
+            </g>
+            <polygon id="Fill-5" fill="#2C85CA" points="7.212 26.4847273 9.33345455 26.4847273 9.33345455 2.18181818 7.212 2.18181818"></polygon>
+            <polygon id="Fill-6" fill="#2C85CA" points="18.8483636 18.5454545 20.9698182 18.5454545 20.9698182 11.212 18.8483636 11.212"></polygon>
+            <polygon id="Fill-7" fill="#2C85CA" points="24.2425455 20.3029091 26.364 20.3029091 26.364 13.0909091 24.2425455 13.0909091"></polygon>
+            <polygon id="Fill-8" fill="#2C85CA" points="29.7574545 29.7574545 31.8789091 29.7574545 31.8789091 17.0301818 29.7574545 17.0301818"></polygon>
+            <polygon id="Fill-9" fill="#2C85CA" points="26.1210909 40.1818182 28.2425455 40.1818182 28.2425455 35.2123636 26.1210909 35.2123636"></polygon>
+            <polygon id="Fill-10" fill="#2C85CA" points="27.9996364 35.2123636 30.1210909 35.2123636 30.1210909 29.6974545 27.9996364 29.6974545"></polygon>
+            <polygon id="Fill-11" fill="#2C85CA" points="13.0305455 18.7570909 15.152 18.7570909 15.152 2.15127273 13.0305455 2.15127273"></polygon>
+            <polygon id="Fill-12" fill="#2C85CA" points="0.121454545 18.5454545 5.33345455 18.5454545 5.33345455 16.6665455 0.121454545 16.6665455"></polygon>
+            <polygon id="Fill-13" fill="#2C85CA" points="9.15163636 40.7272727 28.2429091 40.7272727 28.2429091 38.8483636 9.15163636 38.8483636"></polygon>
+            <polygon id="Fill-14" fill="#2C85CA" points="1.69709091 23.9392727 3.69709091 23.9392727 3.69709091 22.0607273 1.69709091 22.0607273"></polygon>
+            <polygon id="Fill-15" fill="#2C85CA" points="3.63672727 27.9396364 5.45490909 27.9396364 5.45490909 23.8185455 3.63672727 23.8185455"></polygon>
+            <polygon id="Fill-16" fill="#2C85CA" points="5.39418182 31.6363636 7.45490909 31.6363636 7.45490909 27.9396364 5.39418182 27.9396364"></polygon>
+            <polygon id="Fill-17" fill="#2C85CA" points="7.45490909 35.212 9.27309091 35.212 9.27309091 31.5756364 7.45490909 31.5756364"></polygon>
+            <polygon id="Fill-18" fill="#2C85CA" points="9.15163636 39.1512727 11.2123636 39.1512727 11.2123636 35.212 9.15163636 35.212"></polygon>
+            <polygon id="Fill-19" fill="#2C85CA" points="5.39381818 20.424 8.30290909 20.424 8.30290909 18.5450909 5.39381818 18.5450909"></polygon>
+            <polygon id="Fill-20" fill="#2C85CA" points="25.0301818 15.212 27.9392727 15.212 27.9392727 13.0909091 25.0301818 13.0909091"></polygon>
+            <polygon id="Fill-21" fill="#2C85CA" points="27.9447273 17.0792727 29.7574545 17.0792727 29.7574545 15.2341818 27.9447273 15.2341818"></polygon>
+            <polygon id="Fill-22" fill="#2C85CA" points="9.39381818 2.18181818 13.0301818 2.18181818 13.0301818 0.302909091 9.39381818 0.302909091"></polygon>
+            <polygon id="Fill-23" fill="#2C85CA" points="20.3592727 13.1512727 24.3029091 13.1512727 24.3029091 11.2287273 20.3592727 11.2287273"></polygon>
+            <polygon id="Fill-24" fill="#2C85CA" points="15.0843636 11.1894545 18.8418182 11.1894545 18.8418182 9.36363636 15.0843636 9.36363636"></polygon>
+        </g>
+    </g>
+</svg>

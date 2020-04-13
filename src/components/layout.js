@@ -1,11 +1,9 @@
 import React from "react";
 import { Link } from "gatsby";
-
-// import Jumper from "../../content/assets/footer/jumper.svg"
-// import Mug from "../../content/assets/footer/mug.svg"
+import Logo from "../../content/assets/supnimLogo.svg";
 
 const Layout = props => {
-  const { title, children } = props;
+  const { children } = props;
   const [toggleNav, setToggleNav] = React.useState(false);
 
   return (
@@ -30,7 +28,7 @@ const Layout = props => {
           </a>
           <nav id="swup" className="site-head-left">
             <Link className="site-head-logo" to={`/`}>
-              {title}
+              <Logo />
             </Link>
           </nav>
           <div className="site-head-right">
@@ -68,7 +66,7 @@ const Layout = props => {
       <footer className="site-foot">
         <div className="footer-logo">
           <Link className="site-head-logo" to={`/`}>
-            {title}
+            <Logo />
           </Link>
         </div>
         <div className="footer-text">
@@ -97,10 +95,6 @@ const Layout = props => {
             </li>
           </ul>
         </div>
-        {/* <div className="footer-image">
-          <Mug />
-          <Jumper />
-        </div> */}
       </footer>
     </div>
   );

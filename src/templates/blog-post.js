@@ -19,14 +19,6 @@ class BlogPostTemplate extends React.Component {
         <article
           className={`post-content ${post.frontmatter.thumbnail || `no-image`}`}
         >
-          <header className="post-content-header">
-            <h1 className="post-content-title">{post.frontmatter.title}</h1>
-          </header>
-
-          {post.frontmatter.description && (
-            <p class="post-content-excerpt">{post.frontmatter.description}</p>
-          )}
-
           {post.frontmatter.thumbnail && (
             <div className="post-content-image">
               <Img
@@ -35,6 +27,13 @@ class BlogPostTemplate extends React.Component {
                 alt={post.frontmatter.title}
               />
             </div>
+          )}
+          <header className="post-content-header">
+            <h1 className="post-content-title">{post.frontmatter.title}</h1>
+          </header>
+
+          {post.frontmatter.description && (
+            <p class="post-content-excerpt">{post.frontmatter.description}</p>
           )}
 
           <div

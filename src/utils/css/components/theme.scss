@@ -119,3 +119,68 @@ $themes: (
     opacity: 1;
   }
 }
+
+// jobs
+
+.jobs {
+  height: 26vh;
+}
+
+.amazon {
+  background-color: #ffa500;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  fill: white;
+}
+
+.tes {
+  background-color: #013d59;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  fill: white;
+}
+
+// watchLook
+
+.watchLook {
+  height: 32vh;
+  a {
+    text-decoration: none;
+  }
+}
+
+.watch .look {
+  height: 100%;
+}
+
+.watch {
+  height: 100%;
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+}
+
+.look {
+  height: 100%;
+  background-color: #ccf0f9;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+}

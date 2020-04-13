@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="500px" viewBox="0 0 700 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>design system</title>
+    <desc>Created with Sketch.</desc>
+    <g id="design-system" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy" fill="#E08AF7" x="497" y="328" width="43" height="44" rx="8"></rect>
+        <rect id="Rectangle-Copy" fill="#DAF78A" x="560" y="162" width="64" height="40" rx="8"></rect>
+        <text font-family="Effra-Medium, Effra" font-size="100" font-weight="400" fill="#57056C">
+            <tspan x="39.1" y="284">design system</tspan>
+        </text>
+        <rect id="Rectangle" stroke="#57056C" stroke-width="4" x="487" y="319" width="40" height="40" rx="8"></rect>
+        <rect id="Rectangle-Copy" fill="#F78A8A" x="164" y="125" width="151" height="68" rx="8"></rect>
+        <rect id="Rectangle" stroke="#6C0505" stroke-width="4" x="156" y="116" width="147" height="23" rx="8"></rect>
+        <rect id="Rectangle-Copy-2" stroke="#6C0505" stroke-width="4" x="156" y="147" width="147" height="33" rx="8"></rect>
+    </g>
+</svg>
