@@ -56,10 +56,10 @@ const BlogIndex = ({ data }, location) => {
         </header>
       )}
       <div className="row jobs">
-        <div className="col-7 tes">
+        <Link className="col-7 tes" to={`/tes`}>
           <Tes />
-        </div>
-        <div className="col-5 amazon">
+        </Link>
+        <Link className="col-5 amazon" to={`/amazon`}>
           <Amazon
             alt="amazon"
             style={{
@@ -68,7 +68,7 @@ const BlogIndex = ({ data }, location) => {
               width: "100%"
             }}
           />
-        </div>
+        </Link>
       </div>
       <div className="post-feed">
         {posts.map(({ node }) => {

@@ -1,26 +1,24 @@
 .container {
-        margin: 0 auto;
-
+  margin: 0 auto;
 }
 
 .hero-image {
-        background-size: cover;
-        background-color:black;
-        height: 70vh;
-        width: 100vw;
-
-    }
+  background-size: cover;
+  background-color: black;
+  height: 70vh;
+  width: 100vw;
+}
 
 .intro {
-        display: flex;
-        flex-direction: row;
-        color: black;
-        align-items: baseline;
-        justify-content: center;
-        margin: 0 24vw;
-    }
-     //things inside
-    .intro *{
-        padding: 1rem;
-    }
-
+  display: flex;
+  flex-direction: row;
+  color: black;
+  align-items: baseline;
+  justify-content: center;
+  widows: 74vw;
+  margin: 0 24vw;
+}
+//things inside
+.intro * {
+  padding: 1rem;
+}

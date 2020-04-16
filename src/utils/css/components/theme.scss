@@ -120,10 +120,11 @@ $themes: (
   }
 }
 
-// jobs
+// Jobs section ----------------------------------------------->
 
 .jobs {
-  height: 26vh;
+  height: 32vh;
+  width: 100%;
 }
 
 .amazon {
@@ -132,6 +133,9 @@ $themes: (
   flex-direction: column;
   height: 100%;
   fill: white;
+  @media (max-width: 800px) {
+    size: 50%;
+  }
 }
 
 .tes {
@@ -142,10 +146,105 @@ $themes: (
   fill: white;
 }
 
-// watchLook
+.jobHero {
+  height: 80vh;
+  width: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  * {
+    display: flex;
+  }
+}
+.amazonLogo {
+  height: 50%;
+  fill: white;
+}
+.amazonParagraphy {
+  width: 70vw;
+  margin: 0 auto;
+  font-size: large;
+  font-weight: 900;
+  color: white;
+  letter-spacing: 0.2px;
+  line-height: 3.2rem;
+  text-align: center;
+  padding-bottom: 4rem;
+  @media (max-width: 800px) {
+    font-size: small;
+    line-height: 2.2rem;
+    width: 88vw;
+  }
+}
+.amazonJobs {
+  .connect {
+    background-color: #49640b;
+  }
+  .student {
+    background-color: #fffc00;
+  }
+  .travel {
+    background-color: #1c1918;
+  }
+  .music {
+    background-color: #052329;
+  }
+  .social {
+    background-color: chocolate;
+    height: 24vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    * {
+      color: white;
+    }
+  }
+}
+
+.tesJobs {
+  .social {
+    background-color: #1c1918;
+  }
+  .design {
+    background-color: #ffeafe;
+  }
+  .pagebuilder {
+    background-color: #ffe2e2;
+  }
+  .institute {
+    background-color: #d1d1d1;
+  }
+  .school {
+    background-color: #e3fbf8;
+  }
+}
+.connect,
+.student,
+.travel,
+.music,
+.social,
+.design,
+.pagebuilder,
+.institute,
+.school {
+  text-align: center;
+  justify-content: center;
+  height: min-content;
+  width: 100%;
+  text-decoration: none !important;
+  @media (max-width: 800px) {
+    height: 400px;
+  }
+  * {
+    width: 80%;
+  }
+}
+
+// watchLook ----------------------------------------------->
 
 .watchLook {
-  height: 32vh;
+  height: 24vh;
   a {
     text-decoration: none;
   }

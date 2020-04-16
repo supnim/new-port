@@ -9,7 +9,7 @@ const Card = () => {
 
   return (
     <div className="container vertical">
-      <div className="img">{/* img */}</div>
+      <div className="img">img</div>
       <div className="content">
         <h4 className="title">title of the thing</h4>
         <p className="paragraphy">here where all the words would go</p>

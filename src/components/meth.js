@@ -14,7 +14,7 @@ function MethodologyBoard() {
       <h2 className="methHeader">methodology.</h2>
       <div>{currentCard}</div>
       <motion.div className="methContainer" id="methContainer">
-        {MethodologyData.length &&
+        {MethodologyData.length && //why is this needed?
           MethodologyData.map(({ title, standfirst, icon, background }) => {
             return (
               <div
