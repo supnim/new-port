@@ -29,7 +29,10 @@ const AboutPage = ({ data }) => {
   `);
 
   return (
-    <div className="contactBox">
+    <div
+      style={{ color: "white", backgroundColor: " black" }}
+      className="contactBox"
+    >
       <Layout title={siteTitle}>
         <SEO
           title="Contact"

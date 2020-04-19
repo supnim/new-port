@@ -1,7 +1,8 @@
 import React from "react";
 import "../utils/css/components/card.scss";
+import Img from "gatsby-image";
 
-const Card = () => {
+const Card = ({ cardImg, cardTitle, cardParagraphy }) => {
   // const styleV = {
   //   color: "red",
   //   margin: "40px"
@@ -9,10 +10,10 @@ const Card = () => {
 
   return (
     <div className="container vertical">
-      <div className="img">img</div>
+      <Img className="img" fluid={cardImg} />
       <div className="content">
-        <h4 className="title">title of the thing</h4>
-        <p className="paragraphy">here where all the words would go</p>
+        <h4 className="title">cardTitle{cardTitle}</h4>
+        <p className="paragraphy">cardParagraphy{cardParagraphy}</p>
       </div>
     </div>
   );

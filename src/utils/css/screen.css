@@ -809,10 +809,6 @@ p {
   flex-direction: row;
   margin: 1.6rem;
 }
-.contactBox {
-  background-color: black !important;
-  color: white;
-}
 .aboutMe {
   width: 60%;
   padding: 3.2rem;
