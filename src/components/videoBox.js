@@ -11,7 +11,7 @@ const videoBox = ({ description, url }) => (
       frameborder="0"
       allowfullscreen
     ></iframe>
-    <p>{description}</p>
+    <p style={{ textAlign: "center" }}>{description}</p>
   </div>
 );
 

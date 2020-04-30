@@ -9,89 +9,49 @@ function template({
   //hero
   hero,
   heroTitle,
-  heroParagraphy,
+  heroParagraph,
   // breif
   title,
-  paragraphy,
+  paragraph,
   one,
   two,
   three,
   postscript,
   //card
-  cardImg,
-  cardTitle,
-  cardParagraphy
+  cardData
 }) {
-  // const CardTemp = ({ cardImg, cardTitle, cardParagraphy }) => (
-  //   <Card
-  //     cardImg={cardImg}
-  //     cardTitle={cardTitle}
-  //     cardParagraphy={cardParagraphy}
-  //   />
-  // )
+  const column1Data = (cardData && [...cardData].splice(0, 1)) || [];
+  const column2Data = (cardData && [...cardData].splice(1, 2)) || [];
+  const column3Data = (cardData && [...cardData].splice(-3)) || [];
+
+  const mapCard = ({ title, imageUrl, paragraph }) => (
+    <Card cardImg={imageUrl} cardTitle={title} cardParagraph={paragraph} />
+  );
+
   return (
     <div>
       <Hero
         heroImg={hero}
         heroTitle={heroTitle}
-        heroParagraphy={heroParagraphy}
+        heroParagraphy={heroParagraph}
       />
       <Brief
         briefTitle={title}
-        briefParagraphy={paragraphy}
+        briefParagraphy={paragraph}
         one={one}
         two={two}
         three={three}
         postscript={postscript}
       />
       <container>
-        <section className="row divid-2">
-          <div className="col-6">
-            <Card
-              cardImg={cardImg}
-              cardTitle={cardTitle}
-              cardParagraphy={cardParagraphy}
-            />
-          </div>
-          <div className="col-6">
-            <Card
-              cardImg={cardImg}
-              cardTitle={cardTitle}
-              cardParagraphy={cardParagraphy}
-            />
-          </div>
-        </section>
-
-        <section className="row divid-3">
-          <div className="col-3">
-            <Card
-              cardImg={cardImg}
-              cardTitle={cardTitle}
-              cardParagraphy={cardParagraphy}
-            />
-          </div>
-
-          <div className="col-3">
-            <Card
-              cardImg={cardImg}
-              cardTitle={cardTitle}
-              cardParagraphy={cardParagraphy}
-            />
-          </div>
-
-          <div className="col-3">
-            <Card
-              cardImg={cardImg}
-              cardTitle={cardTitle}
-              cardParagraphy={cardParagraphy}
-            />
-          </div>
-        </section>
+        <section className="divid-1">{column1Data.map(mapCard)}</section>
+        <section className="divid-2">{column2Data.map(mapCard)}</section>
+        <section className="divid-3">{column3Data.map(mapCard)}</section>
         <section className="row full">
           <div className="col-12">
             <VideoBox
               src="https://www.youtube.com/watch?v=6bwmlRzt8TE"
-              description="video"
+              description="p.s concept got proved by apple in their latest iteration of ipad aimed at the education sector: here is the keynote summarised by verge."
             />
           </div>
         </section>
