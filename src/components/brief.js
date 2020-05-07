@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../utils/css/components/brief.scss";
 
 function Brief({ briefParagraphy, briefTitle, one, two, three, postscript }) {

@@ -13,16 +13,16 @@ const data = path.map(content => (
   <TitleP
     title={content.description}
     id={content.id}
-    paragraphy={content.description}
+    paragraph={content.description}
   />
 ));
 
-function Grounds({ title, paragraphy }) {
+function Grounds({ title, paragraph }) {
   return (
     <div>
       <Layout>
         <h1>Playground</h1>
-        <TitleP title={title} paragraphy={paragraphy} />
+        <TitleP title={title} paragraph={paragraph} />
         {data}
         {/* <Card /> */}
         {/* <OnHover /> */}
