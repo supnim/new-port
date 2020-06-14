@@ -6,7 +6,8 @@ const videoBox = ({ description, url }) => (
     style={{
       display: "flex",
       flexDirection: "column",
-      alignItems: "center"
+      alignItems: "center",
+      padding: "32px"
     }}
   >
     <iframe
@@ -17,7 +18,7 @@ const videoBox = ({ description, url }) => (
       frameborder="0"
       allowfullscreen
     ></iframe>
-    <p style={{ textAlign: "center" }}>{description}</p>
+    <p style={{ textAlign: "center", padding: "32px" }}>{description}</p>
   </div>
 );
 
