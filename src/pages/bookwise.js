@@ -9,8 +9,9 @@ import Card from "../components/card";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
 
-// import BookwiseHeroImg from "../../content/assets/heros/bookwise_hero.svg"
+import BookwiseHeroImg from "../../content/assets/heros/bookwise_hero.svg";
 
+// Assembling imported content
 const cardData = [
   {
     imageName: "dashboard",
@@ -134,13 +135,14 @@ function Bookwise() {
     <div className="contactBox">
       <Layout>
         <SEO
-          title="Contact"
+          title="Bookwise"
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
+        <BookwiseHeroImg width="100%" height="auto" />
         <Hero
-          heroImg={getImageFor("profilePic")}
+          heroImg={getImageFor("profilePic")} //need it or break it
           heroTitle="brief"
-          heroParagraphy="an immersive application for students to learn differently and collaboratively. i did this by breaking down the barriers that are created in old fashion/outdated language and removing shyness as a factor in learning. by downward convergence, i made it easier for students to better grasp the text as there is less of a learning curve through language limitations. another goal was to make note-taking as intuitive as pencil and pad. the concept has now been proven, scroll to the bottom to see."
+          heroParagraphy="An immersive application for students to learn differently and collaboratively. I did this by breaking down the barriers that are created in old fashion/outdated language and removing shyness as a factor in learning. by downward convergence, i made it easier for students to better grasp the text as there is less of a learning curve through language limitations. another goal was to make note-taking as intuitive as pencil and pad. the concept has now been proven, scroll to the bottom to see."
         />
         <Brief
           briefTitle="Insights"
@@ -155,22 +157,32 @@ function Bookwise() {
           <section className="divid-2">{column2Data.map(mapCard)}</section>
           <section className="divid-3">{column3Data.map(mapCard)}</section>
           <section className="row full">
-            <div className="col-12">
+            <div
+              className="col-12"
+              style={{
+                alignItems: "center",
+                textAlign: "center",
+                padding: "0 4rem"
+              }}
+            >
               <TitleP
                 title="admin control"
                 paragraph="teachers share some similar elements as the students such as the timetable and homework. the file system for each class taught is shown along with the students in the class. at the bottom is the controls to take over the devices in the classroom, and this is used to demonstrate and monitor work. the right image shows all the active devices in the classroom that are in use."
               />
-              <div className="divid-2">
-                <Card cardImg={image.profilePic.childImageSharp.fluid} />
-                <Card cardImg="somehting" />
-              </div>
             </div>
           </section>
           <section className="row full">
-            <div className="col-12">
+            <div
+              className="col-12"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
+              }}
+            >
               <VideoBox
-                src="https://www.youtube.com/watch?v=6bwmlRzt8TE"
-                description="p.s concept got proved by apple in their latest iteration of ipad aimed at the education sector: here is the keynote summarised by verge."
+                url="https://player.vimeo.com/video/168932343"
+                description="p.s concept got proven by apple in their latest iteration of ipad aimed at the education sector: here is the keynote summarised by verge."
               />
             </div>
           </section>
@@ -183,3 +195,5 @@ function Bookwise() {
 export default Bookwise;
 
 // trying to filter bookwiseData through Template
+//link in video descprition
+// uniform images

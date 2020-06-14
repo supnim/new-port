@@ -2,7 +2,13 @@ import React from "react";
 import "../utils/css/screen.css";
 
 const videoBox = ({ description, url }) => (
-  <div>
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center"
+    }}
+  >
     <iframe
       title="videosComponent"
       src={url}
