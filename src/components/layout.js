@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../content/assets/supnimLogo.svg";
+import Pdf from "../../content/assets/nimeshCV.pdf";
 
 const Layout = props => {
   const { children } = props;
@@ -71,11 +72,11 @@ const Layout = props => {
         </div>
         <div className="footer-text">
           <div className="footer-links">
-            <a href="/">bookwise</a>
-            <a href="/">knowhere</a>
-            <a href="/">design system</a>
-            <a href="/">pagebuilder</a>
-            <a href="/">primefitness</a>
+            <a href="/bookwise">bookwise</a>
+            <a href="/knowhere">knowhere</a>
+            <a href="/design-system">design system</a>
+            <a href="/pagebuilder">pagebuilder</a>
+            <a href="/primefitness">primefitness</a>
           </div>
           <div className="footer-love">
             &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
@@ -84,12 +85,12 @@ const Layout = props => {
         <div>
           <ul className="actions fit">
             <li>
-              <a href="/" className="cv button large primary">
+              <a href={Pdf} target="_blank" className="cv button large primary">
                 CV
               </a>
             </li>
             <li>
-              <a href="/" className="button large footer">
+              <a href="mailto:hello@supnim.com" className="button large footer">
                 Get in touch
               </a>
             </li>

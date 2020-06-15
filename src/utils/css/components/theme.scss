@@ -57,7 +57,7 @@ $themes: (
   5: (
     text: #222,
     //black
-      background: bisque //cream,,,,,,,,,,,,,,,,,,,,,,
+      background: bisque //cream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   ),
   6: (
     text: cornsilk,
@@ -69,7 +69,7 @@ $themes: (
   ),
   8: (
     text: olivedrab,
-    background: #031d23 //dark teal,,,,,,,,,,,,,,,,,,,,,,
+    background: #031d23 //dark teal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   )
 );
 
@@ -139,7 +139,7 @@ $themes: (
 }
 
 .tes {
-  background-color: #004054;
+  background-color: #003456;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -248,7 +248,7 @@ $themes: (
     background-color: #ffe2e2;
   }
   .institute {
-    background-color: #d1d1d1;
+    background-color: #04484b;
   }
   .school {
     background-color: #e3fbf8;
@@ -263,16 +263,13 @@ $themes: (
 .pagebuilder,
 .institute,
 .school {
+  display: flex;
   text-align: center;
   justify-content: center;
-  height: min-content;
   width: 100%;
   text-decoration: none !important;
   @media (max-width: 800px) {
     height: 400px;
-  }
-  * {
-    width: 80%;
   }
 }
 

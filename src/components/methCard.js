@@ -1,6 +1,5 @@
 import React from "react";
 import "../utils/css/components/meth.scss";
-
 import { motion } from "framer-motion";
 
 const MethCard = props => (

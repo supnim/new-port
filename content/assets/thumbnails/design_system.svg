@@ -1,1 +1,13 @@
-<svg width="700" height="500" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#E08AF7" x="497" y="328" width="43" height="44" rx="8"/><rect fill="#DAF78A" x="560" y="162" width="64" height="40" rx="8"/><text font-family="Effra-Medium, Effra" font-size="100" font-weight="400" fill="#57056C"><tspan x="39.1" y="284">design system</tspan></text><rect stroke="#57056C" stroke-width="4" x="487" y="319" width="40" height="40" rx="8"/><rect fill="#F78A8A" x="164" y="125" width="151" height="68" rx="8"/><rect stroke="#6C0505" stroke-width="4" x="156" y="116" width="147" height="23" rx="8"/><rect stroke="#6C0505" stroke-width="4" x="156" y="147" width="147" height="33" rx="8"/></g></svg>
+<svg width="700" height="500" viewBox="0 0 700 500" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <g fill="none" fill-rule="evenodd">
+    <rect fill="#E08AF7" x="497" y="328" width="43" height="44" rx="8"/>
+    <rect fill="#DAF78A" x="560" y="162" width="64" height="40" rx="8"/>
+    <text font-family="Effra-Medium, Effra" font-size="100" font-weight="400" fill="#57056C">
+      <tspan x="39.1" y="284">design system</tspan>
+    </text>
+    <rect stroke="#57056C" stroke-width="4" x="487" y="319" width="40" height="40" rx="8"/>
+    <rect fill="#F78A8A" x="164" y="125" width="151" height="68" rx="8"/>
+    <rect stroke="#6C0505" stroke-width="4" x="156" y="116" width="147" height="23" rx="8"/>
+    <rect stroke="#6C0505" stroke-width="4" x="156" y="147" width="147" height="33" rx="8"/>
+  </g>
+</svg>

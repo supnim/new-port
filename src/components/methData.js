@@ -9,6 +9,8 @@ import {
   FaSyncAlt
 } from "react-icons/fa";
 
+import { graphql, useStaticQuery } from "gatsby";
+
 // import design from "../../content/assets/methBackgrounds/design.png"
 
 // console.log(design)
@@ -30,12 +32,78 @@ import {
 
 //     fluid={image.profilePic.childImageSharp.fluid}
 
+// BACKGROUND IMAGE
+// const image = useStaticQuery(graphql`
+//   query {
+//     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     dashboard: file(relativePath: { eq: "projects/bookwise/dashboard.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     profile: file(relativePath: { eq: "projects/bookwise/profile.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     subject: file(relativePath: { eq: "projects/bookwise/subject.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     group: file(relativePath: { eq: "projects/bookwise/group.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     library: file(relativePath: { eq: "projects/bookwise/library.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//     note: file(relativePath: { eq: "projects/bookwise/note.png" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `)
+// //rendering them ^
+// const getImageFor = (id) => {
+//   if (!image || !image[id]) {
+//     return null
+//   }
+//   const {
+//     childImageSharp: { fluid },
+//   } = image[id]
+
+//   return fluid || null
+// }
+
 export default [
   {
     id: 1,
-    background: "design",
     icon: FaEye,
     title: "understand",
+    background: "design",
     standfirst:
       "find out goals  and strategy, collect information, ask questions"
   },

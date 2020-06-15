@@ -18,7 +18,6 @@ import Amazon from "../../content/assets/thumbnails/amazon_logo.svg";
 import Tes from "../../content/assets/thumbnails/tes.svg";
 import Bookwise from "../../content/assets/thumbnails/bookwise.svg";
 import OneCard from "../../content/assets/thumbnails/one_card.svg";
-
 import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
 import Volvic from "../../content/assets/thumbnails/volvic.svg";
 
@@ -86,7 +85,9 @@ const BlogIndex = ({ data }, location) => {
         </Link>
       </div>
 
-      {/* <div className="post-feed">
+      {/*
+      //blog posts
+      <div className="post-feed">
         {posts.map(({ node }) => {
           postCounter++
           return (

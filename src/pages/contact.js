@@ -4,6 +4,7 @@ import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Pdf from "../../content/assets/nimeshCV.pdf";
 
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
@@ -86,12 +87,12 @@ const AboutPage = ({ data }) => {
         <section className="contactButtons contact">
           <ul className="actions fit">
             <li>
-              <a href="/" className="cv button large primary">
+              <a href={Pdf} target="_blank" className="cv button large primary">
                 CV
               </a>
             </li>
             <li>
-              <a href="/" className="button large">
+              <a href="mailto:hello@supnim.com" className="button large">
                 Get in touch
               </a>
             </li>
