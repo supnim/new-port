@@ -7,7 +7,7 @@ function Brief({ briefParagraphy, briefTitle, one, two, three, postscript }) {
       <div className="col-10 wrapper">
         <h4>{briefTitle}</h4>
         <p>{briefParagraphy}</p>
-        <ol>
+        <ol className="list">
           <li>{one}</li>
           <li>{two}</li>
           <li>{three}</li>

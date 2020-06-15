@@ -16,6 +16,12 @@ import "../utils/css/components/theme.scss";
 import ScrollIcon from "../../content/assets/scrollIcon.svg";
 import Amazon from "../../content/assets/thumbnails/amazon_logo.svg";
 import Tes from "../../content/assets/thumbnails/tes.svg";
+import Bookwise from "../../content/assets/thumbnails/bookwise.svg";
+import OneCard from "../../content/assets/thumbnails/one_card.svg";
+
+import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
+import Volvic from "../../content/assets/thumbnails/volvic.svg";
+
 import Methodogly from "../components/meth";
 // import OnLoad from "../components/onLoad"
 
@@ -60,19 +66,29 @@ const BlogIndex = ({ data }, location) => {
           <Tes />
         </Link>
         <Link className="col-5 amazon" to={`/amazon`}>
-          <Amazon
-            alt="amazon"
-            style={{
-              fill: "white",
-              margin: "auto 0",
-              width: "100%"
-            }}
-          />
+          <Amazon />
         </Link>
       </div>
-      <div className="post-feed">
+      <div className="row jobs">
+        <Link className="col-5 one-card" to={`/one-card`}>
+          <OneCard />
+        </Link>
+        <Link className="col-7 bookwise" to={`/bookwise`}>
+          <Bookwise />
+        </Link>
+      </div>
+      <div className="row jobs">
+        <Link className="col-7 knowhere" to={`/knowhere`}>
+          <Knowhere />
+        </Link>
+        <Link className="col-5 volvic" to={`/volvic`}>
+          <Volvic />
+        </Link>
+      </div>
+
+      {/* <div className="post-feed">
         {posts.map(({ node }) => {
-          postCounter++;
+          postCounter++
           return (
             <PostCard
               key={node.fields.slug}
@@ -80,9 +96,9 @@ const BlogIndex = ({ data }, location) => {
               node={node}
               postClass={`post`}
             />
-          );
+          )
         })}
-      </div>
+      </div> */}
 
       <Methodogly />
       <div className="watchLook row">

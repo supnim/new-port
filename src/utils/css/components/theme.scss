@@ -57,7 +57,7 @@ $themes: (
   5: (
     text: #222,
     //black
-      background: bisque //cream
+      background: bisque //cream,,,,,,,,,,,,,,,,,,,,,,
   ),
   6: (
     text: cornsilk,
@@ -69,7 +69,7 @@ $themes: (
   ),
   8: (
     text: olivedrab,
-    background: #031d23 //dark teal
+    background: #031d23 //dark teal,,,,,,,,,,,,,,,,,,,,,,
   )
 );
 
@@ -139,11 +139,46 @@ $themes: (
 }
 
 .tes {
-  background-color: #013d59;
+  background-color: #004054;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  fill: white;
+}
+
+.bookwise {
+  background-color: #efece9;
   display: flex;
   flex-direction: column;
   height: 100%;
   fill: white;
+  align-items: center;
+}
+.one-card {
+  background-color: #bf2828;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  fill: white;
+  align-items: center;
+}
+
+.knowhere {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  fill: white;
+  align-items: center;
+}
+.volvic {
+  background-color: #004b27;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  fill: white;
+  align-items: center;
 }
 
 .jobHero {

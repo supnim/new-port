@@ -140,16 +140,20 @@ function Bookwise() {
         />
         <BookwiseHeroImg width="100%" height="auto" />
         <Hero
-          heroImg={getImageFor("profilePic")} //need it or break it
-          heroTitle="brief"
-          heroParagraphy="An immersive application for students to learn differently and collaboratively. I did this by breaking down the barriers that are created in old fashion/outdated language and removing shyness as a factor in learning. by downward convergence, i made it easier for students to better grasp the text as there is less of a learning curve through language limitations. another goal was to make note-taking as intuitive as pencil and pad. the concept has now been proven, scroll to the bottom to see."
+          heroImg={getImageFor("profilePic")} //need it or breaks it
+          heroTitle="Brief"
+          heroParagraphy="Find a problem and solve it in 6 weeks. The problem:
+           the education system is flawed; everyone learns differently but get
+            taught the same. Being an introvert or extrovert shouldn't play a
+            factor in learning nor should the slow learners limit the fast ones."
         />
         <Brief
-          briefTitle="Insights"
-          briefParagraphy="the education system is flawed; everyone learns differently but get taught the same. being an introvert or extrovert shouldn't play a factor in learning nor should the slow learners limit the quick ones. i aim to solve these problems with the implementation of:"
-          one="collaborative learning"
-          two="using technology to aid teachers and students"
-          three="interaction to be intuitive as possible"
+          briefTitle="Solution"
+          briefParagraphy="Create an immersive application for students to learn and share knowledge in a collaborative way. To break down the barriers that was set by old fashion/outdated teaching methods; making it less liner and more collective. I set out to solve these problems with the implementation of:"
+          one="peer-to-peer learning"
+          two="using technology to remove language and shyness as a
+          factor"
+          three="make it intuitive as pencil and pad"
           postscript=""
         />
         <container>
@@ -162,7 +166,8 @@ function Bookwise() {
               style={{
                 alignItems: "center",
                 textAlign: "center",
-                padding: "0 4rem"
+                padding: "0 4rem",
+                width: "70%"
               }}
             >
               <TitleP
@@ -183,6 +188,5 @@ function Bookwise() {
 
 export default Bookwise;
 
-// trying to filter bookwiseData through Template
 //link in video descprition
 // uniform images
