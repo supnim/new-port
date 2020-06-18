@@ -85,7 +85,12 @@ const Layout = props => {
         <div>
           <ul className="actions fit">
             <li>
-              <a href={Pdf} target="_blank" className="cv button large primary">
+              <a
+                href={Pdf}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cv button large primary"
+              >
                 CV
               </a>
             </li>

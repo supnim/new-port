@@ -1,39 +1,30 @@
 import React from "react";
 import Layout from "../components/layout";
-import { graphql, StaticQuery } from "gatsby";
-
+import { graphql, useStaticQuery } from "gatsby";
 import SEO from "../components/seo";
 import Gallery from "../components/gallery";
-import Img from "gatsby-image";
 
-const Photo = ({ data }) => {
-  const siteTitle = graphql`
+const Photo = () => {
+  const siteTitle = useStaticQuery(graphql`
     query {
-      profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
       site {
         siteMetadata {
           title
         }
       }
     }
-  `;
+  `);
 
   return (
-    <div>
+    <div className="video-page">
       <Layout title={siteTitle}>
         <SEO
           title="photos"
           keywords={[`photography`, `nightlife`, `fashion`, `band`]}
         />
-        <h1>gallery goes here</h1>
+        <h3>photography</h3>
+        <p>My first love.</p>
         <Gallery />
-        {/* <Img fluid={imageData.profilePic.childrenImageSharp.fluid} /> */}
       </Layout>
     </div>
   );

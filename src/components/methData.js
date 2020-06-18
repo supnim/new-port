@@ -9,30 +9,16 @@ import {
   FaSyncAlt
 } from "react-icons/fa";
 
+import Design from "../../content/assets/icon/design.svg";
+
 import { graphql, useStaticQuery } from "gatsby";
 
 // import design from "../../content/assets/methBackgrounds/design.png"
 
 // console.log(design)
 
-// const MethBackground = ({ background }) => {
+// // fluid={image.profilePic.childImageSharp.fluid}
 
-//   const image = useStaticQuery(graphql`
-//       query {
-//         profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
-//           childImageSharp {
-//             fluid(maxWidth: 1000) {
-//               ...GatsbyImageSharpFluid
-//             }
-//           }
-//         }
-//       }
-//     `);
-//   }
-
-//     fluid={image.profilePic.childImageSharp.fluid}
-
-// BACKGROUND IMAGE
 // const image = useStaticQuery(graphql`
 //   query {
 //     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
@@ -42,61 +28,8 @@ import { graphql, useStaticQuery } from "gatsby";
 //         }
 //       }
 //     }
-//     dashboard: file(relativePath: { eq: "projects/bookwise/dashboard.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     profile: file(relativePath: { eq: "projects/bookwise/profile.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     subject: file(relativePath: { eq: "projects/bookwise/subject.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     group: file(relativePath: { eq: "projects/bookwise/group.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     library: file(relativePath: { eq: "projects/bookwise/library.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//     note: file(relativePath: { eq: "projects/bookwise/note.png" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
 //   }
 // `)
-// //rendering them ^
-// const getImageFor = (id) => {
-//   if (!image || !image[id]) {
-//     return null
-//   }
-//   const {
-//     childImageSharp: { fluid },
-//   } = image[id]
-
-//   return fluid || null
-// }
 
 export default [
   {

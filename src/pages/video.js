@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql, StaticQuery } from "gatsby";
-
+import SEO from "../components/seo";
 import "../utils/css/screen.css";
 import Layout from "../components/layout";
 import VideoBox from "../components/videoBox";
@@ -14,8 +14,16 @@ const Video = ({ data }) => {
   return (
     <div className="video-page">
       <Layout title={siteTitle}>
+        <SEO
+          title="photos"
+          keywords={[`videography`, `film`, `director`, `editor`]}
+        />
         <h3>videography</h3>
-        <br />
+        <p>
+          My second love - showed me the power of good storytelling.
+          <br />
+          Taught me; narration, sound-design, composition, tempo and much more.
+        </p>
         {videoUrl}
       </Layout>
     </div>
