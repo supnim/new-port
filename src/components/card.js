@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 
 const Card = ({ image, title, description }) => {
   return (
-    <div className="container vertical">
+    <div className="container">
       {image && <Img className="img" fluid={image} />}
       <div className="content">
         <h4 className="title">{title}</h4>

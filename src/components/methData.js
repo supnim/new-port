@@ -85,7 +85,7 @@ export default [
     title: "test again",
     background: "background7",
     standfirst:
-      "use data, understand behaviours, A/B test, new ideas and start V2"
+      "use data, understand behaviours, A/B test, new ideas and start version 2"
   },
   {
     id: 8,
@@ -93,6 +93,6 @@ export default [
     title: "loop",
     background: "background8",
     standfirst:
-      "fairly simple, start gain. new goals new needs a never ending cycle of iteration"
+      "fairly simple, start again. new goals, new needs, a never ending cycle of iteration"
   }
 ];

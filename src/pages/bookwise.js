@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { graphql, useStaticQuery } from "gatsby";
-
+import "../../src/utils/css/project.scss";
 import Hero from "../components/hero";
 import Brief from "../components/brief";
 import Card from "../components/card";
@@ -132,7 +132,7 @@ function Bookwise() {
   );
 
   return (
-    <div className="contactBox">
+    <div>
       <Layout>
         <SEO
           title="Bookwise"
@@ -140,7 +140,7 @@ function Bookwise() {
         />
         <BookwiseHeroImg width="100%" height="auto" />
         <Hero
-          heroImg={getImageFor("profilePic")} //need it or breaks it
+          heroImg="profilePic" //need it or breaks it
           heroTitle="Brief"
           heroParagraphy="Find a problem and solve it in 6 weeks. The problem:
            the education system is flawed; everyone learns differently but get
@@ -157,9 +157,9 @@ function Bookwise() {
           postscript=""
         />
         <container>
-          <section className="divid-1">{column1Data.map(mapCard)}</section>
-          <section className="divid-2">{column2Data.map(mapCard)}</section>
-          <section className="divid-3">{column3Data.map(mapCard)}</section>
+          <section className="divide-1">{column1Data.map(mapCard)}</section>
+          <section className="divide-2">{column2Data.map(mapCard)}</section>
+          <section className="divide-3">{column3Data.map(mapCard)}</section>
           <section className="row full">
             <div
               className="col-12"

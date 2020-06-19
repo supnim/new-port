@@ -57,7 +57,8 @@ $themes: (
   5: (
     text: #222,
     //black
-      background: bisque //cream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+      background: bisque
+      //cream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   ),
   6: (
     text: cornsilk,
@@ -69,7 +70,8 @@ $themes: (
   ),
   8: (
     text: olivedrab,
-    background: #031d23 //dark teal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+    background: #031d23
+      //dark teal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
   )
 );
 
@@ -180,6 +182,69 @@ $themes: (
   fill: white;
   align-items: center;
 }
+.watchLook {
+  height: 24vh;
+  a {
+    text-decoration: none;
+  }
+}
+
+.watch .look {
+  height: 100%;
+}
+
+.watch {
+  height: 100%;
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+}
+
+.look {
+  height: 100%;
+  background-color: #ccf0f9;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  p {
+    font-size: 4rem;
+    font-weight: 900;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+}
+
+.amazon:hover,
+.tes:hover,
+.bookwise:hover,
+.one-card:hover,
+.knowhere:hover,
+.volvic:hover,
+.connect:hover,
+.student:hover,
+.travel:hover,
+.music:hover,
+.social:hover,
+.design:hover,
+.pagebuilder:hover,
+.institute:hover,
+.school:hover,
+.watch:hover,
+.look:hover {
+  filter: invert(1);
+  transition: 0.2s ease-in-out;
+}
+
+//secondart pages
 
 .jobHero {
   height: 80vh;
@@ -212,6 +277,7 @@ $themes: (
     width: 88vw;
   }
 }
+
 .amazonJobs {
   .connect {
     background-color: #49640b;
@@ -270,48 +336,5 @@ $themes: (
   text-decoration: none !important;
   @media (max-width: 800px) {
     height: 400px;
-  }
-}
-
-// watchLook ----------------------------------------------->
-
-.watchLook {
-  height: 24vh;
-  a {
-    text-decoration: none;
-  }
-}
-
-.watch .look {
-  height: 100%;
-}
-
-.watch {
-  height: 100%;
-  background-color: #ff0000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 4rem;
-    font-weight: 900;
-    margin: 0;
-    letter-spacing: 3px;
-  }
-}
-
-.look {
-  height: 100%;
-  background-color: #ccf0f9;
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 4rem;
-    font-weight: 900;
-    margin: 0;
-    letter-spacing: 3px;
   }
 }

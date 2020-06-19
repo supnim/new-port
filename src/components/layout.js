@@ -73,9 +73,13 @@ const Layout = props => {
         <div className="footer-text">
           <div className="footer-links">
             <a href="/bookwise">bookwise</a>
+            <p>•</p>
             <a href="/knowhere">knowhere</a>
+            <p>•</p>
             <a href="/design-system">design system</a>
+            <p>•</p>
             <a href="/pagebuilder">pagebuilder</a>
+            <p>•</p>
             <a href="/primefitness">primefitness</a>
           </div>
           <div className="footer-love">

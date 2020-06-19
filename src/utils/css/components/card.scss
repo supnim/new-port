@@ -1,13 +1,12 @@
 .container {
   margin: 0 auto;
+  padding: 4rem;
 }
-.vertical {
-  padding: 1rem;
+.content {
+  margin: 4rem;
 }
-
 .img {
   margin: 0 auto;
-  height: 800px;
 }
 
 .title {
@@ -18,16 +17,20 @@
   text-align: center;
 }
 
-.half {
+// alter Orientation
+.side {
   display: flex;
   flex-direction: row;
-  flex-grow: auto;
-  margin: auto;
+  align-items: center;
 }
-.half1,
-.half2 {
-  padding: auto;
-  margin: auto;
+.titleAlt {
+  text-align: left;
 }
 
-// alter Orientation
+.paragraphAlt {
+  text-align: left;
+}
+
+.flip {
+  flex-direction: row-reverse;
+}

@@ -1,11 +1,15 @@
-.divid-1,
-.divid-2,
-.divid-3 {
+.divide-1,
+.divide-2,
+.divide-3 {
   display: flex;
   padding: 6rem 4rem;
 }
 
-.divid-1 {
+.divide-1 {
   width: 70%;
   margin: auto;
+}
+.divide-3 {
+  width: 100%;
+  align-content: space-between;
 }

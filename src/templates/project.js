@@ -44,9 +44,9 @@ function template({
         postscript={postscript}
       />
       <container>
-        <section className="divid-1">{column1Data.map(mapCard)}</section>
-        <section className="divid-2">{column2Data.map(mapCard)}</section>
-        <section className="divid-3">{column3Data.map(mapCard)}</section>
+        <section className="divide-1">{column1Data.map(mapCard)}</section>
+        <section className="divide-2">{column2Data.map(mapCard)}</section>
+        <section className="divide-3">{column3Data.map(mapCard)}</section>
         <section className="row full">
           <div className="col-12">
             <VideoBox
