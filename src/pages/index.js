@@ -7,7 +7,7 @@ import "../utils/css/screen.css";
 // Skelton
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import PostCard from "../components/postCard";
+import PostCard from "../components/postCard"; // article card
 import { Link } from "gatsby";
 
 // Component + theme

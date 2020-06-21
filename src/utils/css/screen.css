@@ -18,10 +18,10 @@ production stylesheet in assets/built/screen.css using gulp dev
 @import "components/actions.css";
 @import "components/hamburger.css";
 @import "components/animations.css";
-@import "components/theme.scss"
-  /* Main - Theme styles
+@import "components/theme.scss";
+/* Main - Theme styles
  ---------------------------------------------------------- */
-  body {
+body {
   font-family: "Lato", "Open Sans", sans-serif;
   background: var(--color-bg);
   transition: background 0.3s ease-out;
