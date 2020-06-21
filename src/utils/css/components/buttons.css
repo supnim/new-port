@@ -89,6 +89,7 @@ button:hover,
   background-color: black;
   border: solid 1px white;
   border-radius: 2px;
+  opacity: 1 !important;
 }
 
 input[type="submit"].primary,

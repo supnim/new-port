@@ -162,12 +162,13 @@ function Bookwise() {
           <section className="divide-3">{column3Data.map(mapCard)}</section>
           <section className="row full">
             <div
-              className="col-12"
+              className="col-8"
               style={{
                 alignItems: "center",
                 textAlign: "center",
                 padding: "0 4rem",
-                width: "70%"
+                width: "50%",
+                margin: "0 auto"
               }}
             >
               <TitleP

@@ -16,11 +16,11 @@ const Photo = () => {
   `);
 
   return (
-    <div className="video-page">
+    <div className="photo-page">
       <Layout title={siteTitle}>
         <SEO
-          title="photos"
-          keywords={[`photography`, `nightlife`, `fashion`, `band`]}
+          title="photography"
+          keywords={[`photography`, `nightlife`, `fashion`, `band`, `supnim`]}
         />
         <h3>photography</h3>
         <p>My first love.</p>

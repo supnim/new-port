@@ -95,6 +95,27 @@ function OneCard() {
           }
         }
       }
+      profile: file(relativePath: { eq: "projects/one-card/profile.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      pay: file(relativePath: { eq: "projects/one-card/pay.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      complete: file(relativePath: { eq: "projects/one-card/complete.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
   return (
@@ -137,18 +158,16 @@ function OneCard() {
             <CardRight
               key="2"
               image={image.statement.childImageSharp.fluid}
-              title="home / statement "
-              description="front and centre of the app is where all the most important pieces of information are; the amount in your current account, daily spend and daily budget. the ring is visual representation of the remainder funds of your set budget for that day, also shown in percentage and actual £'s so you can see everything you need at a glance.
-
-              the statement follows showing time, date, business name, sector and amount. the bar beneath it depicts the progress of set monthly spend/ comparison to last month. while researching we came to find people want as much information as possible when it comes to finance – it allows for better decision making. with that in mind we went about creating a time-line to match the money trail, e.g. showing journeys taken on the bus & metro this is so customers can easily see where and what their money is being used for."
+              title="home / statement"
+              byline="front and centre of the app is where all the most important pieces of information are; the amount in your current account, daily spend and daily budget. the ring is visual representation of the remainder funds of your set budget for that day, also shown in percentage and actual £'s so you can see everything you need at a glance."
+              description=" the statement follows showing time, date, business name, sector and amount. the bar beneath it depicts the progress of set monthly spend/ comparison to last month. while researching we came to find people want as much information as possible when it comes to finance – it allows for better decision making. with that in mind we went about creating a time-line to match the money trail, e.g. showing journeys taken on the bus & metro this is so customers can easily see where and what their money is being used for."
             />
             <CardLeft
               key="3"
               image={image.goals.childImageSharp.fluid}
               title="expenditure / goals "
-              description="the pie chart shows the amount in all the categories the customers are spending money in. beneath that is all the set goals with the progress. 
-
-              pie chart: once the user can easily see and understand where they are spending money, it is then they can take action accordingly. 
+              byline="the pie chart shows the amount in all the categories the customers are spending money in. beneath that is all the set goals with the progress."
+              description="pie chart: once the user can easily see and understand where they are spending money, it is then they can take action accordingly. 
               
               goals: the % of money you save on discounts will be put in here along withchange from buying things. for example: say you buy a coffee for £2.20, the amount left of the pound will be put into your savings – in this case 80pwill be deposited."
             />
@@ -156,9 +175,8 @@ function OneCard() {
               key="4"
               image={image.offers.childImageSharp.fluid}
               title="offers"
-              description="local, recommended and popular.
-
-              using location information, relevant offers and deals are shown to the user also taking into consideration previous spending habits. with this data we populate the 'your reward' section, for example: if you are a regular shopper at topman - you'd be given a personal discount on your next purchase. the app is not only helping you monitor your spending but also help you spend more wisely."
+              byline="local, recommended and popular."
+              description="using location information, relevant offers and deals are shown to the user also taking into consideration previous spending habits. with this data we populate the 'your reward' section, for example: if you are a regular shopper at topman - you'd be given a personal discount on your next purchase. the app is not only helping you monitor your spending but also help you spend more wisely."
             />
           </div>
         </section>
@@ -181,6 +199,43 @@ function OneCard() {
             title="claims"
             description="the process of claiming an offer shown with distance to the nearest cinema (in this case) and how many dates till the offer expires."
           />
+        </section>
+        <section className="row full">
+          <div
+            className="col-8"
+            style={{
+              alignItems: "center",
+              textAlign: "center",
+              padding: "0 4rem",
+              width: "70%",
+              margin: "0 auto"
+            }}
+          >
+            <TitleP
+              title="cards / transfer"
+              paragraph="through experience and research, we discovered how cumbersome it is to pay back someone. you need their sort code & account number which isn’t an easy or user friendly way to transfer money; making it more of a chore than it already is. with the rise of contact-less technology which allows users to pay via mobile phone, we thought it would make sense to incorporate that into the app so you can pay each other by simply tapping phones together."
+            />
+          </div>
+          <div className="divide-3">
+            <Card
+              key="5"
+              image={image.profile.childImageSharp.fluid}
+              title="profile"
+              description="located here are all the cards you have synced, along with some essential information such as sort code and account number"
+            />
+            <Card
+              key="6"
+              image={image.pay.childImageSharp.fluid}
+              title="pay"
+              description="inputting the amount you want to send, you either select from the contacts or bump you phone against the person you want to transfer the money to."
+            />
+            <Card
+              key="7"
+              image={image.complete.childImageSharp.fluid}
+              title="comfirmation"
+              description="once the action is complete, the user is shown the details of the transaction which includes; amount, time, whom it was to and the method of payment."
+            />
+          </div>
         </section>
       </Layout>
     </div>

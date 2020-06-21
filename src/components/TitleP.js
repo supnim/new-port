@@ -3,7 +3,7 @@ function TitleP({ title, paragraph }) {
   return (
     <>
       <h1>{title}</h1>
-      <p>{paragraph}</p>
+      <p style={{ color: "#666666" }}>{paragraph}</p>
     </>
   );
 }

@@ -15,7 +15,7 @@ const Video = ({ data }) => {
     <div className="video-page">
       <Layout title={siteTitle}>
         <SEO
-          title="photos"
+          title="videography"
           keywords={[`videography`, `film`, `director`, `editor`]}
         />
         <h3>videography</h3>

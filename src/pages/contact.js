@@ -9,9 +9,7 @@ import Pdf from "../../content/assets/nimeshCV.pdf";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
 
-const AboutPage = ({ data }) => {
-  const siteTitle = data.site.siteMetadata.title;
-
+const AboutPage = () => {
   const image = useStaticQuery(graphql`
     query {
       profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
@@ -28,6 +26,7 @@ const AboutPage = ({ data }) => {
       }
     }
   `);
+  const siteTitle = image.site.siteMetadata.title;
 
   return (
     <div
@@ -36,12 +35,12 @@ const AboutPage = ({ data }) => {
     >
       <Layout title={siteTitle}>
         <SEO
-          title="Contact"
+          title="contact"
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
 
         <article className="page-template">
-          <div className="post-content-body contact">
+          <div className="post-content-body row contact">
             <div className="contactImg col-6">
               <Img
                 className="aboutMePic"
@@ -53,9 +52,9 @@ const AboutPage = ({ data }) => {
                 hi, i am nimesh a conceptual creative based in london
               </h3>
               <p>
-                practising in the field of digital products and UI/UX. I enjoy
-                the process of taking an idea from concept to completion through
-                a variety of different methods and journeys. i am constantly
+                practising in the field of digital products (UI/UX). I enjoy the
+                process of taking an idea from concept to completion through a
+                variety of different methods and journeys. i am constantly
                 striving to better myself, a drive that is reflected in my work.
                 my enjoyment for my craft stems not just from within, but from
                 others too, as i thrive in diverse, social situations. these

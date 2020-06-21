@@ -33,7 +33,7 @@ const BlogIndex = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="home"
+        title="product designer"
         keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
       />
 
