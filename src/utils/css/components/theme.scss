@@ -1,10 +1,3 @@
-// Variable
-
-// --theme-bg: ;
-// --theme-text: ;
-
-/* search theme color var - add var to all and link to onLoad */
-
 // Base styling
 
 .page-head {
@@ -33,93 +26,6 @@
   line-height: 24pt;
   letter-spacing: 0.4pt;
   color: white;
-}
-
-// Themes
-
-$themes: (
-  1: (
-    text: crimson,
-    background: gainsboro
-  ),
-  2: (
-    text: black,
-    background: white
-  ),
-  3: (
-    text: antiquewhite,
-    background: darkslategray
-  ),
-  4: (
-    text: lightsteelblue,
-    background: midnightblue
-  ),
-  5: (
-    text: #222,
-    //black
-      background: bisque
-      //cream,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-  ),
-  6: (
-    text: cornsilk,
-    background: black
-  ),
-  7: (
-    text: papayawhip,
-    background: brown
-  ),
-  8: (
-    text: olivedrab,
-    background: #031d23
-      //dark teal,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-  )
-);
-
-// Script
-
-@each $themeNo, $map in $themes {
-  .theme-#{$themeNo} {
-    .navigation-clean,
-    .page-head {
-      background-color: map-get($map, background) !important;
-    }
-    #page-head h1,
-    #page-head h2,
-    .sitehead .nav-link {
-      color: map-get($map, text) !important;
-    }
-    .sitehead .navbar-light .navbar-nav .nav-link:hover {
-      color: rgba(map-get($map, text), 0.5) !important;
-    }
-    #scroll {
-      .stroke {
-        stroke: map-get($map, text);
-      }
-      .fill {
-        fill: map-get($map, text);
-      }
-    }
-  }
-}
-
-// Scroll down styling
-
-#scroll {
-  margin-top: 180px;
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 3s;
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 // Jobs section ----------------------------------------------->
