@@ -1,11 +1,10 @@
 import React from "react";
-// import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image";
 import "../utils/css/components/hero.scss";
 
 const hero = ({ heroImg, heroTitle, heroParagraphy }) => {
   return (
-    <div className="container">
+    <div className="hero-wrapper">
       <div className="hero-image">
         <Img fluid={heroImg} />
       </div>

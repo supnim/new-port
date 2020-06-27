@@ -15,8 +15,8 @@ function AmazonPage() {
   return (
     <Layout>
       <SEO
-        title="home"
-        keywords={[`UX`, `UI`, `london`, `amazon`, `ecommerce`]}
+        title="Amazon"
+        keywords={[`UX`, `UI`, `london`, `Amazon`, `ecommerce`]}
       />
       <div className={"jobHero"}>
         <Amazon className={"amazonLogo"} />
