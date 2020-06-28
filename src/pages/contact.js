@@ -130,7 +130,8 @@ const AboutPage = () => {
             threeAlt="Tes Global"
             four={image.virgin.childImageSharp.fixed}
             fourAlt="Virgin Money"
-            five={0}
+            five=" "
+            fiveAlt=" "
           />
         </article>
         <section className="contactButtons contact">

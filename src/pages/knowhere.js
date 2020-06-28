@@ -3,12 +3,11 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
+import LogoBox from "../components/logobox";
 import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
-import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
 import Image from "gatsby-image";
-import LogoBox from "../components/logobox";
 
 import KnowhereHeroImg from "../../content/assets/heros/knowhere_hero.svg";
 
