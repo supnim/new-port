@@ -18,7 +18,7 @@ function AmazonPage() {
         title="Amazon"
         keywords={[`UX`, `UI`, `london`, `Amazon`, `ecommerce`]}
       />
-      <div className={"jobHero"}>
+      <div className="jobHero">
         <Amazon className={"amazonLogo"} />
         <p className={"amazonParagraphy"}>
           multinational technology company that focuses on e-commerce, cloud

@@ -8,6 +8,7 @@ import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
 import Image from "gatsby-image";
+import LogoBox from "../components/logobox";
 
 import KnowhereHeroImg from "../../content/assets/heros/knowhere_hero.svg";
 
@@ -83,38 +84,42 @@ function Knowhere() {
           }
         }
       }
-      discount: file(relativePath: { eq: "projects/knowhere/discount.png" }) {
+      fhnw: file(relativePath: { eq: "projects/knowhere/FHNW.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 80) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      claims: file(relativePath: { eq: "projects/knowhere/claims.png" }) {
+      merz: file(relativePath: { eq: "projects/knowhere/merz.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 160) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      profile: file(relativePath: { eq: "projects/knowhere/profile.png" }) {
+      southeast: file(
+        relativePath: { eq: "projects/knowhere/southeast-uni.png" }
+      ) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 64) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      pay: file(relativePath: { eq: "projects/knowhere/pay.png" }) {
+      swisscom: file(relativePath: { eq: "projects/knowhere/swisscom.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 80) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
-      complete: file(relativePath: { eq: "projects/knowhere/complete.png" }) {
+      northumbria: file(
+        relativePath: { eq: "projects/knowhere/northumbria.png" }
+      ) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
+          fixed(width: 140) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -125,10 +130,17 @@ function Knowhere() {
       <Layout>
         <SEO
           title="Knowhere"
-          keywords={[`product`, `designer`, `london`, `nimesh`]}
+          keywords={[`internet of things`, `swisscom`, `iPole`, `Collabrative`]}
         />
         <KnowhereHeroImg width="100%" height="auto" />
         {BriefAlt()}
+        <LogoBox
+          one={image.fhnw.childImageSharp.fixed}
+          two={image.swisscom.childImageSharp.fixed}
+          three={image.northumbria.childImageSharp.fixed}
+          four={image.southeast.childImageSharp.fixed}
+          five={image.merz.childImageSharp.fixed}
+        />
         <section>
           <div className="knowhere-container">
             <CardLeft
@@ -182,7 +194,7 @@ function Knowhere() {
           >
             <h4>video demo</h4>
             <VideoBox
-              url="https://player.vimeo.com/video/168798295"
+              url="https://player.vimeo.com/video/168933267"
               description="ipole | collaborative project with universes from switzerland, germany and china."
             />
           </div>
@@ -194,4 +206,4 @@ function Knowhere() {
 
 export default Knowhere;
 
-//logo box
+//image box

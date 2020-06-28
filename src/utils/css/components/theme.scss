@@ -244,3 +244,14 @@
     height: 400px;
   }
 }
+
+//logobox
+
+.logobox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div {
+    margin: 2rem;
+  }
+}

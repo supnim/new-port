@@ -15,6 +15,11 @@
 }
 
 .knowhere-container {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
+  padding: 8rem 0;
+  max-width: 1000px;
+  div {
+    padding-bottom: 4rem;
+  }
 }

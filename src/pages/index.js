@@ -84,23 +84,6 @@ const BlogIndex = ({ data }, location) => {
           <Volvic />
         </Link>
       </div>
-
-      {/*
-      //blog posts
-      <div className="post-feed">
-        {posts.map(({ node }) => {
-          postCounter++
-          return (
-            <PostCard
-              key={node.fields.slug}
-              count={postCounter}
-              node={node}
-              postClass={`post`}
-            />
-          )
-        })}
-      </div> */}
-
       <Methodogly />
       <div className="watchLook row">
         <Link className="col-6 watch" to={`/video`}>
@@ -155,3 +138,19 @@ export default props => (
     )}
   />
 );
+
+/*
+      //blog posts
+      <div className="post-feed">
+        {posts.map(({ node }) => {
+          postCounter++
+          return (
+            <PostCard
+              key={node.fields.slug}
+              count={postCounter}
+              node={node}
+              postClass={`post`}
+            />
+          )
+        })}
+      </div> */
