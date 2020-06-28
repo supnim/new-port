@@ -14,11 +14,12 @@ const Social = () => {
       }
     }
   `);
-  const Frame = ({ title, link }) => {
+  const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
         {" "}
         <iframe
+          title={id}
           src={link}
           width="476"
           height="476"
@@ -44,18 +45,22 @@ const Social = () => {
           <p>Short form content for facebook and twitter</p>
           <div className="row">
             <Frame
+              id="1"
               title="Back to school"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F2095659293814856%2F&show_text=0&width=476"
             />
             <Frame
+              id="2"
               title="Tidy home, tidy mind"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1922808147766639%2F&show_text=0&width=476"
             />
             <Frame
+              id="3"
               title="#throwbackthursday"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1920780491302738%2F&show_text=0&width=476"
             />
             <Frame
+              id="4"
               title="British science week 2017"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1917999824914138%2F&show_text=0&width=476"
             />

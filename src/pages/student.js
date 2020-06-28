@@ -5,7 +5,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
 import StudentHero from "../../content/assets/heros/music_for_students_hero.svg";
 import TitleP from "../components/TitleP";
-import Brief from "../components/brief";
 
 const Student = () => {
   const siteTitle = useStaticQuery(graphql`
@@ -17,11 +16,12 @@ const Student = () => {
       }
     }
   `);
-  const Frame = ({ title, link }) => {
+  const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
         {" "}
         <iframe
+          title={id}
           src={link}
           width="480"
           height="480"
@@ -59,18 +59,22 @@ const Student = () => {
           </div>
           <div className="row">
             <Frame
+              id="1"
               title="Save data"
               link="https://player.vimeo.com/video/233477595?title=0&byline=0&portrait=0"
             />
             <Frame
+              id="2"
               title="Device"
               link="https://player.vimeo.com/video/233477582?title=0&byline=0&portrait=0"
             />
             <Frame
+              id="3"
               title="No ads"
               link="https://player.vimeo.com/video/233477589?title=0&byline=0&portrait=0"
             />
             <Frame
+              id="4"
               title="Songs"
               link="https://player.vimeo.com/video/233477606?title=0&byline=0&portrait=0"
             />

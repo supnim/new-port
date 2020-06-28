@@ -16,11 +16,12 @@ const Travel = () => {
       }
     }
   `);
-  const Frame = ({ title, link }) => {
+  const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
         {" "}
         <iframe
+          title={id}
           src={link}
           width="476"
           height="476"
@@ -58,26 +59,32 @@ const Travel = () => {
           </div>
           <div className="row">
             <Frame
+              id="1"
               title="adventure"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1983111175069669%2F&show_text=0&width=476"
             />
             <Frame
+              id="2"
               title="beach"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1974139259300194%2F&show_text=0&width=476"
             />
             <Frame
+              id="3"
               title="city & culture"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1977717762275677%2F&show_text=0&width=476"
             />
             <Frame
+              id="4"
               title="travel with kids"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F2001741363206650%2F&show_text=0&width=476"
             />
             <Frame
+              id="5"
               title="road trip"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1986052184775568%2F&show_text=0&width=476"
             />
             <Frame
+              id="6"
               title="festival"
               link="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FAmazonUK%2Fvideos%2F1991380820909371%2F&show_text=0&width=476"
             />

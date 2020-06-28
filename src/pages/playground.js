@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import LogoBox from "../components/logobox";
 import { graphql, useStaticQuery } from "gatsby";
-import Image from "gatsby-image";
 
 // const data = path.map((content) => (
 //   <TitleP
@@ -11,9 +10,6 @@ import Image from "gatsby-image";
 //     paragraph={content.description}
 //   />
 // ))
-const Box = () => {
-  return <div>IMG</div>;
-};
 
 function Grounds() {
   const logo = useStaticQuery(graphql`
