@@ -136,10 +136,15 @@ function Knowhere() {
         {BriefAlt()}
         <LogoBox
           one={image.fhnw.childImageSharp.fixed}
+          oneAlt="University of Applied Sciences and Arts Northwestern Switerland"
           two={image.swisscom.childImageSharp.fixed}
+          twoAlt="Swisscom"
           three={image.northumbria.childImageSharp.fixed}
+          threeAlt="Northumbria University"
           four={image.southeast.childImageSharp.fixed}
+          fourAlt="Southeast University"
           five={image.merz.childImageSharp.fixed}
+          fiveAlt="Merz Akademie University of Applied Art, Design and Media"
         />
         <section>
           <div className="knowhere-container">

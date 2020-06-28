@@ -5,6 +5,7 @@ import Img from "gatsby-image";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import Pdf from "../../content/assets/nimeshCV.pdf";
+import LogoBox from "../components//logobox";
 
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
@@ -24,8 +25,37 @@ const AboutPage = () => {
           title
         }
       }
+      amazon: file(relativePath: { eq: "thumbnails/logos/amazon.png" }) {
+        childImageSharp {
+          fixed(width: 80) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      swisscom: file(relativePath: { eq: "thumbnails/logos/swisscom.png" }) {
+        childImageSharp {
+          fixed(width: 80) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      tes: file(relativePath: { eq: "thumbnails/logos/tes.png" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      virgin: file(relativePath: { eq: "thumbnails/logos/virgin.png" }) {
+        childImageSharp {
+          fixed(width: 100) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `);
+
   const siteTitle = image.site.siteMetadata.title;
 
   return (
@@ -82,6 +112,26 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
+        </article>
+        <article
+          style={{
+            alignItems: "center",
+            textAlign: "center",
+            padding: "0 4rem"
+          }}
+        >
+          <h6>worked with</h6>
+          <LogoBox
+            one={image.amazon.childImageSharp.fixed}
+            oneAlt="Amazon"
+            two={image.swisscom.childImageSharp.fixed}
+            twoAlt="Swisscom"
+            three={image.tes.childImageSharp.fixed}
+            threeAlt="Tes Global"
+            four={image.virgin.childImageSharp.fixed}
+            fourAlt="Virgin Money"
+            five={0}
+          />
         </article>
         <section className="contactButtons contact">
           <ul className="actions fit">
