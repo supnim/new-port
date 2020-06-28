@@ -6,7 +6,7 @@ import "../../src/utils/css/project.scss";
 import Hero from "../components/hero";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
-import VolvicGif from "../../content/assets/projects/volvic.gif";
+// import VolvicGif from "../../content/assets/projects/volvic.gif"
 import GifPlayer from "react-gif-player";
 
 const Volvic = () => {
@@ -27,11 +27,11 @@ const Volvic = () => {
           title="volvic"
           keywords={[`discography`, `music`, `producer`, `N1M`]}
         />
-        <GifPlayer
+        {/* <GifPlayer
           gif="../../content/assets/heros/volvic.gif"
           still="../../content/assets/heros/volvic-still.png"
           autoplay={true}
-        />
+        /> */}
         <Hero
           heroImg=" "
           heroTitle="Brief"
