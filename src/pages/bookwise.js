@@ -176,7 +176,7 @@ function Bookwise() {
                 paragraph="teachers share some similar elements as the students such as the timetable and homework. the file system for each class taught is shown along with the students in the class. at the bottom is the controls to take over the devices in the classroom, and this is used to demonstrate and monitor work. the right image shows all the active devices in the classroom that are in use."
               />
               <VideoBox
-                url="https://player.vimeo.com/video/168932343"
+                url="https://player.vimeo.com/video/168932343?title=0&byline=0&portrait=0"
                 description="p.s concept got proven by apple in their latest iteration of ipad aimed at the education sector: here is the keynote summarised by verge."
               />
             </div>

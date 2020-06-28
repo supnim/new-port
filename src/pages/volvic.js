@@ -53,7 +53,7 @@ const Volvic = () => {
                     all current ads where promoting energy and sugary sports drinks; we wanted to do something a little different. 
                     all elements of this project had to be considered, from making the music to shooting the clips and finally editing it together to make this video. this is what we made."
           />
-          <VideoBox url="https://player.vimeo.com/video/163986212" />
+          <VideoBox url="https://player.vimeo.com/video/163986212?title=0&byline=0&portrait=0" />
         </div>
       </Layout>
     </div>

@@ -198,7 +198,7 @@ function Knowhere() {
           >
             <h4>video demo</h4>
             <VideoBox
-              url="https://player.vimeo.com/video/168933267"
+              url="https://player.vimeo.com/video/168933267?title=0&byline=0&portrait=0"
               description="ipole | collaborative project with universes from switzerland, germany and china."
             />
           </div>
