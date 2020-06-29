@@ -7,7 +7,7 @@ import Hero from "../components/hero";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
 // import VolvicGif from "../../content/assets/projects/volvic.gif"
-import GifPlayer from "react-gif-player";
+// import GifPlayer from "react-gif-player";
 
 const Volvic = () => {
   const data = useStaticQuery(graphql`
