@@ -11,6 +11,19 @@ import Image from "gatsby-image";
 
 import KnowhereHeroImg from "../../content/assets/heros/knowhere_hero.svg";
 
+const HeroImage = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center"
+      }}
+    >
+      <KnowhereHeroImg width="80%" height="auto" />
+    </div>
+  );
+};
 function BriefAlt() {
   return (
     <section className="row">
@@ -117,7 +130,7 @@ function Knowhere() {
         relativePath: { eq: "projects/knowhere/northumbria.png" }
       ) {
         childImageSharp {
-          fixed(width: 140) {
+          fixed(width: 148) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -131,7 +144,7 @@ function Knowhere() {
           title="Knowhere"
           keywords={[`internet of things`, `swisscom`, `iPole`, `Collabrative`]}
         />
-        <KnowhereHeroImg width="100%" height="auto" />
+        <HeroImage />
         {BriefAlt()}
         <LogoBox
           one={image.fhnw.childImageSharp.fixed}

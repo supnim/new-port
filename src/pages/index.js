@@ -3,6 +3,7 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 // Skelton
 import Layout from "../components/layout";
@@ -22,6 +23,7 @@ import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
 import Volvic from "../../content/assets/thumbnails/volvic.svg";
 
 import Methodogly from "../components/meth";
+
 // import OnLoad from "../components/onLoad"
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
@@ -47,20 +49,22 @@ const BlogIndex = ({ data }, location) => {
               {data.site.siteMetadata.description}
             </h2>
             <br />
-            <ScrollIcon
-              alt="scrollicon"
-              style={{
-                fill: "white",
-                marginTop: "4rem",
-                height: "40px",
-                width: "40px",
-                paddingTop: "1rem"
-              }}
-            />
+            <a onClick={() => scrollTo("#jobs")}>
+              <ScrollIcon
+                alt="scrollicon"
+                style={{
+                  fill: "white",
+                  marginTop: "4rem",
+                  height: "40px",
+                  width: "40px",
+                  paddingTop: "1rem"
+                }}
+              />
+            </a>
           </div>
         </header>
       )}
-      <div className="row jobs">
+      <div className="row jobs" id="jobs">
         <Link className="col-7 tes" to={`/tes`}>
           <Tes />
         </Link>
@@ -85,12 +89,15 @@ const BlogIndex = ({ data }, location) => {
         </Link>
       </div>
       <Methodogly />
-      <div className="watchLook row">
-        <Link className="col-6 watch" to={`/video`}>
-          <p>WATCH</p>
-        </Link>
-        <Link className="col-6 look" to={`/photo`}>
+      <div className="graphy row">
+        <Link className="col-4 look" to={`/photo`}>
           <p>LOOK</p>
+        </Link>
+        <Link className="col-4 listen" to={`/audio`}>
+          <p>LISTEN</p>
+        </Link>
+        <Link className="col-4 watch" to={`/video`}>
+          <p>WATCH</p>
         </Link>
       </div>
     </Layout>

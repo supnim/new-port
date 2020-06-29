@@ -124,6 +124,7 @@ html {
 }
 a {
   background-color: transparent;
+  cursor: pointer;
 }
 a:active,
 a:hover {

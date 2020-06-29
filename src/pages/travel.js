@@ -16,6 +16,20 @@ const Travel = () => {
       }
     }
   `);
+  const HeroImage = () => {
+    return (
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          backgroundColor: "#1c1918"
+        }}
+      >
+        <TravelHero width="80%" height="auto" />
+      </div>
+    );
+  };
   const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
@@ -43,7 +57,7 @@ const Travel = () => {
           title="travel"
           keywords={[`travel`, `amazon`, `stop motion`, `facebook`]}
         />
-        <TravelHero width="100%" height="auto" />
+        <HeroImage />
         <div className="socialwrapper">
           <div className="col-8">
             <TitleP

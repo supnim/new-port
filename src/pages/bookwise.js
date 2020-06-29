@@ -11,6 +11,20 @@ import VideoBox from "../components/videoBox";
 
 import BookwiseHeroImg from "../../content/assets/heros/bookwise_hero.svg";
 
+const HeroImage = () => {
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        backgroundColor: "#efece9"
+      }}
+    >
+      <BookwiseHeroImg width="80%" height="auto" />
+    </div>
+  );
+};
 // Assembling imported content
 const cardData = [
   {
@@ -138,7 +152,7 @@ function Bookwise() {
           title="Bookwise"
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
-        <BookwiseHeroImg width="100%" height="auto" />
+        <HeroImage />
         <Hero
           heroImg="profilePic" //need it or breaks it
           heroTitle="Brief"
