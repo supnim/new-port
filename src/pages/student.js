@@ -16,20 +16,7 @@ const Student = () => {
       }
     }
   `);
-  const HeroImage = () => {
-    return (
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          backgroundColor: "#fffc00"
-        }}
-      >
-        <StudentHero width="80%" height="auto" />
-      </div>
-    );
-  };
+
   const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
@@ -58,7 +45,7 @@ const Student = () => {
           keywords={[`music`, `amazon`, `students`, `promo`]}
         />
         <div style={{ backgroundColor: "yellow", alignContent: "end" }}>
-          <HeroImage />
+          <StudentHero width="100%" height="auto" />
         </div>
         <div className="socialwrapper">
           <div className="col-8">

@@ -1,3 +1,18 @@
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+
+// const image = useStaticQuery(graphql`
+//   query {
+//     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
+//       childImageSharp {
+//         fluid(maxWidth: 1000) {
+//           ...GatsbyImageSharpFluid
+//         }
+//       }
+//     }
+//   }
+// `)
+
 export const photos = [
   {
     src: "/../content/assets/photography/1.jpg",

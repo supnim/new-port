@@ -11,19 +11,6 @@ import Image from "gatsby-image";
 
 import KnowhereHeroImg from "../../content/assets/heros/knowhere_hero.svg";
 
-const HeroImage = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center"
-      }}
-    >
-      <KnowhereHeroImg width="80%" height="auto" />
-    </div>
-  );
-};
 function BriefAlt() {
   return (
     <section className="row">
@@ -144,7 +131,7 @@ function Knowhere() {
           title="Knowhere"
           keywords={[`internet of things`, `swisscom`, `iPole`, `Collabrative`]}
         />
-        <HeroImage />
+        <KnowhereHeroImg width="100%" height="auto" />
         {BriefAlt()}
         <LogoBox
           one={image.fhnw.childImageSharp.fixed}

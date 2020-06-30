@@ -12,21 +12,6 @@ import VideoBox from "../components/videoBox";
 
 import OneCardHeroImg from "../../content/assets/heros/one_card_hero.svg";
 
-const HeroImage = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        backgroundColor: "#bf2828"
-      }}
-    >
-      <OneCardHeroImg width="80%" height="auto" />
-    </div>
-  );
-};
-
 function BriefAlt() {
   return (
     <section className="row">
@@ -140,7 +125,7 @@ function OneCard() {
           title="One Card"
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
-        <HeroImage />
+        <OneCardHeroImg width="100%" height="auto" />
         <Hero
           heroImg="profilePic" //need it or breaks it
           heroTitle="Brief"
