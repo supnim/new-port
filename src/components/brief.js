@@ -4,7 +4,7 @@ import "../utils/css/components/brief.scss";
 function Brief({ briefParagraphy, briefTitle, one, two, three, postscript }) {
   return (
     <section className="row">
-      <div className="col-10 wrapper">
+      <div className="col-12 wrapper">
         <h4>{briefTitle}</h4>
         <p>{briefParagraphy}</p>
         <ol className="list">

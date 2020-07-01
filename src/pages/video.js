@@ -19,12 +19,12 @@ const Video = ({ data }) => {
           keywords={[`videography`, `film`, `director`, `editor`]}
         />
         <h3>videography</h3>
-        <p>
+        <p style={{ paddingBottom: "8rem" }}>
           My second love - showed me the power of good storytelling.
           <br />
           Taught me; narration, sound-design, composition, tempo and much more.
         </p>
-        {videoUrl}
+        <div style={{ maxWidth: "800px", margin: "0 auto" }}>{videoUrl}</div>
       </Layout>
     </div>
   );

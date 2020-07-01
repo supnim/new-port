@@ -23,7 +23,7 @@ const Photo = () => {
           keywords={[`photography`, `nightlife`, `fashion`, `band`, `supnim`]}
         />
         <h3>photography</h3>
-        <p>My first love.</p>
+        <p style={{ paddingBottom: "8rem" }}>My first love.</p>
         <Gallery />
       </Layout>
     </div>

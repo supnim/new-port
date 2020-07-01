@@ -22,7 +22,9 @@ const Audio = () => {
           keywords={[`discography`, `music`, `producer`, `N1M`]}
         />
         <h3>discography</h3>
-        <p>My newest passion. Latest to the earliest; left to right.</p>
+        <p style={{ paddingBottom: "8rem" }}>
+          My newest passion. Latest to the earliest; left to right.
+        </p>
         <div className="discography row">
           <div className="auto">
             <iframe

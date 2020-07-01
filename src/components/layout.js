@@ -82,7 +82,7 @@ const Layout = props => {
             <p>•</p>
             <a href="/primefitness">primefitness</a>
           </div>
-          <div className="footer-love">
+          <div title="using ReactJS">
             &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
           </div>
         </div>

@@ -156,7 +156,10 @@ function Bookwise() {
           three="make it intuitive as pencil and pad"
           postscript=""
         />
-        <container>
+        <container
+          style={{ maxWidth: "1200px", margin: "0 auto" }}
+          className="row"
+        >
           <section className="divide-1">{column1Data.map(mapCard)}</section>
           <section className="divide-2">{column2Data.map(mapCard)}</section>
           <section className="divide-3">{column3Data.map(mapCard)}</section>

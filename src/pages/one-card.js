@@ -16,7 +16,7 @@ function BriefAlt() {
   return (
     <section className="row">
       <div
-        className="col-10 wrapper"
+        className="col-12 wrapper"
         style={{
           color: "white",
           backgroundColor: "#bf2828",

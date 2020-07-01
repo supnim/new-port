@@ -160,6 +160,7 @@ p {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 
 .footer-links a {
@@ -797,12 +798,12 @@ p {
 .audio-page p,
 .photo-page p {
   padding: 8px;
-  padding-bottom: 8rem;
 }
 
 .video-page iframe {
   border-radius: 2px;
 }
+
 .discography {
   margin: 0 auto;
   place-content: center;

@@ -7,13 +7,13 @@ const videoBox = ({ description, url }) => (
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
-      padding: "32px"
+      padding: "16px 0"
     }}
   >
     <iframe
       title="videosComponent"
       src={url}
-      width="800"
+      width="100%"
       height="450"
       frameborder="0"
       allowfullscreen
