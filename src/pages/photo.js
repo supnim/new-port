@@ -24,7 +24,9 @@ const Photo = () => {
         />
         <h3>photography</h3>
         <p style={{ paddingBottom: "8rem" }}>My first love.</p>
-        <Gallery />
+        <section>
+          <Gallery />
+        </section>
       </Layout>
     </div>
   );

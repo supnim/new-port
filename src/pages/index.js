@@ -64,42 +64,44 @@ const BlogIndex = ({ data }, location) => {
           </div>
         </header>
       )}
-      <div className="row jobs" id="jobs">
-        <Link className="col-7 tes" to={`/tes`}>
-          <Tes />
-        </Link>
-        <Link className="col-5 amazon" to={`/amazon`}>
-          <Amazon />
-        </Link>
-      </div>
-      <div className="row jobs">
-        <Link className="col-5 one-card" to={`/one-card`}>
-          <OneCard />
-        </Link>
-        <Link className="col-7 bookwise" to={`/bookwise`}>
-          <Bookwise />
-        </Link>
-      </div>
-      <div className="row jobs">
-        <Link className="col-7 knowhere" to={`/knowhere`}>
-          <Knowhere />
-        </Link>
-        <Link className="col-5 volvic" to={`/volvic`}>
-          <Volvic />
-        </Link>
-      </div>
-      <Methodogly />
-      <div className="graphy row">
-        <Link className="col-4 look" to={`/photo`}>
-          <p>LOOK</p>
-        </Link>
-        <Link className="col-4 listen" to={`/audio`}>
-          <p>LISTEN</p>
-        </Link>
-        <Link className="col-4 watch" to={`/video`}>
-          <p>WATCH</p>
-        </Link>
-      </div>
+      <section className="jobwrapper">
+        <div className="row jobs" id="jobs">
+          <Link className="col-7 tes" to={`/tes`}>
+            <Tes width="100%" height="100%" />
+          </Link>
+          <Link className="col-5 amazon" to={`/amazon`}>
+            <Amazon width="100%" height="100%" />
+          </Link>
+        </div>
+        <div className="row jobs">
+          <Link className="col-5 one-card" to={`/one-card`}>
+            <OneCard width="100%" height="100%" />
+          </Link>
+          <Link className="col-7 bookwise" to={`/bookwise`}>
+            <Bookwise width="100%" height="100%" />
+          </Link>
+        </div>
+        <div className="row jobs">
+          <Link className="col-7 knowhere" to={`/knowhere`}>
+            <Knowhere width="100%" height="100%" />
+          </Link>
+          <Link className="col-5 volvic" to={`/volvic`}>
+            <Volvic width="100%" height="100%" />
+          </Link>
+        </div>
+        <Methodogly />
+        <div className="graphy row">
+          <Link className="col-4 look" to={`/photo`}>
+            <p>LOOK</p>
+          </Link>
+          <Link className="col-4 listen" to={`/audio`}>
+            <p>LISTEN</p>
+          </Link>
+          <Link className="col-4 watch" to={`/video`}>
+            <p>WATCH</p>
+          </Link>
+        </div>
+      </section>
     </Layout>
   );
 };

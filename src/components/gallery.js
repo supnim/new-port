@@ -1,7 +1,8 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../components/photography";
+// import { images } from "../components/photography"
+import { graphql, useStaticQuery } from "gatsby";
 
 function PhotoGallery() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -16,10 +17,37 @@ function PhotoGallery() {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
+  const images = useStaticQuery(graphql`
+    query {
+      photo: allFile(filter: { relativeDirectory: { glob: "photography/*" } }) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                src
+                srcSet
+                aspectRatio
+                originalName
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+    }
+  `);
+  const photos = images.photo.edges.map(
+    ({ node }) => node.childImageSharp.fluid
+  );
 
   return (
     <div>
-      <Gallery photos={photos} onClick={openLightbox} />
+      <Gallery
+        photos={photos}
+        direction="column"
+        margin="1rem"
+        onClick={openLightbox}
+      />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -28,7 +56,7 @@ function PhotoGallery() {
               views={photos.map(x => ({
                 ...x,
                 srcset: x.srcSet,
-                caption: x.title
+                caption: x.originalName
               }))}
             />
           </Modal>
