@@ -162,6 +162,7 @@ p {
   flex-direction: row;
   align-items: baseline;
   flex-wrap: wrap;
+  place-content: center;
 }
 
 .footer-links a {
@@ -184,6 +185,9 @@ p {
 
 .footer-image * {
   margin: 0 20vw;
+}
+.footer-buttons {
+  padding-top: 16rem;
 }
 
 /* Site Navigation
@@ -394,7 +398,7 @@ p {
   .site-head-right {
     order: 3;
     width: 100%;
-    margin-top: 3vw;
+    margin-top: 16vw;
   }
   .social-links {
     flex-direction: column;

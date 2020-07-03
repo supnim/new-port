@@ -86,7 +86,7 @@ const Layout = props => {
             &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
           </div>
         </div>
-        <div>
+        <div className="footer-buttons">
           <ul className="actions fit">
             <li>
               <a

@@ -67,7 +67,7 @@ const BlogIndex = ({ data }, location) => {
       <section className="jobwrapper">
         <div className="row jobs" id="jobs">
           <Link className="col-7 tes" to={`/tes`}>
-            <Tes width="100%" height="100%" />
+            <Tes width="100%" height="80%" />
           </Link>
           <Link className="col-5 amazon" to={`/amazon`}>
             <Amazon width="100%" height="100%" />
