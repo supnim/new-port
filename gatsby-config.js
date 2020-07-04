@@ -81,8 +81,8 @@ module.exports = {
               width: 800,
               height: 450,
               related: false,
-              noIframeBorder: true
-              // allowfullscreen: true
+              noIframeBorder: true,
+              allowfullscreen: true
             }
           },
 

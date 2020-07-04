@@ -16,7 +16,8 @@ const videoBox = ({ description, url }) => (
       width="100%"
       height="450"
       frameborder="0"
-      allowfullscreen
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen="true"
     ></iframe>
     <p style={{ textAlign: "center", padding: "32px" }}>{description}</p>
   </div>

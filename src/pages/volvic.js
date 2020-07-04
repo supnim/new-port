@@ -6,7 +6,7 @@ import "../../src/utils/css/project.scss";
 import Hero from "../components/hero";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
-// import volvic from "../../content/assets/projects/volvic.gif"
+// import gif from "../../content/assets/projects/volvic.gif"
 
 const Volvic = () => {
   const data = useStaticQuery(graphql`
@@ -27,7 +27,7 @@ const Volvic = () => {
           keywords={[`discography`, `music`, `producer`, `N1M`]}
         />
         <Hero
-          heroImg=" "
+          heroImg=""
           heroTitle="Brief"
           heroParagraphy="To create a promotional video – it could be about anything we want it to be."
         />
@@ -41,8 +41,7 @@ const Volvic = () => {
             margin: "0 auto"
           }}
         >
-          {/* <Img fluid={data.connect.childImageSharp.fluid} /> */}
-          {/* <img src={volvic} alt="volvicgif" /> */}
+          {/* <img src={gif} alt="volvicgif" /> */}
           <TitleP
             paragraph="after some research we decided on the drinks market.
                     all current ads where promoting energy and sugary sports drinks; we wanted to do something a little different. 
