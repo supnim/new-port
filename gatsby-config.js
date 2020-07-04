@@ -1,6 +1,26 @@
 const urljoin = require("url-join");
 const siteConfig = require("./siteConfig");
 
+//ive just added this
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          "file-loader",
+          {
+            loader: "image-webpack-loader",
+            options: {
+              bypassOnDebug: true, // webpack@1.x
+              disable: true // webpack@2.x and newer
+            }
+          }
+        ]
+      }
+    ]
+  }
+};
 module.exports = {
   siteMetadata: {
     title: siteConfig.name,

@@ -9,28 +9,6 @@ import {
   FaSyncAlt
 } from "react-icons/fa";
 
-import Design from "../../content/assets/icon/design.svg";
-
-import { graphql, useStaticQuery } from "gatsby";
-
-// import design from "../../content/assets/methBackgrounds/design.png"
-
-// console.log(design)
-
-// // fluid={image.profilePic.childImageSharp.fluid}
-
-// const image = useStaticQuery(graphql`
-//   query {
-//     profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
-//       childImageSharp {
-//         fluid(maxWidth: 1000) {
-//           ...GatsbyImageSharpFluid
-//         }
-//       }
-//     }
-//   }
-// `)
-
 export default [
   {
     id: 1,

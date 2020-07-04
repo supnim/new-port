@@ -3,13 +3,13 @@ import React from "react";
 import { graphql, StaticQuery } from "gatsby";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
-import scrollTo from "gatsby-plugin-smoothscroll";
 
 // Skelton
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import PostCard from "../components/postCard"; // article card
+// import PostCard from "../components/postCard" // article card
 import { Link } from "gatsby";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 // Component + theme
 import "../script/typing";
@@ -27,10 +27,11 @@ import Methodogly from "../components/meth";
 // import OnLoad from "../components/onLoad"
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
-const BlogIndex = ({ data }, location) => {
+const Index = ({ data }, location) => {
   const siteTitle = data.site.siteMetadata.title;
-  const posts = data.allMarkdownRemark.edges;
-  let postCounter = 0;
+  //article vvv
+  // const posts = data.allMarkdownRemark.edges
+  // let postCounter = 0
 
   return (
     <Layout title={siteTitle}>
@@ -143,7 +144,7 @@ export default props => (
   <StaticQuery
     query={indexQuery}
     render={data => (
-      <BlogIndex location={props.location} props data={data} {...props} />
+      <Index location={props.location} props data={data} {...props} />
     )}
   />
 );

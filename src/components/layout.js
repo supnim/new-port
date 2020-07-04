@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../content/assets/supnimLogo.svg";
 import Pdf from "../../content/assets/nimeshCV.pdf";
+import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Layout = props => {
   const { children } = props;
@@ -38,7 +39,9 @@ const Layout = props => {
                 <Link to={`/`}>home</Link>
               </li>
               <li className="nav-work">
-                <Link to={`/work`}>work</Link>
+                <Link to={`/`} onClick={() => scrollTo("#jobs")}>
+                  work
+                </Link>
               </li>
               <li className="nav-photo">
                 <Link to={`/photo`}>photo</Link>
