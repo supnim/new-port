@@ -132,7 +132,10 @@ function OneCard() {
           heroParagraphy="Re-imagine banking for a demographic group. We chose ourselves; students. we set out with the aim to create a tailored banking experience for students; looking at what is expected and desired from a bank. considering the future of banking and how we can provide something that is ahead of its time. with all that in mind we made the virgin one card; the one and only card you'd need that houses the following cards: credit/debit, store loyalty, gym and work building (nfc), id and many more."
         />
         {BriefAlt()}
-        <section className="row full">
+        <section
+          className="row full"
+          style={{ maxWidth: "1400px", margin: "0 auto" }}
+        >
           <div
             className="col-12"
             style={{

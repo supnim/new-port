@@ -32,7 +32,7 @@ function AmazonPage() {
         </p>
       </div>
       <div className="tesJobs row">
-        <Link className="col-7 design" to={`/design`}>
+        <Link className="col-7 design" to={`/design-system`}>
           <Designsystem width="100%" height="100%" />
         </Link>
         <Link className="col-5 pagebuilder" to={`/pagebuilder`}>
