@@ -6,7 +6,7 @@ import "../../src/utils/css/project.scss";
 import Hero from "../components/hero";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
-import gif from "../components/gifs/volvic.gif";
+import gif from "../components/gifs/volvic/volvic.gif";
 
 const Volvic = () => {
   const data = useStaticQuery(graphql`
