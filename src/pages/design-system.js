@@ -6,8 +6,13 @@ import "../../src/utils/css/project.scss";
 import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
 import Img from "gatsby-image";
+import TitleP from "../components/TitleP";
 
 import DesignSystemImg from "../../content/assets/heros/design_system_hero.svg";
+import Password from "../components/gifs/design-system/password.gif";
+import Component from "../components/gifs/design-system/component.gif";
+import Content from "../components/gifs/design-system/content.gif";
+import More from "../../content/assets/projects/design-system/component-more.svg";
 
 function OneCard() {
   const image = useStaticQuery(graphql`
@@ -135,22 +140,47 @@ function OneCard() {
                 <Img fluid={image.fieldsstates.childImageSharp.fluid} />
               </div>
             </div>
-            {/* <CardLeft
-              key="3"
-              image={image.goals.childImageSharp.fluid}
-              title="expenditure / goals "
-              byline="the pie chart shows the amount in all the categories the customers are spending money in. beneath that is all the set goals with the progress."
-              description="pie chart: once the user can easily see and understand where they are spending money, it is then they can take action accordingly. 
-              
-              goals: the % of money you save on discounts will be put in here along withchange from buying things. for example: say you buy a coffee for £2.20, the amount left of the pound will be put into your savings – in this case 80pwill be deposited."
-            />
-            <CardRight
-              key="4"
-              image={image.offers.childImageSharp.fluid}
-              title="offers"
-              byline="local, recommended and popular."
-              description="using location information, relevant offers and deals are shown to the user also taking into consideration previous spending habits. with this data we populate the 'your reward' section, for example: if you are a regular shopper at topman - you'd be given a personal discount on your next purchase. the app is not only helping you monitor your spending but also help you spend more wisely."
-            /> */}
+            <div className="row">
+              <div className="col-6">
+                <Img fluid={image.element.childImageSharp.fluid} />
+              </div>
+              <div className="col-6">
+                <img src={Password} />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-6" style={{ backgroundColor: "#F5F5F5" }}>
+                <img src={Component} />
+              </div>
+              <div
+                className="col-6"
+                style={{ margin: "auto", padding: "5rem" }}
+              >
+                <TitleP
+                  title="Component"
+                  paragraph="the final building blocks of the design system. an agreed-upon, unified component list used sitewide. providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
+                />
+              </div>
+            </div>
+            <div className="row" style={{ backgroundColor: "#F5F5F5" }}>
+              <div className="col-6">
+                <img src={Content} />
+              </div>
+              <div
+                className="col-6"
+                style={{ margin: "auto", padding: "5rem" }}
+              >
+                <More width="100%" height="100%" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12" style={{ margin: "4rem" }}>
+                <TitleP
+                  title="What's next?"
+                  paragraph="layout libraries, baking in motion, further implementation of accessibility, creating user journey ( e.g checkout / onboarding ) and aligning marketing and editorial style guides "
+                />
+              </div>
+            </div>
           </div>
         </section>
       </Layout>
