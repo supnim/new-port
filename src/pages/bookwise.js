@@ -148,8 +148,8 @@ function Bookwise() {
             factor in learning nor should the slow learners limit the fast ones."
         />
         <Brief
-          briefTitle="Solution"
-          briefParagraphy="Create an immersive application for students to learn and share knowledge in a collaborative way. To break down the barriers that was set by old fashion/outdated teaching methods; making it less liner and more collective. I set out to solve these problems with the implementation of:"
+          title="Solution"
+          paragraph="Create an immersive application for students to learn and share knowledge in a collaborative way. To break down the barriers that was set by old fashion/outdated teaching methods; making it less liner and more collective. I set out to solve these problems with the implementation of:"
           one="peer-to-peer learning"
           two="using technology to remove language and shyness as a
           factor"
@@ -180,7 +180,16 @@ function Bookwise() {
               />
               <VideoBox
                 url="https://player.vimeo.com/video/168932343?title=0&byline=0&portrait=0"
-                description="p.s concept got proven by apple in their latest iteration of ipad aimed at the education sector: here is the keynote summarised by verge."
+                description={
+                  <p>
+                    p.s concept got proven by apple in their latest iteration of
+                    ipad aimed at the education sector:{" "}
+                    <a href="https://youtu.be/OkMPXssKX4I">
+                      <b>here</b>
+                    </a>{" "}
+                    is the keynote summarised by verge.
+                  </p>
+                }
               />
             </div>
           </section>

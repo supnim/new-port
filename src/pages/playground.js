@@ -11,61 +11,81 @@ import { graphql, useStaticQuery } from "gatsby";
 //   />
 // ))
 
+import AwesomeSlider from "react-awesome-slider";
+import "react-awesome-slider/dist/styles.css";
+
+// const getImages = useStaticQuery(graphql`
+//   query {
+//     f1: file(relativePath: { eq: "projects/institute/route-1.png" }) {
+//       childImageSharp {
+//         fixed(width: 80) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//     f2: file(relativePath: { eq: "projects/institute/route-2.png" }) {
+//       childImageSharp {
+//         fixed(width: 160) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//     f3: file(relativePath: { eq: "projects/institute/route-3.png" }) {
+//       childImageSharp {
+//         fixed(width: 64) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//     f4: file(relativePath: { eq: "projects/institute/route-4.png" }) {
+//       childImageSharp {
+//         fixed(width: 80) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//     f5: file(relativePath: { eq: "projects/institute/route-5.png" }) {
+//       childImageSharp {
+//         fixed(width: 140) {
+//           ...GatsbyImageSharpFixed
+//         }
+//       }
+//     }
+//   }
+// `)
+
 function Grounds() {
-  const logo = useStaticQuery(graphql`
+  const images = useStaticQuery(graphql`
     query {
-      fhnw: file(relativePath: { eq: "projects/knowhere/FHNW.png" }) {
-        childImageSharp {
-          fixed(width: 80) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      merz: file(relativePath: { eq: "projects/knowhere/merz.png" }) {
-        childImageSharp {
-          fixed(width: 160) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      southeast: file(
-        relativePath: { eq: "projects/knowhere/southeast-uni.png" }
-      ) {
-        childImageSharp {
-          fixed(width: 64) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      swisscom: file(relativePath: { eq: "projects/knowhere/swisscom.png" }) {
-        childImageSharp {
-          fixed(width: 80) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      northumbria: file(
-        relativePath: { eq: "projects/knowhere/northumbria.png" }
-      ) {
-        childImageSharp {
-          fixed(width: 140) {
-            ...GatsbyImageSharpFixed
+      photo: allFile(filter: { relativeDirectory: { glob: "photography/*" } }) {
+        edges {
+          node {
+            childImageSharp {
+              fluid {
+                src
+                srcSet
+                aspectRatio
+                originalName
+                ...GatsbyImageSharpFluid
+              }
+            }
           }
         }
       }
     }
   `);
+  const photos = images.photo.edges.map(
+    ({ node }) => node.childImageSharp.fluid
+  );
+  console.log(photos);
+
+  // const slider = <AwesomeSlider media={photos.map(x => )} />
+
   return (
     <div>
       <Layout>
         <h1>Playground</h1>
-        <LogoBox
-          one={logo.fhnw.childImageSharp.fixed}
-          two={logo.swisscom.childImageSharp.fixed}
-          three={logo.northumbria.childImageSharp.fixed}
-          four={logo.southeast.childImageSharp.fixed}
-          five={logo.merz.childImageSharp.fixed}
-        />
+        {/* {slider} */}
       </Layout>
     </div>
   );

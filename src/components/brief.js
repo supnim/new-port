@@ -1,12 +1,12 @@
 import React from "react";
 import "../utils/css/components/brief.scss";
 
-function Brief({ briefParagraphy, briefTitle, one, two, three, postscript }) {
+function Brief({ title, paragraph, one, two, three, postscript, style }) {
   return (
-    <section className="row">
-      <div className="col-12 wrapper">
-        <h4>{briefTitle}</h4>
-        <p>{briefParagraphy}</p>
+    <section style={{ maxWidth: "1200px", margin: "0 auto" }} className="row">
+      <div className="col-12 wrapper" style={style}>
+        <h4>{title}</h4>
+        <p>{paragraph}</p>
         <ol className="list">
           <li>{one}</li>
           <li>{two}</li>

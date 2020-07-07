@@ -9,39 +9,9 @@ import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import VideoBox from "../components/videoBox";
+import Brief from "../components/brief";
 
 import OneCardHeroImg from "../../content/assets/heros/one_card_hero.svg";
-
-function BriefAlt() {
-  return (
-    <section className="row">
-      <div
-        className="col-12 wrapper"
-        style={{
-          color: "white",
-          backgroundColor: "#bf2828",
-          border: "none"
-        }}
-      >
-        <h4>Insight</h4>
-        <p>
-          Students / young adults are the best to target for banks, as its
-          unlikely for them to change banks once signed up; pretty much a
-          lifetime customer.{" "}
-        </p>
-        <ol className="list">
-          <li>wanted to save but didn't know how</li>
-          <li>need a more user-friendly peer-to-peer payment system</li>
-          <li>discount and offers on thing they would actually wanted</li>
-        </ol>
-        <p className="superset">
-          in addition we wanted to think ahead and predict/innovate in the
-          banking sector.
-        </p>
-      </div>
-    </section>
-  );
-}
 
 function OneCard() {
   const image = useStaticQuery(graphql`
@@ -118,6 +88,12 @@ function OneCard() {
       }
     }
   `);
+
+  const briefStyle = {
+    color: "white",
+    backgroundColor: "#bf2828",
+    border: "none"
+  };
   return (
     <div>
       <Layout>
@@ -131,7 +107,18 @@ function OneCard() {
           heroTitle="Brief"
           heroParagraphy="Re-imagine banking for a demographic group. We chose ourselves; students. we set out with the aim to create a tailored banking experience for students; looking at what is expected and desired from a bank. considering the future of banking and how we can provide something that is ahead of its time. with all that in mind we made the virgin one card; the one and only card you'd need that houses the following cards: credit/debit, store loyalty, gym and work building (nfc), id and many more."
         />
-        {BriefAlt()}
+        <Brief
+          title="Insight"
+          paragraph="Students / young adults are the best to target for banks, as its
+          unlikely for them to change banks once signed up; pretty much a
+          lifetime customer."
+          one="wanted to save but didn't know how"
+          two="need a more user-friendly peer-to-peer payment system"
+          three="discount and offers on thing they would actually wanted"
+          postscript="in addition we wanted to think ahead and predict/innovate in the
+          banking sector."
+          style={briefStyle}
+        />
         <section
           className="row full"
           style={{ maxWidth: "1400px", margin: "0 auto" }}

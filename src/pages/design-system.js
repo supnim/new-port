@@ -7,6 +7,7 @@ import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
 import Img from "gatsby-image";
 import TitleP from "../components/TitleP";
+import Brief from "../components/brief";
 
 import DesignSystemImg from "../../content/assets/heros/design_system_hero.svg";
 import Password from "../components/gifs/design-system/password.gif";
@@ -109,7 +110,23 @@ function OneCard() {
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
         <DesignSystemImg width="100%" height="auto" />
-        {BriefAlt()}
+        <Brief
+          title="Objective"
+          paragraph={
+            <p>
+              One single source of truth; forming unity across the whole site
+              and lay a stable foundation for onboarding future businesses.{" "}
+              <br />
+              The live design system can be found{" "}
+              <a href="https://www.tes.com/styleguide/">
+                <b>here</b>
+              </a>
+            </p>
+          }
+          one="Firstly, take stock and deprecated duplicates and unused elements / components"
+          two="Secondly, simplify and merge similar elements / components into one"
+          three="Finally, build one centralised system all engineering points to"
+        />
         <section className="row full">
           <div className="col-12">
             <CardLeft

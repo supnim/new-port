@@ -7,65 +7,52 @@ import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
 import Img from "gatsby-image";
 import TitleP from "../components/TitleP";
+import Brief from "../components/brief";
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
-import Password from "../components/gifs/design-system/password.gif";
-import Component from "../components/gifs/design-system/component.gif";
-import Content from "../components/gifs/design-system/content.gif";
-import More from "../../content/assets/projects/design-system/component-more.svg";
+import course from "../components/gifs/institute/course.gif";
+import pages from "../components/gifs/institute/pages.gif";
+import process from "../components/gifs/institute/process.gif";
 
 function OneCard() {
   const image = useStaticQuery(graphql`
     query {
-      button: file(relativePath: { eq: "projects/design-system/button.png" }) {
+      one: file(relativePath: { eq: "projects/institute/route-1.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      colour: file(relativePath: { eq: "projects/design-system/colour.png" }) {
+      two: file(relativePath: { eq: "projects/institute/route-2.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      element: file(
-        relativePath: { eq: "projects/design-system/element.png" }
-      ) {
+      three: file(relativePath: { eq: "projects/institute/route-3.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      fields: file(relativePath: { eq: "projects/design-system/fields.png" }) {
+      four: file(relativePath: { eq: "projects/institute/route-4.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      fieldsstates: file(
-        relativePath: { eq: "projects/design-system/fieldsstates.png" }
-      ) {
+      five: file(relativePath: { eq: "projects/institute/route-5.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      icon: file(relativePath: { eq: "projects/design-system/icon.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      typography: file(
-        relativePath: { eq: "projects/design-system/typography.png" }
-      ) {
+      mix: file(relativePath: { eq: "projects/institute/mix.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -75,32 +62,16 @@ function OneCard() {
     }
   `);
 
-  function BriefAlt() {
-    return (
-      <section className="row">
-        <div
-          className="wrapper"
-          style={{
-            margin: "4rem auto",
-            color: "black",
-            backgroundColor: "white",
-            border: "2px black solid",
-            margin: "4rem"
-          }}
-        >
-          <h4>Brief</h4>
-          <p>
-            give institute a facelift/rebranding. tes institute is a leading
-            provider of online courses and programmes with a particular focus on
-            teacher training and development this is what it looked like before:{" "}
-            <a href="https://web.archive.org/web/20200513133158/https://www.tes.com/institute/">
-              <b>this</b>
-            </a>
-          </p>
-        </div>
-      </section>
-    );
-  }
+  const grey = {
+    backgroundColor: "#F5F5F5"
+  };
+  const briefStyle = {
+    margin: "4rem auto",
+    color: "black",
+    backgroundColor: "white",
+    border: "2px black solid",
+    margin: "4rem"
+  };
 
   return (
     <div>
@@ -110,48 +81,57 @@ function OneCard() {
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
         <InstituteImg width="100%" height="auto" />
-        {BriefAlt()}
+        <Brief
+          style={briefStyle}
+          title="Brief"
+          paragraph={
+            <p>
+              give institute a facelift/rebranding. tes institute is a leading
+              provider of online courses and programmes with a particular focus
+              on teacher training and development this is what it looked like
+              before:{" "}
+              <a href="https://web.archive.org/web/20200513133158/https://www.tes.com/institute/">
+                <b>this</b>
+              </a>
+            </p>
+          }
+        />
         <section className="row full">
           <div className="col-12">
             <CardLeft
               key="1"
-              image={image.typography.childImageSharp.fluid}
-              title="core"
-              description="this is the first and most important part of the design system; everything is built of this. its mainly comprised of typography, colour and icons"
+              image={image.mix.childImageSharp.fluid}
+              title="Art direction"
+              description="first, i explored a styling, something that is in the theme of the current but still different to bring some life"
             />
+            <br />
             <div className="row">
-              <div className="col-6">
-                <Img fluid={image.colour.childImageSharp.fluid} />
+              <div className="col-6" style={grey}>
+                <Img fluid={image.five.childImageSharp.fluid} />
               </div>
-              <div className="col-6">
-                <Img fluid={image.icon.childImageSharp.fluid} />
+              <div className="col-6" style={grey}>
+                <Img fluid={image.four.childImageSharp.fluid} />
               </div>
             </div>
+            <br />
+            <div className="row">
+              <div className="col-6" style={grey}>
+                <Img fluid={image.three.childImageSharp.fluid} />
+              </div>
+              <div className="col-6" style={grey}>
+                <Img fluid={image.two.childImageSharp.fluid} />
+              </div>
+            </div>
+            <br />
             <CardRight
               key="2"
-              image={image.element.childImageSharp.fluid}
-              title="elements"
-              description="we're building on what we've built. combining multiple core parts to make more complex pieces"
+              image={image.one.childImageSharp.fluid}
+              title="choosen direction"
+              description="even though the other routes were great in their own right, this one took what was already established and elevated it"
             />
             <div className="row">
-              <div className="col-6">
-                <Img fluid={image.fields.childImageSharp.fluid} />
-              </div>
-              <div className="col-6">
-                <Img fluid={image.fieldsstates.childImageSharp.fluid} />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-6">
-                <Img fluid={image.element.childImageSharp.fluid} />
-              </div>
-              <div className="col-6">
-                <img src={Password} />
-              </div>
-            </div>
-            <div className="row">
               <div className="col-6" style={{ backgroundColor: "#F5F5F5" }}>
-                <img src={Component} />
+                <img src={course} />
               </div>
               <div
                 className="col-6"
@@ -159,27 +139,16 @@ function OneCard() {
               >
                 <TitleP
                   title="Component"
-                  paragraph="the final building blocks of the design system. an agreed-upon, unified component list used sitewide. providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
+                  paragraph="then i componentized the rebuild to make it more efficient and move away from making things one time, plus this allows us to build pages fast"
                 />
               </div>
             </div>
             <div className="row" style={{ backgroundColor: "#F5F5F5" }}>
               <div className="col-6">
-                <img src={Content} />
+                <img src={process} />
               </div>
-              <div
-                className="col-6"
-                style={{ margin: "auto", padding: "5rem" }}
-              >
-                <More width="100%" height="100%" />
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12" style={{ margin: "4rem" }}>
-                <TitleP
-                  title="What's next?"
-                  paragraph="layout libraries, baking in motion, further implementation of accessibility, creating user journey ( e.g checkout / onboarding ) and aligning marketing and editorial style guides "
-                />
+              <div className="col-6">
+                <img src={pages} />
               </div>
             </div>
           </div>
