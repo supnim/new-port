@@ -14,7 +14,7 @@ import course from "../components/gifs/institute/course.gif";
 import pages from "../components/gifs/institute/pages.gif";
 import process from "../components/gifs/institute/process.gif";
 
-function OneCard() {
+function Institute() {
   const image = useStaticQuery(graphql`
     query {
       one: file(relativePath: { eq: "projects/institute/route-1.png" }) {
@@ -158,4 +158,4 @@ function OneCard() {
   );
 }
 
-export default OneCard;
+export default Institute;

@@ -32,7 +32,7 @@ function AmazonPage() {
         </p>
       </div>
       <div className="amazonJobs row">
-        <Link className="col-7 connect" to={`/connect`}>
+        <Link className="col-7 connect" to={`/primefitness`}>
           <Connect width="100%" height="100%" />
         </Link>
         <Link className="col-5 student" to={`/student`}>
