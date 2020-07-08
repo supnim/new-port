@@ -17,7 +17,7 @@ function PrimeFitness() {
     color: "black",
     backgroundColor: "white",
     border: "2px black solid",
-    margin: "4rem"
+    padding: "4rem"
   };
   const Goals = ({ rank, title, sub }) => {
     return (

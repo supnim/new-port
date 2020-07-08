@@ -23,7 +23,7 @@ function PhotoGallery() {
         edges {
           node {
             childImageSharp {
-              fluid {
+              fluid(maxWidth: 100) {
                 src
                 srcSet
                 aspectRatio

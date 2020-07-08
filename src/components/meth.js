@@ -8,17 +8,20 @@ const defaultBackground = "default background";
 
 function MethodologyBoard() {
   const [currentCard, setCurrentCard] = useState(defaultBackground);
-
+  const focusStyle = {
+    outline: "solid 2px pink"
+  };
   return (
     <div id="board" className="board">
       <h2 className="methHeader">methodology.</h2>
       <div>{currentCard}</div>
       <motion.div className="methContainer" id="methContainer">
-        {MethodologyData.length && //why is this needed?
+        {MethodologyData.length &&
           MethodologyData.map(({ title, standfirst, icon, background }) => {
             return (
               <div
                 onMouseOver={() => setCurrentCard(background)}
+                onFocus={focusStyle}
                 onMouseLeave={() => setCurrentCard(defaultBackground)}
               >
                 <MethodologyCard

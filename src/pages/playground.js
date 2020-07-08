@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import LogoBox from "../components/logobox";
+// import LogoBox from "../components/logobox";
 import { graphql, useStaticQuery } from "gatsby";
 
 // const data = path.map((content) => (
@@ -11,7 +11,7 @@ import { graphql, useStaticQuery } from "gatsby";
 //   />
 // ))
 
-import AwesomeSlider from "react-awesome-slider";
+// import AwesomeSlider from "react-awesome-slider";
 import "react-awesome-slider/dist/styles.css";
 
 // const getImages = useStaticQuery(graphql`

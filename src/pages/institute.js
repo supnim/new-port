@@ -70,7 +70,7 @@ function Institute() {
     color: "black",
     backgroundColor: "white",
     border: "2px black solid",
-    margin: "4rem"
+    padding: "4rem"
   };
 
   return (
@@ -131,7 +131,7 @@ function Institute() {
             />
             <div className="row">
               <div className="col-6" style={{ backgroundColor: "#F5F5F5" }}>
-                <img src={course} />
+                <img src={course} alt="course gif" />
               </div>
               <div
                 className="col-6"
@@ -145,10 +145,10 @@ function Institute() {
             </div>
             <div className="row" style={{ backgroundColor: "#F5F5F5" }}>
               <div className="col-6">
-                <img src={process} />
+                <img src={process} alt="process gif" />
               </div>
               <div className="col-6">
-                <img src={pages} />
+                <img src={pages} alt="pages gif" />
               </div>
             </div>
           </div>

@@ -76,32 +76,6 @@ function OneCard() {
     }
   `);
 
-  function BriefAlt() {
-    return (
-      <section className="row">
-        <div
-          className="wrapper"
-          style={{
-            margin: "4rem auto",
-            color: "black",
-            backgroundColor: "white",
-            border: "2px black solid"
-          }}
-        >
-          <h4>Aim</h4>
-          <p>
-            One single source of truth; forming unity across the whole site and
-            lay a stable foundation for onboarding future businesses. <br />
-            The live design system can be found{" "}
-            <a href="https://www.tes.com/styleguide/">
-              <b>here</b>
-            </a>
-          </p>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <div>
       <Layout>
@@ -162,12 +136,12 @@ function OneCard() {
                 <Img fluid={image.element.childImageSharp.fluid} />
               </div>
               <div className="col-6">
-                <img src={Password} />
+                <img src={Password} alt="setting password box gif" />
               </div>
             </div>
             <div className="row">
               <div className="col-6" style={{ backgroundColor: "#F5F5F5" }}>
-                <img src={Component} />
+                <img src={Component} alt="component gif" />
               </div>
               <div
                 className="col-6"
@@ -181,7 +155,7 @@ function OneCard() {
             </div>
             <div className="row" style={{ backgroundColor: "#F5F5F5" }}>
               <div className="col-6">
-                <img src={Content} />
+                <img src={Content} alt="content gif" />
               </div>
               <div
                 className="col-6"
