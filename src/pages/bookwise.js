@@ -201,5 +201,4 @@ function Bookwise() {
 
 export default Bookwise;
 
-//link in video descprition
 // uniform images
