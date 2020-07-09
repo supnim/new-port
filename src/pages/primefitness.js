@@ -6,7 +6,7 @@ import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
 import VideoBox from "../components/videoBox";
 
-import PrimeFitnessImg from "../../content/assets/heros/primefitness_hero.svg";
+import PrimeFitnessImg from "../../content/assets/heros/Primefitness_hero.svg";
 import app from "../components/gifs/primefitness/app.gif";
 import watch from "../components/gifs/primefitness/watch.gif";
 import pantry from "../components/gifs/primefitness/pantry.gif";
