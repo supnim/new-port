@@ -199,7 +199,7 @@ eco-system."
               <p>How the virtual pantry works</p>
               <VideoBox
                 url="https://player.vimeo.com/video/226803084"
-                description="ipole | collaborative project with universes from switzerland, germany and china."
+                description=""
               />
             </div>
           </section>

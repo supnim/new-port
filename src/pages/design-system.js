@@ -15,7 +15,7 @@ import Component from "../components/gifs/design-system/component.gif";
 import Content from "../components/gifs/design-system/content.gif";
 import More from "../../content/assets/projects/design-system/component-more.svg";
 
-function OneCard() {
+function DesignSystem() {
   const image = useStaticQuery(graphql`
     query {
       button: file(relativePath: { eq: "projects/design-system/button.png" }) {
@@ -179,4 +179,4 @@ function OneCard() {
   );
 }
 
-export default OneCard;
+export default DesignSystem;

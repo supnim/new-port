@@ -4,6 +4,8 @@ import SEO from "../components/seo";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
 
+import SocialHero from "../../content/assets/heros/social_hero.svg";
+
 const Social = () => {
   const siteTitle = useStaticQuery(graphql`
     query {
@@ -40,9 +42,8 @@ const Social = () => {
           title="social"
           keywords={[`social`, `amazon`, `stop motion`, `facebook`]}
         />
+        <SocialHero width="100%" height="80%" />
         <div className="socialwrapper">
-          <h3>Social</h3>
-          <p>Short form content for facebook and twitter</p>
           <div className="row">
             <Frame
               id="1"
