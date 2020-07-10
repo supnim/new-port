@@ -1,7 +1,7 @@
 import React from "react";
 import Img from "gatsby-image";
 import Carousel from "react-bootstrap/Carousel";
-import "bootstrap/dist/css/bootstrap.css";
+import "../utils/css/components/carousel.css";
 
 function Slide({
   one,
