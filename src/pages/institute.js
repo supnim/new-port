@@ -5,9 +5,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
 import CardLeft from "../components/cardLeft";
 import CardRight from "../components/cardRight";
-import Img from "gatsby-image";
 import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
+import Carousel from "../components/carousel";
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
 import course from "../components/gifs/institute/course.gif";
@@ -62,9 +62,6 @@ function Institute() {
     }
   `);
 
-  const grey = {
-    backgroundColor: "#F5F5F5"
-  };
   const briefStyle = {
     margin: "4rem auto",
     color: "black",
@@ -105,24 +102,21 @@ function Institute() {
               description="first, i explored a styling, something that is in the theme of the current but still different to bring some life"
             />
             <br />
-            <div className="row">
-              <div className="col-6" style={grey}>
-                <Img fluid={image.five.childImageSharp.fluid} />
-              </div>
-              <div className="col-6" style={grey}>
-                <Img fluid={image.four.childImageSharp.fluid} />
-              </div>
+            <div>
+              <Carousel
+                style={{ color: "black" }}
+                one={image.one.childImageSharp.fluid}
+                oneAlt="One"
+                two={image.two.childImageSharp.fluid}
+                twoAlt="Two"
+                three={image.three.childImageSharp.fluid}
+                threeAlt="Three"
+                four={image.four.childImageSharp.fluid}
+                fourAlt="Four"
+                five={image.five.childImageSharp.fluid}
+                fiveAlt="Five"
+              />
             </div>
-            <br />
-            <div className="row">
-              <div className="col-6" style={grey}>
-                <Img fluid={image.three.childImageSharp.fluid} />
-              </div>
-              <div className="col-6" style={grey}>
-                <Img fluid={image.two.childImageSharp.fluid} />
-              </div>
-            </div>
-            <br />
             <CardRight
               key="2"
               image={image.one.childImageSharp.fluid}

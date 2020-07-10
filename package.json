@@ -10,6 +10,7 @@
   "dependencies": {
     "acorn": "^7.3.1",
     "acorn-dynamic-import": "^4.0.0",
+    "bootstrap": "^4.5.0",
     "core-js": "^3.6.5",
     "framer": "^1.2.3",
     "framer-motion": "^1.11.1",
@@ -44,7 +45,7 @@
     "path": "^0.12.7",
     "prismjs": "^1.20.0",
     "react": "^16.13.1",
-    "react-awesome-slider": "^4.1.0",
+    "react-bootstrap": "^1.2.0",
     "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.10.0",
