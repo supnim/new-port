@@ -1,15 +1,24 @@
-import React from "react";
+import React, { Component } from "react";
 import Layout from "../components/layout";
+import Pop from "../../content/assets/heros/error-pop.svg";
 
-function Grounds() {
-  return (
-    <div>
+class Grounds extends Component {
+  state = {
+    show: false
+  };
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({ show: true });
+    }, 5000); //runs after 5sec
+  }
+  render() {
+    return (
       <Layout>
         <h1>Playground</h1>
-        <section></section>
+        <section>{this.state.show && <Pop />}</section>
       </Layout>
-    </div>
-  );
+    );
+  }
 }
 
 export default Grounds;
