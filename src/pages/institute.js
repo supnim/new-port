@@ -8,6 +8,7 @@ import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
 import Carousel from "../components/carousel";
+import Wireframe from "../components/wireframe"; // prefilled carousel
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
 import course from "../components/gifs/institute/course.gif";
@@ -93,6 +94,20 @@ function Institute() {
             </p>
           }
         />
+        <section
+          style={{ maxWidth: "1200px", margin: "0 auto", padding: "4rem 0" }}
+        >
+          <div style={{ textAlign: "center" }}>
+            <TitleP
+              title="wireframing"
+              paragraph="this is the starting stucture"
+            />
+          </div>
+
+          <div style={{ width: "70%", margin: "0 auto", padding: "4rem 0" }}>
+            <Wireframe />
+          </div>
+        </section>
         <section className="row full">
           <div className="col-12">
             <CardLeft
@@ -117,12 +132,14 @@ function Institute() {
                 fiveAlt="Five"
               />
             </div>
+            <br />
             <CardRight
               key="2"
               image={image.one.childImageSharp.fluid}
               title="choosen direction"
               description="even though the other routes were great in their own right, this one took what was already established and elevated it"
             />
+            <br />
             <div className="row">
               <div className="col-6" style={{ backgroundColor: "#F5F5F5" }}>
                 <img src={course} alt="course gif" />
