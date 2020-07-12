@@ -41,17 +41,19 @@
   border: 2px solid white;
   .methTitle,
   .methParagraph,
-  .icon {
+  .methImg {
     color: white;
     fill: white;
   }
 }
+
 .methImg {
-  height: 8vh;
-  width: 8vh;
+  height: 56px;
+  width: 56px;
   display: flex;
   flex-direction: column-reverse;
   margin: 8px 0;
+  color: black;
 }
 .methTitle {
   padding: 0px;
@@ -67,10 +69,4 @@
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 0.2px;
-}
-
-.icon {
-  width: 40px;
-  height: 40px;
-  fill: black;
 }

@@ -23,7 +23,7 @@ function PhotoGallery() {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 100) {
+              fluid(maxWidth: 400) {
                 src
                 srcSet
                 aspectRatio
@@ -36,6 +36,8 @@ function PhotoGallery() {
       }
     }
   `);
+
+  //in here height and width isnt being asigned
   const photos = images.photo.edges.map(
     ({ node }) => node.childImageSharp.fluid
   );
@@ -44,7 +46,7 @@ function PhotoGallery() {
     <div>
       <Gallery
         photos={photos}
-        direction="column"
+        direction="row"
         margin="1rem"
         onClick={openLightbox}
       />

@@ -1,3 +1,4 @@
+import React from "react";
 import {
   FaBraille,
   FaBicycle,
@@ -12,7 +13,7 @@ import {
 export default [
   {
     id: 1,
-    icon: FaEye,
+    icon: <FaEye size={40} />,
     title: "understand",
     background: "design",
     standfirst:
@@ -20,7 +21,7 @@ export default [
   },
   {
     id: 2,
-    icon: FaBicycle,
+    icon: <FaBicycle size={40} />,
     title: "explore",
     background: "background2",
     standfirst:
@@ -28,7 +29,7 @@ export default [
   },
   {
     id: 3,
-    icon: FaBraille,
+    icon: <FaBraille size={40} />,
     title: "plan",
     background: "background3",
     standfirst:
@@ -36,7 +37,7 @@ export default [
   },
   {
     id: 4,
-    icon: FaObjectGroup,
+    icon: <FaObjectGroup size={40} />,
     title: "design",
     background: "background4",
     standfirst:
@@ -44,7 +45,7 @@ export default [
   },
   {
     id: 5,
-    icon: FaFile,
+    icon: <FaFile size={40} />,
     title: "test",
     background: "background5",
     standfirst:
@@ -52,14 +53,14 @@ export default [
   },
   {
     id: 6,
-    icon: FaCubes,
+    icon: <FaCubes size={40} />,
     title: "develop",
     background: "background6",
     standfirst: "break-down and organise to build MVP (Minimum Viable Product)"
   },
   {
     id: 7,
-    icon: FaFileAlt,
+    icon: <FaFileAlt size={40} />,
     title: "test again",
     background: "background7",
     standfirst:
@@ -67,7 +68,7 @@ export default [
   },
   {
     id: 8,
-    icon: FaSyncAlt,
+    icon: <FaSyncAlt size={40} />,
     title: "loop",
     background: "background8",
     standfirst:
