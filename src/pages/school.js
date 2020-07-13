@@ -8,7 +8,7 @@ import Brief from "../components/brief";
 
 import SchoolImg from "../../content/assets/heros/tes_for_schools_hero.svg";
 
-function DesignSystem() {
+function School() {
   const image = useStaticQuery(graphql`
     query {
       end1: file(relativePath: { eq: "projects/schools/end1.png" }) {
@@ -158,4 +158,4 @@ function DesignSystem() {
   );
 }
 
-export default DesignSystem;
+export default School;
