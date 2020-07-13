@@ -9,29 +9,40 @@ import Schools from "../../content/assets/thumbnails/tes_for_school.svg";
 import Pagebuilder from "../../content/assets/thumbnails/page_builder.svg";
 import Institute from "../../content/assets/thumbnails/institute.svg";
 import Designsystem from "../../content/assets/thumbnails/design_system.svg";
+import Redesign from "../../content/assets/thumbnails/redesign.svg";
 
 function AmazonPage() {
   return (
     <Layout>
       <SEO
-        title="home"
-        keywords={[`UX`, `UI`, `london`, `amazon`, `ecommerce`]}
+        title="Tes Global"
+        keywords={[
+          `global`,
+          `teaching`,
+          `london`,
+          `publication`,
+          `education`,
+          `times`,
+          `supplyment`,
+          `teachers`
+        ]}
       />
       <div className={"jobHero"}>
-        <Tes className={"amazonLogo"} />
+        <Tes width="15%" height="15%" className={"amazonLogo"} />
         <p className={"amazonParagraphy"}>
-          is the uk's largest network for teachers and schools, with an
-          increasingly large global footprint. originally the times educational
-          supplement, tes has transformed into a truly saas business in the last
-          3 years. as the main designer for news and magazine, i facilitate the
-          uninterrupted output of a 100-year-old running editorial team. i head
-          up the production and implementation of the design system, alongside
-          constructing a component-based cms, operating on 60% of tes's main
-          site. through this, we were able to focus on the company as a single
-          entity, deliver a more integrated and fluid user experience.
+          A 100-year-old publication originally started as Times Educational
+          Supplement. Currently have been transforming into a SaaS business in
+          the last 3 years. I head up the production and implementation of the
+          design system, alongside constructing a component-based CMS, which
+          makes up 60% of the site and through this, we were able to focus on
+          the company as a single entity, deliver a more integrated and fluid
+          user experience.
         </p>
       </div>
       <div className="tesJobs row">
+        <Link className="col-12 redesign" to={`/redesign`}>
+          <Redesign width="100%" height="100%" />
+        </Link>
         <Link className="col-7 design" to={`/design-system`}>
           <Designsystem width="100%" height="100%" />
         </Link>

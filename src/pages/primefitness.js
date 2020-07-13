@@ -48,13 +48,13 @@ function PrimeFitness() {
         <Brief
           style={briefStyle}
           title="Insight"
-          paragraph="people are more aware of what they consume, and are consciously taking action to change their lifestyle. with that said, these are the problems i've identified and solved through this idea."
-          one="want to exercise and stay health"
-          two="don't know what to eat"
-          three="maximise produce and reduce waste"
+          paragraph="People are more aware of what they consume, and are consciously taking action to change their lifestyle. With that said, these are the problems I've identified and solved through this idea."
+          one="Want to exercise and stay health"
+          two="Don't know what to eat"
+          three="Maximise produce and reduce waste"
           postscript={
             <p>
-              in addition it was important to me to make it as convenient as
+              In addition it was important to me to make it as convenient as
               possible and have it working holistically within the amazon
               eco-system.{" "}
               <a href="https://drive.google.com/file/d/1KmgRvISb8zxt50Cd9PnixGqEebb43Ibh/view">
@@ -68,13 +68,13 @@ function PrimeFitness() {
             <Goals
               rank="1st"
               title="Choose a goal"
-              sub="from: losing weight to gaining muscle or getting lean whatever it may be."
+              sub="from: losing weight to gaining muscle or getting lean"
             />
             <Goals
               rank="2nd"
               title="Workout & meal planning"
               sub="exercise and meals are planned for you according to intensity-frequency 
-            of workouts."
+            of workouts you choose"
             />
             <Goals
               rank="3rd"
@@ -89,7 +89,7 @@ function PrimeFitness() {
             >
               <TitleP
                 title="Connect"
-                paragraph="a smart watch that tracks intake and expenditure of calories; syncing it back to the amazon 
+                paragraph="a smart watch that tracks intake and expenditure of calories; syncing it back to your goal 
 eco-system."
               />
             </div>
@@ -137,7 +137,7 @@ eco-system."
             >
               <TitleP
                 title="PrimeFitness App"
-                paragraph="the portable hub of the operation; at quick glance you see current status and next steps.users can add meals and workouts into the system via the app."
+                paragraph="The portable hub of the operation; at quick glance you see current status and next steps. Users can add meals and workouts into the system via the app."
               />
             </div>
             <div className="col-4" style={{ alignSelf: "center" }}>
@@ -155,7 +155,7 @@ eco-system."
             <div className="col-4" style={{ alignSelf: "center" }}>
               <Info
                 title="Planning route"
-                paragraph="using amazon logistics, running/cycling routes can be plotted to users needs. e.g. ”alexa, i want to cycle 20 miles, avoiding busy roads"
+                paragraph="Using amazon logistics, running/cycling routes can be plotted to users needs. e.g. ”Alexa, I want to cycle 20 miles, avoiding busy roads"
               />
             </div>
           </section>
@@ -165,13 +165,13 @@ eco-system."
             >
               <TitleP
                 title="Virtual pantry"
-                paragraph="meal prep station; here you can see all the food you have in your house virtually represented along with suggested recipes on the right - which is curated taking into consideration the ingredients you already have to maximise produce and reduce waste."
+                paragraph="Meal prep station; here you see all the food you have in your house virtually represented along with suggested recipes on the right - which is curated taking into consideration the ingredients you already have and the expiration date to maximise produce and reduce waste."
               />
             </div>
             <div className="col-4" style={{ alignSelf: "center" }}>
               <Info
                 title="Recipe recommendations"
-                paragraph="ingredients data used to complete recipes that 
+                paragraph="Ingredients data used to complete recipes that 
                 we think you’d like."
               />
             </div>
@@ -181,7 +181,7 @@ eco-system."
             <div className="col-4" style={{ alignSelf: "center" }}>
               <Info
                 title="Product suggestions"
-                paragraph="current items data used to shows similar product"
+                paragraph="Current items data used to shows similar product"
               />
             </div>
           </section>

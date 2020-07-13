@@ -16,19 +16,19 @@ function AmazonPage() {
     <Layout>
       <SEO
         title="Amazon"
-        keywords={[`UX`, `UI`, `london`, `Amazon`, `ecommerce`]}
+        keywords={[`UX`, `UI`, `london`, `Amazon`, `ecommerce`, `amazon.com`]}
       />
       <div className="jobHero">
         <Amazon className="amazonLogo" />
         <p className="amazonParagraphy">
-          multinational technology company that focuses on e-commerce, cloud
-          computing, digital streaming, and artificial intelligence. during my
-          time there i've learnt a great deal; from new skills to different
+          An international technology company that focuses on e-commerce, cloud
+          computing, digital streaming, and artificial intelligence. During my
+          time there I've learnt a great deal; from new skills to different
           methods of approaching, thinking and targeting audiences according to
-          the given brief. the tasks widely ranged from branding and content
-          creation for social outlets to concepts for ad campaigns. alongside
-          this i was involved in art directing photo-shoots, heading 360 video
-          case studies, ideating for projects and much more.
+          the given brief. The tasks widely ranged from branding and content
+          creation for social outlets to concepts for ad campaigns. Alongside
+          this I was involved in art directing photo-shoots, overseeing 360
+          video case studies, ideating for projects and much more.
         </p>
       </div>
       <div className="amazonJobs row">

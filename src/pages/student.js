@@ -42,7 +42,7 @@ const Student = () => {
       <Layout title={siteTitle}>
         <SEO
           title="Music for students"
-          keywords={[`music`, `amazon`, `students`, `promo`]}
+          keywords={[`music`, `amazon`, `students`, `promo`, `advertisement`]}
         />
         <div style={{ backgroundColor: "yellow", alignContent: "end" }}>
           <StudentHero width="100%" height="auto" />
@@ -51,11 +51,11 @@ const Student = () => {
           <div className="col-8">
             <TitleP
               title="Brief"
-              paragraph="to create ads to inform students of the features and the offer that is on.
+              paragraph="To create ads to inform students of the features and the offer that are on.
 
-              this was a wonderful collaborative project, with many parts. i and another creative worked together to ideate on demonstration these features - taking into consideration of our target audience which was students and how to appeal to them. for that matter, the style had to be eye-grabbing and scroll stopping. after storyboarding the idea it was taken to animators. where they rotoscoped footage i shot of members of the team. 
-              
-              involved: ad's, head of social, campaign managers, amazon music team and numerous others."
+              This was a collaborative project, with many parts. I and another creative worked together to ideate on demonstration these features - taking into consideration of our target audience of students and how to appeal to them. For that matter, the style had to be eye-grabbing and scroll stopping. After storyboarding the idea it was taken to animators, where they rotoscoped footage I shot of members of the team. 
+               
+              Involved: ad's, head of social, campaign managers, Amazon Music team and numerous others."
             />
           </div>
           <div className="row">

@@ -8,7 +8,7 @@ import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
 import Carousel from "../components/carousel";
-import Wireframe from "../components/wireframe"; // prefilled carousel
+import Wireframe from "../components/wireframe-institute"; // prefilled carousel
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
 import course from "../components/gifs/institute/course.gif";
@@ -84,10 +84,9 @@ function Institute() {
           title="Brief"
           paragraph={
             <p>
-              give institute a facelift/rebranding. tes institute is a leading
-              provider of online courses and programmes with a particular focus
-              on teacher training and development this is what it looked like
-              before:{" "}
+              To align and future-proof. Tes Institute is a leading provider of
+              online courses and to visually represent it as so. this is what it
+              looked like before:{" "}
               <a href="https://web.archive.org/web/20200513133158/https://www.tes.com/institute/">
                 <b>this</b>
               </a>
@@ -99,8 +98,8 @@ function Institute() {
         >
           <div style={{ textAlign: "center" }}>
             <TitleP
-              title="wireframing"
-              paragraph="this is the starting stucture"
+              title="              Wireframing"
+              paragraph="Figuring out the structure and sketching out the foundation of the rebuild"
             />
           </div>
 
@@ -114,7 +113,7 @@ function Institute() {
               key="1"
               image={image.mix.childImageSharp.fluid}
               title="Art direction"
-              description="first, i explored a styling, something that is in the theme of the current but still different to bring some life"
+              description="First, I explored styling, something that is in the theme of the current but still evolving it"
             />
             <br />
             <div>
@@ -136,8 +135,8 @@ function Institute() {
             <CardRight
               key="2"
               image={image.one.childImageSharp.fluid}
-              title="choosen direction"
-              description="even though the other routes were great in their own right, this one took what was already established and elevated it"
+              title="Choosen direction"
+              description="Even though the other routes were great in their own right, this one took what was already established and elevated it"
             />
             <br />
             <div className="row">
@@ -150,7 +149,7 @@ function Institute() {
               >
                 <TitleP
                   title="Component"
-                  paragraph="then i componentized the rebuild to make it more efficient and move away from making things one time, plus this allows us to build pages fast"
+                  paragraph="I componentized the rebuild to make it more efficient and move away from making one off things, plus this allows us to build pages fast"
                 />
               </div>
             </div>

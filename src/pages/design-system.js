@@ -106,8 +106,8 @@ function DesignSystem() {
             <CardLeft
               key="1"
               image={image.typography.childImageSharp.fluid}
-              title="core"
-              description="this is the first and most important part of the design system; everything is built of this. its mainly comprised of typography, colour and icons"
+              title="Core"
+              description="This is the first and most important part of the design system; everything is built of this. Its mainly comprised of typography, colour and icons - the base of all that we're building off"
             />
             <div className="row">
               <div className="col-6">
@@ -120,8 +120,8 @@ function DesignSystem() {
             <CardRight
               key="2"
               image={image.element.childImageSharp.fluid}
-              title="elements"
-              description="we're building on what we've built. combining multiple core parts to make more complex pieces"
+              title="Elements"
+              description="We're building on what we've built. combining multiple core parts to make more complex pieces"
             />
             <div className="row">
               <div className="col-6">
@@ -149,7 +149,7 @@ function DesignSystem() {
               >
                 <TitleP
                   title="Component"
-                  paragraph="the final building blocks of the design system. an agreed-upon, unified component list used sitewide. providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
+                  paragraph="The final building blocks of the design system. an agreed-upon, unified component list used sitewide. Providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
                 />
               </div>
             </div>
@@ -168,7 +168,7 @@ function DesignSystem() {
               <div className="col-12" style={{ margin: "4rem" }}>
                 <TitleP
                   title="What's next?"
-                  paragraph="layout libraries, baking in motion, further implementation of accessibility, creating user journey ( e.g checkout / onboarding ) and aligning marketing and editorial style guides "
+                  paragraph="Layout libraries, baking in motion, further implementation of accessibility, creating user journey ( e.g  onboarding / checkout ) and aligning marketing and editorial style guides"
                 />
               </div>
             </div>

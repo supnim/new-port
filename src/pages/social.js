@@ -40,7 +40,15 @@ const Social = () => {
       <Layout title={siteTitle}>
         <SEO
           title="social"
-          keywords={[`social`, `amazon`, `stop motion`, `facebook`]}
+          keywords={[
+            `social`,
+            `amazon`,
+            `stop motion`,
+            `facebook`,
+            `twitter`,
+            `360`,
+            `art direction`
+          ]}
         />
         <SocialHero width="100%" height="80%" />
         <div className="socialwrapper">

@@ -275,7 +275,7 @@ function DesignSystem() {
             <div style={{ textAlign: "center" }}>
               <TitleP
                 title="Unlimited playlist"
-                paragraph="a collection of specially curated playlists to reflect a variety of moods."
+                paragraph="A collection of specially curated playlists to reflect a variety of moods."
               />
             </div>
             <div className="row" style={{ display: "flex" }}>
@@ -309,7 +309,7 @@ function DesignSystem() {
             <div style={{ textAlign: "center" }}>
               <TitleP
                 title="Cutting Edge"
-                paragraph="the brief was to recreate artwork aimed for a niche audience - the connoisseurs of the genre."
+                paragraph="Artwork aimed at the connoisseurs of the genre."
               />
             </div>
             <div className="row" style={{ display: "flex" }}>
@@ -343,7 +343,7 @@ function DesignSystem() {
             <div style={{ textAlign: "center" }}>
               <TitleP
                 title="best of 2017 so far"
-                paragraph="the following playlist artworks represent the best of the year in their respected categories. i created the artist-focused, bold, distinctive style to help separate them from other playlists on the music service."
+                paragraph="The following playlist artworks represent the best of the year in their respected categories."
               />
             </div>
             <div className="row" style={{ display: "flex" }}>

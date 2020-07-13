@@ -1,22 +1,11 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
 import TravelHero from "../../content/assets/heros/travel_store_hero.svg";
 import TitleP from "../components/TitleP";
 
 const Travel = () => {
-  const siteTitle = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `);
-
   const Frame = ({ id, title, link }) => {
     return (
       <div className="auto">
@@ -39,9 +28,9 @@ const Travel = () => {
 
   return (
     <div className="">
-      <Layout title={siteTitle}>
+      <Layout title="Travel">
         <SEO
-          title="travel"
+          title="Travel"
           keywords={[`travel`, `amazon`, `stop motion`, `facebook`]}
         />
         <TravelHero width="100%" height="auto" />
@@ -49,13 +38,7 @@ const Travel = () => {
           <div className="col-8">
             <TitleP
               title="Aim"
-              paragraph="these animations were made to drive traffic to the new summer 2017
-            travel store. each animation depicts personas of different types of
-            travel/ holiday goers. local versions of each idea to suit the eu
-            market; uk, germany, france, italy and spain, were produced working
-            together, me and an illustrator storyboarded, pitched and created
-            these animations.found this to be a great learning project, as
-            before this i had no animating experience."
+              paragraph="These animations were made to drive traffic to the new summer 2017 travel store. Each animation depicts different types of travel/holiday goers. Local versions of each idea to suit the EU market; UK, Germany, France, Italy and Spain were produced. Working together, an illustrator and I storyboarded, pitched and created these animations. Found this to be a great learning project, as, before this, I had no animating experience.more."
             />
           </div>
           <div className="row">
