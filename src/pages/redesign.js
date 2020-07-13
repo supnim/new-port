@@ -70,7 +70,7 @@ function Redesign() {
         />
         <section
           className="row full"
-          style={{ height: "100vh", backgroundColor: "black" }}
+          style={{ height: "150vh", backgroundColor: "black" }}
         >
           <div
             style={{
