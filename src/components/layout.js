@@ -19,6 +19,8 @@ const Layout = props => {
           >
             <div
               className="hamburger hamburger--collapse"
+              aria-pressed="false"
+              aria-haspopup="true"
               aria-label="Menu"
               role="button"
               aria-controls="navigation"
@@ -29,33 +31,33 @@ const Layout = props => {
             </div>
           </a>
           <nav id="swup" className="site-head-left">
-            <Link className="site-head-logo" to={`/`}>
-              <Logo />
+            <Link rel="preconnect" className="site-head-logo" to={`/`}>
+              <Logo alt="supnim logo" />
             </Link>
           </nav>
           <div className="site-head-right">
-            <ul className="nav">
-              <li className="nav-home">
+            <ul className="nav" role="menu" aria-labelledby="menubutton">
+              <li role="menuitem" className="nav-home">
                 <Link to={`/`}>home</Link>
               </li>
-              <li className="nav-work">
+              <li role="menuitem" className="nav-work">
                 <Link to={`/`} onClick={() => scrollTo("#jobs")}>
                   work
                 </Link>
               </li>
-              <li className="nav-photo">
+              <li role="menuitem" className="nav-photo">
                 <Link to={`/photo`}>photo</Link>
               </li>
-              <li className="nav-video">
+              <li role="menuitem" className="nav-video">
                 <Link to={`/video`}>video</Link>
               </li>
-              <li className="nav-audio">
+              <li role="menuitem" className="nav-audio">
                 <Link to={`/audio`}>audio</Link>
               </li>
-              <li className="nav-contact">
+              <li role="menuitem" className="nav-contact">
                 <Link to={`/contact`}>contact</Link>
               </li>
-              <li className="nav-contact">
+              <li role="menuitem" className="nav-contact">
                 <Link to={`/playground`}>playground</Link>
               </li>
             </ul>
@@ -69,8 +71,8 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         <div className="footer-logo">
-          <Link className="site-head-logo" to={`/`}>
-            <Logo />
+          <Link rel="preconnect" className="site-head-logo" to={`/`}>
+            <Logo alt="supnim logo" />
           </Link>
         </div>
         <div className="footer-text">
