@@ -196,7 +196,7 @@ p {
 .site-head {
   position: relative;
   z-index: 300;
-  padding: 0 16px;
+  padding: 16px;
   font-size: 1.5rem;
   background-color: black;
   /* theme color var */
