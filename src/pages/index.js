@@ -67,63 +67,38 @@ const Index = ({ data }, location) => {
       )}
       <section className="jobwrapper">
         <div className="row jobs" id="jobs">
-          <Link rel="preconnect" className="col-7 tes" alt="tes" to={`/tes`}>
+          <Link rel="preconnect" className="col-7 tes" to={`/tes`}>
             <Tes width="100%" height="80%" />
           </Link>
-          <Link
-            rel="preconnect"
-            className="col-5 amazon"
-            alt="amazon"
-            to={`/amazon`}
-          >
+          <Link rel="preconnect" className="col-5 amazon" to={`/amazon`}>
             <Amazon width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link
-            rel="preconnect"
-            className="col-5 one-card"
-            alt="one card"
-            to={`/one-card`}
-          >
+          <Link rel="preconnect" className="col-5 one-card" to={`/one-card`}>
             <OneCard width="100%" height="100%" />
           </Link>
-          <Link
-            rel="preconnect"
-            className="col-7 bookwise"
-            alt="bookwise"
-            to={`/bookwise`}
-          >
+          <Link rel="preconnect" className="col-7 bookwise" to={`/bookwise`}>
             <Bookwise width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link
-            rel="preconnect"
-            className="col-7 knowhere"
-            alt="knowhere"
-            to={`/knowhere`}
-          >
+          <Link rel="preconnect" className="col-7 knowhere" to={`/knowhere`}>
             <Knowhere width="100%" height="100%" />
           </Link>
-          <Link
-            rel="preconnect"
-            className="col-5 volvic"
-            alt="volvic"
-            to={`/volvic`}
-          >
+          <Link rel="preconnect" className="col-5 volvic" to={`/volvic`}>
             <Volvic width="100%" height="100%" />
           </Link>
         </div>
         <Methodogly />
         <div className="graphy row">
-          <Link className="col-4 look" alt="look" to={`/photo`}>
+          <Link className="col-4 look" to={`/photo`}>
             <p>LOOK</p>
           </Link>
-          <Link className="col-4 listen" alt="listen" to={`/audio`}>
+          <Link className="col-4 listen" to={`/audio`}>
             <p>LISTEN</p>
           </Link>
-          <Link className="col-4 watch" alt="watch" to={`/video`}>
+          <Link className="col-4 watch" to={`/video`}>
             <p>WATCH</p>
           </Link>
         </div>

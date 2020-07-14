@@ -29,7 +29,7 @@ const Layout = props => {
             </div>
           </a>
           <nav id="swup" className="site-head-left">
-            <Link className="site-head-logo" alt="supnim logo" to={`/`}>
+            <Link className="site-head-logo" to={`/`}>
               <Logo />
             </Link>
           </nav>
@@ -69,7 +69,7 @@ const Layout = props => {
       </main>
       <footer className="site-foot">
         <div className="footer-logo">
-          <Link className="site-head-logo" alt="supnim logo" to={`/`}>
+          <Link className="site-head-logo" to={`/`}>
             <Logo />
           </Link>
         </div>

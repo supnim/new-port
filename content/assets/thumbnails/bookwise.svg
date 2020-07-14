@@ -44,7 +44,7 @@
                 </mask>
                 <use fill="#222222" fill-rule="nonzero" xlink:href="#path-7"></use>
                 <g mask="url(#mask-8)" fill="#FD8D5F">
-                    <polygon points="0 0 91 0 91 91 0 91"></polygon>
+                    <polygon id="#EB612A" points="0 0 91 0 91 91 0 91"></polygon>
                 </g>
             </g>
         </g>
