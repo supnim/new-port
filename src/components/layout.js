@@ -19,7 +19,6 @@ const Layout = props => {
           >
             <div
               className="hamburger hamburger--collapse"
-              aria-pressed="false"
               aria-haspopup="true"
               aria-label="Menu"
               role="button"
@@ -36,28 +35,28 @@ const Layout = props => {
             </Link>
           </nav>
           <div className="site-head-right">
-            <ul className="nav" role="menu" aria-labelledby="menubutton">
-              <li role="menuitem" className="nav-home">
+            <ul className="nav">
+              <li className="nav-home">
                 <Link to={`/`}>home</Link>
               </li>
-              <li role="menuitem" className="nav-work">
+              <li className="nav-work">
                 <Link to={`/`} onClick={() => scrollTo("#jobs")}>
                   work
                 </Link>
               </li>
-              <li role="menuitem" className="nav-photo">
+              <li className="nav-photo">
                 <Link to={`/photo`}>photo</Link>
               </li>
-              <li role="menuitem" className="nav-video">
+              <li className="nav-video">
                 <Link to={`/video`}>video</Link>
               </li>
-              <li role="menuitem" className="nav-audio">
+              <li className="nav-audio">
                 <Link to={`/audio`}>audio</Link>
               </li>
-              <li role="menuitem" className="nav-contact">
+              <li className="nav-contact">
                 <Link to={`/contact`}>contact</Link>
               </li>
-              <li role="menuitem" className="nav-contact">
+              <li className="nav-contact">
                 <Link to={`/playground`}>playground</Link>
               </li>
             </ul>
