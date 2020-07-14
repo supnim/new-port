@@ -1,19 +1,19 @@
 // Base
 import React from "react";
-import { graphql, StaticQuery } from "gatsby";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
+import "../utils/css/components/theme.scss";
+import "../script/typing";
 
 // Skelton
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-// import PostCard from "../components/postCard" // article card
+import { graphql, StaticQuery } from "gatsby";
 import { Link } from "gatsby";
 import scrollTo from "gatsby-plugin-smoothscroll";
+// import PostCard from "../components/postCard" // article card
 
-// Component + theme
-import "../script/typing";
-import "../utils/css/components/theme.scss";
+// Component
 import ScrollIcon from "../../content/assets/scrollIcon.svg";
 import Amazon from "../../content/assets/thumbnails/amazon_logo.svg";
 import Tes from "../../content/assets/thumbnails/tes.svg";
@@ -67,26 +67,26 @@ const Index = ({ data }, location) => {
       )}
       <section className="jobwrapper">
         <div className="row jobs" id="jobs">
-          <Link className="col-7 tes" to={`/tes`}>
+          <Link rel="preconnect" className="col-7 tes" to={`/tes`}>
             <Tes width="100%" height="80%" />
           </Link>
-          <Link className="col-5 amazon" to={`/amazon`}>
+          <Link rel="preconnect" className="col-5 amazon" to={`/amazon`}>
             <Amazon width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link className="col-5 one-card" to={`/one-card`}>
+          <Link rel="preconnect" className="col-5 one-card" to={`/one-card`}>
             <OneCard width="100%" height="100%" />
           </Link>
-          <Link className="col-7 bookwise" to={`/bookwise`}>
+          <Link rel="preconnect" className="col-7 bookwise" to={`/bookwise`}>
             <Bookwise width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link className="col-7 knowhere" to={`/knowhere`}>
+          <Link rel="preconnect" className="col-7 knowhere" to={`/knowhere`}>
             <Knowhere width="100%" height="100%" />
           </Link>
-          <Link className="col-5 volvic" to={`/volvic`}>
+          <Link rel="preconnect" className="col-5 volvic" to={`/volvic`}>
             <Volvic width="100%" height="100%" />
           </Link>
         </div>

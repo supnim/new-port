@@ -14,25 +14,25 @@
         <text font-family="GillSans-SemiBold, Gill Sans" font-size="100" font-weight="500" fill="#CA592C">
             <tspan x="48.3769531" y="285">bookwise</tspan>
         </text>
-        <g id="icons/32px/paper-plane" transform="translate(415.783651, 184.783651) rotate(21.000000) translate(-415.783651, -184.783651) translate(370.283651, 139.283651)">
-            <g id="Icon-frame">
+        <g  transform="translate(415.783651, 184.783651) rotate(21.000000) translate(-415.783651, -184.783651) translate(370.283651, 139.283651)">
+            <g>
                 <mask id="mask-2" fill="white">
                     <use xlink:href="#path-1"></use>
                 </mask>
-                <g id="Rectangle-2"></g>
+                <g></g>
             </g>
-            <g id="Icon">
+            <g>
                 <mask id="mask-4" fill="white">
                     <use xlink:href="#path-3"></use>
                 </mask>
-                <use id="icon/paper-plane" fill="#222222" fill-rule="nonzero" xlink:href="#path-3"></use>
-                <g id="colours/burning-orange/20" mask="url(#mask-4)" fill="#FFE2D7">
+                <use fill="#222222" fill-rule="nonzero" xlink:href="#path-3"></use>
+                <g  mask="url(#mask-4)" fill="#FFE2D7">
                     <polygon id="#EB612A" points="0 0 91 0 91 91 0 91"></polygon>
                 </g>
             </g>
         </g>
-        <g id="icons/32px/paper-plane" transform="translate(418.783651, 179.783651) rotate(21.000000) translate(-418.783651, -179.783651) translate(373.283651, 134.283651)">
-            <g id="Icon-frame">
+        <g  transform="translate(418.783651, 179.783651) rotate(21.000000) translate(-418.783651, -179.783651) translate(373.283651, 134.283651)">
+            <g>
                 <mask id="mask-6" fill="white">
                     <use xlink:href="#path-5"></use>
                 </mask>
@@ -42,8 +42,8 @@
                 <mask id="mask-8" fill="white">
                     <use xlink:href="#path-7"></use>
                 </mask>
-                <use id="icon/paper-plane" fill="#222222" fill-rule="nonzero" xlink:href="#path-7"></use>
-                <g id="colours/burning-orange/80" mask="url(#mask-8)" fill="#FD8D5F">
+                <use fill="#222222" fill-rule="nonzero" xlink:href="#path-7"></use>
+                <g mask="url(#mask-8)" fill="#FD8D5F">
                     <polygon id="#EB612A" points="0 0 91 0 91 91 0 91"></polygon>
                 </g>
             </g>
