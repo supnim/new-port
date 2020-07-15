@@ -67,38 +67,66 @@ const Index = ({ data }, location) => {
       )}
       <section className="jobwrapper">
         <div className="row jobs" id="jobs">
-          <Link className="col-7 tes" to={`/tes`}>
+          <Link aria-label="tes projects" className="col-7 tes" to={`/tes`}>
             <Tes width="100%" height="80%" />
           </Link>
-          <Link className="col-5 amazon" to={`/amazon`}>
+          <Link
+            aria-label="amazon projects"
+            className="col-5 amazon"
+            to={`/amazon`}
+          >
             <Amazon width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link className="col-5 one-card" to={`/one-card`}>
+          <Link
+            aria-label="onecard project"
+            className="col-5 one-card"
+            to={`/one-card`}
+          >
             <OneCard width="100%" height="100%" />
           </Link>
-          <Link className="col-7 bookwise" to={`/bookwise`}>
+          <Link
+            aria-label="bookwise project"
+            className="col-7 bookwise"
+            to={`/bookwise`}
+          >
             <Bookwise width="100%" height="100%" />
           </Link>
         </div>
         <div className="row jobs">
-          <Link className="col-7 knowhere" to={`/knowhere`}>
+          <Link
+            aria-label="knowhere project"
+            className="col-7 knowhere"
+            to={`/knowhere`}
+          >
             <Knowhere width="100%" height="100%" />
           </Link>
-          <Link className="col-5 volvic" to={`/volvic`}>
+          <Link
+            aria-label="volvic project"
+            className="col-5 volvic"
+            to={`/volvic`}
+          >
             <Volvic width="100%" height="100%" />
           </Link>
         </div>
         <Methodogly />
         <div className="graphy row">
-          <Link className="col-4 look" to={`/photo`}>
+          <Link
+            aria-label="look at pictures"
+            className="col-4 look"
+            to={`/photo`}
+          >
             <p>LOOK</p>
           </Link>
-          <Link className="col-4 listen" to={`/audio`}>
+          <Link
+            aria-label="listen to music"
+            className="col-4 listen"
+            to={`/audio`}
+          >
             <p>LISTEN</p>
           </Link>
-          <Link className="col-4 watch" to={`/video`}>
+          <Link aria-label="watch videos" className="col-4 watch" to={`/video`}>
             <p>WATCH</p>
           </Link>
         </div>

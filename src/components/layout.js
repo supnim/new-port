@@ -19,8 +19,8 @@ const Layout = props => {
           >
             <div
               className="hamburger hamburger--collapse"
-              aria-label="Menu"
-              role="button"
+              aria-label="nav"
+              role="navigation"
               aria-controls="navigation"
             >
               <div className="hamburger-box">
@@ -28,13 +28,13 @@ const Layout = props => {
               </div>
             </div>
           </a>
-          <nav id="swup" className="site-head-left">
-            <Link className="site-head-logo" to={`/`}>
+          <nav className="site-head-left">
+            <Link className="site-head-logo" aria-label="supnim logo" to={`/`}>
               <Logo />
             </Link>
           </nav>
-          <div className="site-head-right">
-            <ul className="nav" role="menu" aria-labelledby="menubutton">
+          <div className="site-head-right" role="menu">
+            <ul className="nav" role="menubar" aria-label="menu">
               <li role="menuitem" className="nav-home">
                 <Link to={`/`}>home</Link>
               </li>
@@ -63,13 +63,11 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div id="swup" className="transition-fade">
-          {children}
-        </div>
+        <div className="transition-fade">{children}</div>
       </main>
       <footer className="site-foot">
         <div className="footer-logo">
-          <Link className="site-head-logo" to={`/`}>
+          <Link className="site-head-logo" aria-label="supnim logo" to={`/`}>
             <Logo />
           </Link>
         </div>
