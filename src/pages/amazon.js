@@ -19,7 +19,7 @@ function AmazonPage() {
         keywords={[`UX`, `UI`, `london`, `Amazon`, `ecommerce`, `amazon.com`]}
       />
       <div className="jobHero">
-        <Amazon className="amazonLogo" />
+        <Amazon width="100%" height="100%" className="amazonLogo" />
         <p className="amazonParagraphy">
           An international technology company that focuses on e-commerce, cloud
           computing, digital streaming, and artificial intelligence. During my

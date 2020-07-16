@@ -84,7 +84,12 @@ const Layout = props => {
             <a href="/primefitness">primefitness</a>
           </div>
           <div title="using ReactJS">
-            &copy; {new Date().getFullYear()} &mdash; handmade with {" ♥︎ "}
+            <a></a>
+            &copy; {new Date().getFullYear()} &mdash;{" "}
+            <a style={{ color: "white" }} href="https://github.com/supnim">
+              handmade{" "}
+            </a>{" "}
+            with {" ♥︎ "}
           </div>
         </div>
         <div className="footer-buttons">

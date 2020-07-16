@@ -55,7 +55,7 @@ const Index = ({ data }, location) => {
                 alt="scrollicon"
                 style={{
                   fill: "white",
-                  marginTop: "4rem",
+                  marginTop: "8rem",
                   height: "40px",
                   width: "40px",
                   paddingTop: "1rem"
@@ -67,13 +67,19 @@ const Index = ({ data }, location) => {
       )}
       <section className="jobwrapper">
         <div className="row jobs" id="jobs">
-          <Link aria-label="tes projects" className="col-7 tes" to={`/tes`}>
+          <Link
+            rel="preconnect"
+            aria-label="tes projects"
+            className="col-7 tes"
+            to={`/tes`}
+          >
             <Tes width="100%" height="80%" />
           </Link>
           <Link
             aria-label="amazon projects"
             className="col-5 amazon"
             to={`/amazon`}
+            rel="preconnect"
           >
             <Amazon width="100%" height="100%" />
           </Link>
@@ -83,6 +89,7 @@ const Index = ({ data }, location) => {
             aria-label="onecard project"
             className="col-5 one-card"
             to={`/one-card`}
+            rel="preconnect"
           >
             <OneCard width="100%" height="100%" />
           </Link>
@@ -90,6 +97,7 @@ const Index = ({ data }, location) => {
             aria-label="bookwise project"
             className="col-7 bookwise"
             to={`/bookwise`}
+            rel="preconnect"
           >
             <Bookwise width="100%" height="100%" />
           </Link>
@@ -99,6 +107,7 @@ const Index = ({ data }, location) => {
             aria-label="knowhere project"
             className="col-7 knowhere"
             to={`/knowhere`}
+            rel="preconnect"
           >
             <Knowhere width="100%" height="100%" />
           </Link>
@@ -106,6 +115,7 @@ const Index = ({ data }, location) => {
             aria-label="volvic project"
             className="col-5 volvic"
             to={`/volvic`}
+            rel="preconnect"
           >
             <Volvic width="100%" height="100%" />
           </Link>

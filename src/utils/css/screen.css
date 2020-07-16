@@ -440,11 +440,13 @@ p {
     border-bottom: var(--color-base) 2px solid;
   }
   .site-head-open .site-head-right a {
-    opacity: 0.5;
+    opacity: 0.8;
     font-weight: 400;
+    padding: 1rem 0;
   }
   .site-head-open .site-foot {
     /* display: block; */
+    visibility: hidden;
     position: fixed;
     z-index: 9999;
     bottom: 0;

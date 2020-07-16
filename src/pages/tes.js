@@ -28,7 +28,7 @@ function AmazonPage() {
         ]}
       />
       <div className={"jobHero"}>
-        <Tes width="15%" height="15%" className={"amazonLogo"} />
+        <Tes width="70%" height="70%" className={"amazonLogo"} />
         <p className={"amazonParagraphy"}>
           A 100-year-old publication originally started as Times Educational
           Supplement. Currently have been transforming into a SaaS business in
