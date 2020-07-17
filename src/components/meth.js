@@ -6,23 +6,25 @@ import { motion } from "framer-motion";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
+const defaultBackground = "defaultBackground";
+
 function MethodologyBoard() {
   const [currentCard, setCurrentCard] = useState(defaultBackground);
   const focusStyle = {
     outline: "solid 2px pink"
   };
 
-  const image = useStaticQuery(graphql`
-    query {
-      design: file(relativePath: { eq: "methBackgrounds/design.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 1000) {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-    }
-  `);
+  // const image = useStaticQuery(graphql`
+  //   query {
+  //     design: file(relativePath: { eq: "methBackgrounds/design.png" }) {
+  //       childImageSharp {
+  //         fluid(maxWidth: 1000) {
+  //           ...GatsbyImageSharpFluid
+  //         }
+  //       }
+  //     }
+  //   }
+  // `);
   // const defaultBackground = () => {
   //   return (
   //     <div>
@@ -30,7 +32,6 @@ function MethodologyBoard() {
   //     </div>
   //   );
   // };
-  const defaultBackground = "defaultBackground";
 
   return (
     <div id="board" className="board">
