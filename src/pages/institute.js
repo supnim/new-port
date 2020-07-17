@@ -8,7 +8,6 @@ import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
 import Carousel from "../components/carousel";
-import Wireframe from "../components/wireframe-institute"; // prefilled carousel
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
 import course from "../components/gifs/institute/course.gif";
@@ -60,6 +59,34 @@ function Institute() {
           }
         }
       }
+      home: file(relativePath: { eq: "projects/institute/home.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      cat: file(relativePath: { eq: "projects/institute/courses-cat.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      page: file(relativePath: { eq: "projects/institute/course-page.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      map: file(relativePath: { eq: "projects/institute/sitemap.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -69,6 +96,11 @@ function Institute() {
     backgroundColor: "white",
     border: "2px black solid",
     padding: "4rem"
+  };
+  const style = {
+    color: "white",
+    border: "4px solid #870AF3",
+    backgroundColor: "#870AF3"
   };
 
   return (
@@ -103,8 +135,25 @@ function Institute() {
             />
           </div>
 
-          <div style={{ width: "70%", margin: "0 auto", padding: "4rem 0" }}>
-            <Wireframe />
+          <div
+            style={{
+              width: "70%",
+              margin: "0 auto",
+              margin: "4rem auto",
+              border: "2px solid #870AF3"
+            }}
+          >
+            <Carousel
+              style={style}
+              one={image.map.childImageSharp.fluid}
+              oneAlt="site map structure"
+              two={image.home.childImageSharp.fluid}
+              twoAlt="homepage layout"
+              three={image.cat.childImageSharp.fluid}
+              threeAlt="course catalogue page"
+              four={image.page.childImageSharp.fluid}
+              fourAlt="course detail page"
+            />
           </div>
         </section>
         <section className="row full">

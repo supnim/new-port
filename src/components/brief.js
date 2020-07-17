@@ -8,9 +8,9 @@ function Brief({ title, paragraph, one, two, three, postscript, style }) {
         <h4>{title}</h4>
         <p>{paragraph}</p>
         <ol className="list">
-          <li>{one}</li>
-          <li>{two}</li>
-          <li>{three}</li>
+          {!!one && <li>{one}</li>}
+          {!!two && <li>{two}</li>}
+          {!!three && <li>{three}</li>}
         </ol>
         <p className="superset">{postscript}</p>
       </div>

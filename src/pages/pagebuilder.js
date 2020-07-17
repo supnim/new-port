@@ -224,10 +224,6 @@ function Pagebuilder() {
                   twoAlt="Two"
                   three={image.example3.childImageSharp.fluid}
                   threeAlt="Three"
-                  four={image.example1.childImageSharp.fluid}
-                  fourAlt=""
-                  five={image.example2.childImageSharp.fluid}
-                  fiveAlt=""
                 />
               </div>
             </div>
