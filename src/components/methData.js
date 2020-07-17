@@ -72,6 +72,6 @@ export default [
     title: "loop",
     background: "background8",
     standfirst:
-      "fairly simple, start again. new goals, new needs, a never ending cycle of iteration"
+      "start again. new goals, new needs, a never ending cycle of iteration"
   }
 ];

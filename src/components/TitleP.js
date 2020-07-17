@@ -2,7 +2,7 @@ import React from "react";
 function TitleP({ title, paragraph }) {
   return (
     <>
-      <h1>{title}</h1>
+      <h3>{title}</h3>
       <p style={{ color: "#666666" }}>{paragraph}</p>
     </>
   );
