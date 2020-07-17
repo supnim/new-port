@@ -1,7 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
-// import { images } from "../components/photography"
 import { graphql, useStaticQuery } from "gatsby";
 
 function PhotoGallery() {
@@ -23,11 +22,11 @@ function PhotoGallery() {
         edges {
           node {
             childImageSharp {
-              fluid(maxWidth: 400) {
-                src
+              fluid(quality: 100) {
                 srcSet
-                aspectRatio
                 originalName
+                presentationWidth
+                presentationHeight
                 ...GatsbyImageSharpFluid
               }
             }
@@ -37,19 +36,15 @@ function PhotoGallery() {
     }
   `);
 
-  //in here height and width isnt being asigned
-  const photos = images.photo.edges.map(
-    ({ node }) => node.childImageSharp.fluid
-  );
+  const photos = images.photo.edges.map(({ node }) => ({
+    ...node.childImageSharp.fluid,
+    width: node.childImageSharp.fluid.presentationWidth,
+    height: node.childImageSharp.fluid.presentationHeight
+  }));
 
   return (
     <div>
-      <Gallery
-        photos={photos}
-        direction="row"
-        margin="1rem"
-        onClick={openLightbox}
-      />
+      <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -69,5 +64,3 @@ function PhotoGallery() {
 }
 
 export default PhotoGallery;
-
-//link photos

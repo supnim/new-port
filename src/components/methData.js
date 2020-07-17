@@ -17,7 +17,7 @@ export default [
     title: "understand",
     background: "design",
     standfirst:
-      "find out goals  and strategy, collect information, ask questions"
+      "find out goals  and strategy, collect information and ask questions"
   },
   {
     id: 2,

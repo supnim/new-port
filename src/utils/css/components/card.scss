@@ -1,6 +1,8 @@
 .container {
   margin: 0 auto;
-  padding: 4rem;
+  padding: 1rem;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 .content {
   margin: 4rem;

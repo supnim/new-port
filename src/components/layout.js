@@ -55,9 +55,6 @@ const Layout = props => {
               <li role="menuitem" className="nav-contact">
                 <Link to={`/contact`}>contact</Link>
               </li>
-              <li role="menuitem" className="nav-contact">
-                <Link to={`/playground`}>playground</Link>
-              </li>
             </ul>
           </div>
         </div>
@@ -66,11 +63,6 @@ const Layout = props => {
         <div className="transition-fade">{children}</div>
       </main>
       <footer className="site-foot">
-        <div className="footer-logo">
-          <Link className="site-head-logo" aria-label="supnim logo" to={`/`}>
-            <Logo />
-          </Link>
-        </div>
         <div className="footer-text">
           <div className="footer-links">
             <a href="/bookwise">bookwise</a>

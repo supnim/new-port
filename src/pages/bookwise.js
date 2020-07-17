@@ -140,7 +140,6 @@ function Bookwise() {
         />
         <BookwiseHeroImg width="100%" height="100%" />
         <Hero
-          // heroImg="profilePic" //need it or breaks it
           heroTitle="Brief"
           heroParagraphy="Find a problem and solve it in 6 weeks. The problem:
            the education system is flawed; everyone learns differently but get

@@ -3,14 +3,34 @@ import "../utils/css/components/meth.scss";
 import MethodologyCard from "../components/methCard";
 import MethodologyData from "../components/methData";
 import { motion } from "framer-motion";
-
-const defaultBackground = "default background";
+import { graphql, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
 
 function MethodologyBoard() {
   const [currentCard, setCurrentCard] = useState(defaultBackground);
   const focusStyle = {
     outline: "solid 2px pink"
   };
+
+  const image = useStaticQuery(graphql`
+    query {
+      design: file(relativePath: { eq: "methBackgrounds/design.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
+  const defaultBackground = () => {
+    return (
+      <div>
+        <Img fluid={image.design.childImageSharp.fluid} />
+      </div>
+    );
+  };
+
   return (
     <div id="board" className="board">
       <h2 className="methHeader">methodology.</h2>

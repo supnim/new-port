@@ -43,9 +43,9 @@ const Volvic = () => {
           }}
         >
           <TitleP
-            paragraph="after some research we decided on the drinks market.
-                    all current ads where promoting energy and sugary sports drinks; we wanted to do something a little different. 
-                    all elements of this project had to be considered, from making the music to shooting the clips and finally editing it together to make this video. this is what we made."
+            paragraph="After some research we decided on the drinks market.
+                    All current ads where promoting energy and sugary drinks; we wanted to do something a little different. 
+                    All elements of this project had to be considered, from making the music to shooting the clips and finally editing it together to make this video. This is what we made."
           />
           <VideoBox url="https://player.vimeo.com/video/163986212?title=0&byline=0&portrait=0" />
         </div>

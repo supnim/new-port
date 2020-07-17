@@ -97,6 +97,7 @@ function Institute() {
     border: "2px black solid",
     padding: "4rem"
   };
+
   const style = {
     color: "white",
     border: "4px solid #870AF3",
@@ -138,7 +139,6 @@ function Institute() {
           <div
             style={{
               width: "70%",
-              margin: "0 auto",
               margin: "4rem auto",
               border: "2px solid #870AF3"
             }}
