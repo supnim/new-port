@@ -23,13 +23,14 @@ function MethodologyBoard() {
       }
     }
   `);
-  const defaultBackground = () => {
-    return (
-      <div>
-        <Img fluid={image.design.childImageSharp.fluid} />
-      </div>
-    );
-  };
+  // const defaultBackground = () => {
+  //   return (
+  //     <div>
+  //       <Img fluid={image.design.childImageSharp.fluid} />
+  //     </div>
+  //   );
+  // };
+  const defaultBackground = "defaultBackground";
 
   return (
     <div id="board" className="board">
