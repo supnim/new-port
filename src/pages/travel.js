@@ -11,6 +11,7 @@ const Travel = () => {
       <div className="auto">
         {" "}
         <iframe
+          className="iframeloading"
           title={id}
           src={link}
           width="476"

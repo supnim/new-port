@@ -28,6 +28,7 @@ const Audio = () => {
         <div className="discography row">
           <div className="auto">
             <iframe
+              className="iframeloading"
               title="JAIN"
               src="https://open.spotify.com/embed/track/1iZspYCLfqzaxzVUFAdw9O"
               width="100%"
@@ -39,6 +40,7 @@ const Audio = () => {
           </div>
           <div className="auto">
             <iframe
+              className="iframeloading"
               title="BACK2SCHOOL"
               src="https://open.spotify.com/embed/track/2lxNDEE2DJKZAsgpEQzImx"
               width="100%"
@@ -50,6 +52,7 @@ const Audio = () => {
           </div>
           <div className="auto">
             <iframe
+              className="iframeloading"
               title="A-STARR"
               width="100%"
               height="380"
@@ -61,6 +64,7 @@ const Audio = () => {
           </div>
           <div className="auto">
             <iframe
+              className="iframeloading"
               title="Carol of NIM"
               width="100%"
               height="380"

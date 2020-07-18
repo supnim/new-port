@@ -22,6 +22,7 @@ const Student = () => {
       <div className="auto">
         {" "}
         <iframe
+          className="iframeloading"
           title={id}
           src={link}
           width="480"
