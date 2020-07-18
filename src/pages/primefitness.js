@@ -23,7 +23,7 @@ function PrimeFitness() {
     return (
       <div className="col-4" style={{ textAlign: "center", padding: "1rem" }}>
         <b>{rank}</b>
-        <h6 style={{ color: "#bace3f", padding: "0px" }}>{title}</h6>
+        <h6 style={{ color: "#91a709", padding: "0px" }}>{title}</h6>
         <p style={{ color: "grey" }}>{sub}</p>
       </div>
     );
@@ -64,7 +64,10 @@ function PrimeFitness() {
           }
         />
         <section style={{ maxWidth: "1200px", margin: "0 auto" }}>
-          <section className="row" style={{ padding: "4rem" }}>
+          <section
+            className="row"
+            style={{ padding: "4rem", backgroundColor: "whitesmoke" }}
+          >
             <Goals
               rank="1st"
               title="Choose a goal"

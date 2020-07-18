@@ -22,7 +22,7 @@ function PhotoGallery() {
         edges {
           node {
             childImageSharp {
-              fluid(quality: 100) {
+              fluid(maxWidth: 1000, quality: 100) {
                 srcSet
                 originalName
                 presentationWidth

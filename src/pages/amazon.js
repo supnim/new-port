@@ -27,8 +27,8 @@ function AmazonPage() {
           methods of approaching, thinking and targeting audiences according to
           the given brief. The tasks widely ranged from branding and content
           creation for social outlets to concepts for ad campaigns. Alongside
-          this I was involved in art directing photo-shoots, overseeing 360
-          video case studies, ideating for projects and much more.
+          this I was involved in art directing photo-shoots, producing 360 video
+          case studies, stakeholder management and much more.
         </p>
       </div>
       <div className="amazonJobs row">

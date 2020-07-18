@@ -11,7 +11,7 @@ import Institute from "../../content/assets/thumbnails/institute.svg";
 import Designsystem from "../../content/assets/thumbnails/design_system.svg";
 import Redesign from "../../content/assets/thumbnails/redesign.svg";
 
-function AmazonPage() {
+function TesPage() {
   return (
     <Layout>
       <SEO
@@ -31,12 +31,12 @@ function AmazonPage() {
         <Tes width="70%" height="70%" className={"amazonLogo"} />
         <p className={"amazonParagraphy"}>
           A 100-year-old publication originally started as Times Educational
-          Supplement. Currently have been transforming into a SaaS business in
-          the last 3 years. I head up the production and implementation of the
-          design system, alongside constructing a component-based CMS, which
-          makes up 60% of the site and through this, we were able to focus on
-          the company as a single entity, deliver a more integrated and fluid
-          user experience.
+          Supplement. Currently in the transformation into a SaaS business. I
+          head up the production and implementation of the design system,
+          alongside constructing a component-based CMS, which makes up for more
+          than 60% of the site and through this, we were able to focus on the
+          company as a single entity, deliver a more integrated and fluid user
+          experience.
         </p>
       </div>
       <div className="tesJobs row">
@@ -60,4 +60,4 @@ function AmazonPage() {
   );
 }
 
-export default AmazonPage;
+export default TesPage;

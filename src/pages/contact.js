@@ -78,34 +78,33 @@ const AboutPage = () => {
               />
             </div>
             <div className="aboutMe col-6">
-              <h3 className="aboutMeTitle">
-                hi, i am nimesh a conceptual creative based in london
-              </h3>
+              <h3 className="aboutMeTitle">hi, i am nimesh</h3>
               <p>
-                practising in the field of digital products (UI/UX). I enjoy the
-                process of taking an idea from concept to completion through a
-                variety of different methods and journeys. i am constantly
-                striving to better myself, a drive that is reflected in my work.
-                my enjoyment for my craft stems not just from within, but from
-                others too, as i thrive in diverse, social situations. these
-                invaluable experience allow me to expand my understanding of
-                different disciplines and build my skill set.
+                a creative based in London practising product design (UI/UX).
+                Its the process of taking an idea from concept to completion I
+                enjoy most. The enthusiasm for my craft stems not just from
+                within, but those around me, as I thrive in a diverse, social
+                situation as they provide invaluable experiences allowing me to
+                expand my understanding of different disciplines and build out
+                my skill set. I am continually striving to better myself, a
+                drive that is reflected in my work
               </p>
               <p>
-                In my downtime, i play with different mediums including; music,
-                still and motion pictures, and designing and developing
-                websites.
+                In my downtime, I play with different mediums, some including;
+                music, still and motion pictures, and designing and development
+                of websites.
               </p>
               <p>
-                Born in Kuwait and brought up in Kerala, India, grew into an
-                interactive media designer (IMD) at Northumbria University in
-                Newcastle. now practising at{" "}
+                Born in Kuwait and brought up in Kerala, India, studied
+                Interactive Media Designer (IMD) at Northumbria University in
+                Newcastle. Now practising at{" "}
                 <a href="https://www.tes.com">Tes</a> in London.
               </p>
               <span className="contactSpan">––––––––––––––––––––––</span>
               <p>
-                hope you have enjoyed looking through my work. if you'd like to
-                dicuss new projects or opportunities; get in touch or find me on{" "}
+                Hope you have enjoyed looking through my work. If you'd like to
+                discuss new projects or opportunities; get in touch or find me
+                on{" "}
                 <a href="https://www.linkedin.com/in/nimeshreghunandanan/">
                   linkedin.
                 </a>{" "}
@@ -148,7 +147,7 @@ const AboutPage = () => {
             </li>
             <li>
               <a href="mailto:hello@supnim.com" className="button large">
-                Get in touch
+                get in touch
               </a>
             </li>
           </ul>

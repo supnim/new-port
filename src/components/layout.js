@@ -98,7 +98,7 @@ const Layout = props => {
             </li>
             <li>
               <a href="mailto:hello@supnim.com" className="button large footer">
-                Get in touch
+                get in touch
               </a>
             </li>
           </ul>
