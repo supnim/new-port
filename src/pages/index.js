@@ -36,7 +36,7 @@ const Index = ({ data }, location) => {
   return (
     <Layout title={siteTitle}>
       <SEO
-        title="product designer"
+        title="Product Designer"
         keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
       />
 

@@ -9,7 +9,17 @@ import path from "../components/videoPaths.js";
 const Video = ({ data }) => {
   const siteTitle = data.site.siteMetadata.title;
   const videoUrl = path.map(video => (
-    <VideoBox description={video.description} url={video.url} id={video.id} />
+    <VideoBox
+      style={{
+        backgroundColor: "whitesmoke",
+        border: "8px solid black",
+        boxShadow: "inset 0px 0px 0px 16px black",
+        boxSizing: "border-box"
+      }}
+      description={video.description}
+      url={video.url}
+      id={video.id}
+    />
   ));
   return (
     <div className="video-page">

@@ -133,25 +133,6 @@ const AboutPage = () => {
             fiveAlt=" "
           />
         </article>
-        <section className="contactButtons contact">
-          <ul className="actions fit">
-            <li>
-              <a
-                href={Pdf}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cv button large primary"
-              >
-                CV
-              </a>
-            </li>
-            <li>
-              <a href="mailto:hello@supnim.com" className="button large">
-                get in touch
-              </a>
-            </li>
-          </ul>
-        </section>
       </Layout>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const videoBox = ({ description, url }) => (
+const videoBox = ({ description, url, style }) => (
   <div
     style={{
       display: "flex",
@@ -10,7 +10,7 @@ const videoBox = ({ description, url }) => (
     }}
   >
     <iframe
-      className="iframeloading"
+      style={style}
       title="videosComponent"
       src={url}
       width="100%"

@@ -56,6 +56,7 @@ const Travel = () => {
             <div className="col-6">
               <div style={{ padding: "100% 0 0 0", position: "relative" }}>
                 <iframe
+                  title="intro"
                   src="https://player.vimeo.com/video/439697063?title=0&byline=0&portrait=0"
                   style={{
                     position: "absolute",
