@@ -3,6 +3,7 @@
   padding: 1rem;
   flex-basis: 0;
   flex-grow: 1;
+  align-content: center;
 }
 .content {
   margin: 4rem;
@@ -16,6 +17,7 @@
 
 .title {
   text-align: center;
+  margin: 0;
 }
 
 .paragraph {
@@ -34,6 +36,7 @@
 }
 .titleAlt {
   text-align: left;
+  margin: 0;
 }
 
 .byline {
