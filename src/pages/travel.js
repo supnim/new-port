@@ -36,11 +36,41 @@ const Travel = () => {
         />
         <TravelHero width="100%" height="auto" />
         <div className="socialwrapper">
-          <div className="col-8">
-            <TitleP
-              title="Aim"
-              paragraph="These animations were made to drive traffic to the new summer 2017 travel store. Each animation depicts different types of travel/holiday goers. Local versions of each idea to suit the EU market; UK, Germany, France, Italy and Spain were produced. Working together, an illustrator and I storyboarded, pitched and created these animations. Found this to be a great learning project, as, before this, I had no animating experience.more."
-            />
+          <div className="row">
+            <div className="col-6">
+              <TitleP
+                title="Aim"
+                paragraph={
+                  <p>
+                    To drive traffic to the new summer 2017 travel store. <br />
+                    <br />
+                    Each animation depicts different types of travel/holiday
+                    goers. Local versions of each idea to suit the EU market;
+                    UK, Germany, France, Italy and Spain were produced. <br />
+                    <br /> Working together, an illustrator and I storyboarded,
+                    pitched and created these animations.
+                  </p>
+                }
+              />
+            </div>
+            <div className="col-6">
+              <div style={{ padding: "100% 0 0 0", position: "relative" }}>
+                <iframe
+                  src="https://player.vimeo.com/video/439697063?title=0&byline=0&portrait=0"
+                  style={{
+                    position: "absolute",
+                    top: "0",
+                    left: "0",
+                    width: "100%",
+                    height: "100%"
+                  }}
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
           </div>
           <div className="row">
             <Frame

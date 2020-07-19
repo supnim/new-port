@@ -15,7 +15,7 @@ export default [
     id: 1,
     icon: <FaEye size={40} />,
     title: "understand",
-    background: "design",
+    background: " ",
     standfirst:
       "find out goals  and strategy, collect information and ask questions"
   },
@@ -23,7 +23,7 @@ export default [
     id: 2,
     icon: <FaBicycle size={40} />,
     title: "explore",
-    background: "background2",
+    background: " ",
     standfirst:
       "envision, hypothesise and ideate, develop lots of solutions with all parts of business"
   },
@@ -31,7 +31,7 @@ export default [
     id: 3,
     icon: <FaBraille size={40} />,
     title: "plan",
-    background: "background3",
+    background: " ",
     standfirst:
       "choose the best, wirefrime idea and project the products coming journey"
   },
@@ -39,7 +39,7 @@ export default [
     id: 4,
     icon: <FaObjectGroup size={40} />,
     title: "design",
-    background: "background4",
+    background: " ",
     standfirst:
       "bring ideas to life, prototype, focusing on usability and experiment"
   },
@@ -47,7 +47,7 @@ export default [
     id: 5,
     icon: <FaFile size={40} />,
     title: "test",
-    background: "background5",
+    background: " ",
     standfirst:
       "show prototypes to users outside of co. learn what doesn’t work "
   },
@@ -55,14 +55,14 @@ export default [
     id: 6,
     icon: <FaCubes size={40} />,
     title: "develop",
-    background: "background6",
+    background: " ",
     standfirst: "break-down and organise to build MVP (Minimum Viable Product)"
   },
   {
     id: 7,
     icon: <FaFileAlt size={40} />,
     title: "test again",
-    background: "background7",
+    background: " ",
     standfirst:
       "use data, understand behaviours, A/B test, new ideas and start version 2"
   },
@@ -70,7 +70,7 @@ export default [
     id: 8,
     icon: <FaSyncAlt size={40} />,
     title: "loop",
-    background: "background8",
+    background: " ",
     standfirst:
       "start again. new goals, new needs, a never ending cycle of iteration"
   }

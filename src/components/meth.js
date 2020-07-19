@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 
-const defaultBackground = "defaultBackground";
+const defaultBackground = " ";
 
 function MethodologyBoard() {
   const [currentCard, setCurrentCard] = useState(defaultBackground);
