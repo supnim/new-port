@@ -208,13 +208,13 @@ function DesignSystem() {
             />
             <div className="row">
               <div className="col-4">
-                <img src={Content} />
+                <img src={Content} alt="content components" />
               </div>
               <div className="col-4">
-                <img src={Password} />
+                <img src={Password} alt="library gif" />
               </div>
               <div className="col-4">
-                <img src={Component} />
+                <img src={Component} alt="more components" />
               </div>
             </div>
             <div>

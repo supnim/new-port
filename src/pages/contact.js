@@ -4,7 +4,6 @@ import Img from "gatsby-image";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Pdf from "../../content/assets/nimeshCV.pdf";
 import LogoBox from "../components//logobox";
 
 import "../utils/normalize.css";
