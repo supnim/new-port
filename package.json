@@ -8,6 +8,7 @@
     "url": "https://github.com/ImedAdel/gatsby-london/issues"
   },
   "dependencies": {
+    "@babel/core": "^7.10.5",
     "acorn": "^7.3.1",
     "acorn-dynamic-import": "^4.0.0",
     "bootstrap": "^4.5.0",
@@ -38,6 +39,8 @@
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-remark": "^2.8.16",
     "gatsby-transformer-sharp": "^2.5.10",
+    "ink": "^2.7.1",
+    "jquery": "^3.5.1",
     "jshint": "^2.11.1",
     "motion": "^5.0.0-beta26",
     "node-sass": "^4.14.1",
