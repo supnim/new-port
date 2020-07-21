@@ -141,6 +141,12 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
-    `gatsby-plugin-smoothscroll`
+    `gatsby-plugin-smoothscroll`,
+    {
+      resolve: "gatsby-plugin-zopfli",
+      options: {
+        extensions: ["css", "html", "js", "svg"]
+      }
+    }
   ]
 };
