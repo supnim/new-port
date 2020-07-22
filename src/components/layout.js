@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../content/assets/supnimLogo.svg";
-import Pdf from "../../content/assets/nimeshCV.pdf";
 import scrollTo from "gatsby-plugin-smoothscroll";
 
 const Layout = props => {
@@ -92,7 +91,7 @@ const Layout = props => {
           <ul className="actions fit">
             <li>
               <a
-                href={Pdf}
+                href="https://www.dropbox.com/s/imn8mlg31tb2wig/Nimesh_CV.pdf?dl=0"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="cv button large primary"
