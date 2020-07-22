@@ -45,24 +45,26 @@ function PrimeFitness() {
           keywords={[`prime`, `amazon`, `fitness`, `pantry`, `app`, `wearable`]}
         />
         <PrimeFitnessImg width="100%" height="auto" />
-        <Brief
-          style={briefStyle}
-          title="Insight"
-          paragraph="People are more aware of what they consume, and are consciously taking action to change their lifestyle. With that said, these are the problems I've identified and solved through this idea."
-          one="Want to exercise and stay health"
-          two="Don't know what to eat"
-          three="Maximise produce and reduce waste"
-          postscript={
-            <p>
-              In addition it was important to me to make it as convenient as
-              possible and have it working holistically within the amazon
-              eco-system.{" "}
-              <a href="https://drive.google.com/file/d/1KmgRvISb8zxt50Cd9PnixGqEebb43Ibh/view">
-                <b>paper process</b>
-              </a>
-            </p>
-          }
-        />
+        <div style={{ margin: "0 2rem" }}>
+          <Brief
+            style={briefStyle}
+            title="Insight"
+            paragraph="People are more aware of what they consume, and are consciously taking action to change their lifestyle. With that said, these are the problems I've identified and solved through this idea."
+            one="Want to exercise and stay health"
+            two="Don't know what to eat"
+            three="Maximise produce and reduce waste"
+            postscript={
+              <p>
+                In addition it was important to me to make it as convenient as
+                possible and have it working holistically within the amazon
+                eco-system.{" "}
+                <a href="https://drive.google.com/file/d/1KmgRvISb8zxt50Cd9PnixGqEebb43Ibh/view">
+                  <b>paper process</b>
+                </a>
+              </p>
+            }
+          />
+        </div>
         <section style={{ maxWidth: "1200px", margin: "0 auto" }}>
           <section
             className="row"

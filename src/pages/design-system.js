@@ -193,19 +193,27 @@ function DesignSystem() {
             />
           </div>
           <section style={{ textAlign: "center" }}>
-            <TitleP
-              title="Elements"
-              paragraph="We're building on what we've built. combining multiple core parts to make more complex pieces"
-            />
+            <div
+              style={{ margin: "0 auto", maxWidth: "800px", padding: "0 2rem" }}
+            >
+              <TitleP
+                title="Elements"
+                paragraph="We're building on what we've built. combining multiple core parts to make more complex pieces"
+              />
+            </div>
             <div>
               <Img fluid={image.elements.childImageSharp.fluid} />
             </div>
           </section>
           <section style={{ textAlign: "center" }}>
-            <TitleP
-              title="Components"
-              paragraph="The final building blocks of the design system. an agreed-upon, unified component list used sitewide. Providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
-            />
+            <div
+              style={{ margin: "0 auto", maxWidth: "800px", padding: "0 2rem" }}
+            >
+              <TitleP
+                title="Components"
+                paragraph="The final building blocks of the design system. an agreed-upon, unified component list used sitewide. Providing consistent and uniform designing, efficient engineering and changes that cascade through from one source of truth"
+              />
+            </div>
             <div className="row">
               <div className="col-4">
                 <img src={Content} alt="content components" />

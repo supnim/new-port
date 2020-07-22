@@ -113,20 +113,22 @@ function Pagebuilder() {
           keywords={[`CMS`, `Drupal`, `management`, `content`, `system`]}
         />
         <PagebuilderImg width="100%" height="auto" />
-        <Brief
-          style={briefStyle}
-          title="Aim"
-          paragraph={
-            <p>
-              to build a cms which in turn removes dependency and create
-              autonomy – basing it of the{" "}
-              <a href="/design-system">
-                <b>design system </b>
-              </a>
-              to form consistency and site-wide unity.
-            </p>
-          }
-        />
+        <div style={{ margin: "0 2rem" }}>
+          <Brief
+            style={briefStyle}
+            title="Aim"
+            paragraph={
+              <p>
+                to build a cms which in turn removes dependency and create
+                autonomy – basing it of the{" "}
+                <a href="/design-system">
+                  <b>design system </b>
+                </a>
+                to form consistency and site-wide unity.
+              </p>
+            }
+          />
+        </div>
         <section
           style={{ maxWidth: "1200px", margin: "0 auto", padding: "4rem 0" }}
         >

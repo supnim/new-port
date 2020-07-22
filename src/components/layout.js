@@ -65,6 +65,10 @@ const Layout = props => {
       <footer className="site-foot">
         <div className="footer-text">
           <div className="footer-links">
+            <a href="/amazon">amazon</a>
+            <p>•</p>
+            <a href="/tes">tes</a>
+            <p>•</p>
             <a href="/bookwise">bookwise</a>
             <p>•</p>
             <a href="/knowhere">knowhere</a>

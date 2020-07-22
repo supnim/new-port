@@ -112,20 +112,23 @@ function Institute() {
           keywords={[`product`, `designer`, `london`, `nimesh`]}
         />
         <InstituteImg width="100%" height="auto" />
-        <Brief
-          style={briefStyle}
-          title="Brief"
-          paragraph={
-            <p>
-              To align and future-proof. Tes Institute is a leading provider of
-              online courses and to visually represent it as so. this is what it
-              looked like before:{" "}
-              <a href="https://web.archive.org/web/20200513133158/https://www.tes.com/institute/">
-                <b>this</b>
-              </a>
-            </p>
-          }
-        />
+        <div style={{ margin: "0 2rem" }}>
+          {" "}
+          <Brief
+            style={briefStyle}
+            title="Brief"
+            paragraph={
+              <p>
+                To align and future-proof. Tes Institute is a leading provider
+                of online courses and to visually represent it as so. this is
+                what it looked like before:{" "}
+                <a href="https://web.archive.org/web/20200513133158/https://www.tes.com/institute/">
+                  <b>this</b>
+                </a>
+              </p>
+            }
+          />
+        </div>
         <section
           style={{ maxWidth: "1200px", margin: "0 auto", padding: "4rem 0" }}
         >
