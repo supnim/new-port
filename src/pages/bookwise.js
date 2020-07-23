@@ -199,5 +199,3 @@ function Bookwise() {
 }
 
 export default Bookwise;
-
-// uniform images

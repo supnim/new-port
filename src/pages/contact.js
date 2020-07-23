@@ -9,7 +9,7 @@ import LogoBox from "../components//logobox";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
 
-const AboutPage = () => {
+const Contact = () => {
   const image = useStaticQuery(graphql`
     query {
       profilePic: file(relativePath: { eq: "profilePic.jpg" }) {
@@ -137,4 +137,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default Contact;

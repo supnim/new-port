@@ -216,5 +216,3 @@ function Knowhere() {
 }
 
 export default Knowhere;
-
-//image box
