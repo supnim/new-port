@@ -87,6 +87,13 @@ function Redesign() {
           }
         }
       }
+      live: file(relativePath: { eq: "projects/redesign/live.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -94,8 +101,15 @@ function Redesign() {
     <div>
       <Layout>
         <SEO
-          title="tes.com redesign"
-          keywords={[`tes.com`, `redesign`, `homepage`, `rebuild`]}
+          title="Redesign"
+          keywords={[
+            `tes.com`,
+            `redesign`,
+            `homepage`,
+            `rebuild`,
+            `SaaS`,
+            `sotfware`
+          ]}
         />
         <RedesignHero width="100%" height="auto" />
         <div className="col-6" style={{ margin: "0 auto", padding: "2rem" }}>
@@ -108,7 +122,7 @@ function Redesign() {
                 internationalisation. <br />
                 <br />
                 previously looked like{" "}
-                <a href="https://www.tes.com/">
+                <a href="https://web.archive.org/web/20200613221639/https://www.tes.com/">
                   <b>this</b>
                 </a>
               </p>
@@ -176,7 +190,7 @@ function Redesign() {
           >
             <TitleP
               title="Personas"
-              paragraph="From the research conducted these are the personas formed"
+              paragraph="From the research conducted these where some of the personas formed"
             />
             <Carousel
               one={image.alison.childImageSharp.fluid}
@@ -217,6 +231,24 @@ function Redesign() {
             />
             <Img fluid={image.mood.childImageSharp.fluid} />
           </div>
+        </section>
+        <section>
+          <div
+            style={{ maxWidth: "800xp", margin: "4rem", textAlign: "center" }}
+          >
+            <TitleP
+              title="Launch"
+              paragraph={
+                <p>
+                  through this redesign, we addressed all issues and
+                  better-aligned ourselves for future moves. with a clear
+                  explanation of who we are, what we do and how we can help you.
+                  see live site <a href="https://www.tes.com">here</a>
+                </p>
+              }
+            />
+          </div>
+          <Img fluid={image.live.childImageSharp.fluid} />
         </section>
       </Layout>
     </div>
