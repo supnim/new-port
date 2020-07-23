@@ -3,6 +3,7 @@ import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { graphql, useStaticQuery } from "gatsby";
 import "../../src/utils/css/project.scss";
+import Brief from "../components/brief";
 
 import SocialHero from "../../content/assets/heros/social_hero.svg";
 
@@ -52,6 +53,10 @@ const Social = () => {
           ]}
         />
         <SocialHero width="100%" height="80%" />
+        <Brief
+          title="Aim"
+          paragraph="when working on the social vertical, I was set the task to organise, order, ideate, create, edit and publish content across all social platform according to each and every upcoming event — here are some"
+        />
         <div className="socialwrapper">
           <div className="row">
             <Frame

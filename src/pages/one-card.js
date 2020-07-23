@@ -99,7 +99,7 @@ function OneCard() {
       <Layout>
         <SEO
           title="One Card"
-          keywords={[`product`, `designer`, `london`, `nimesh`]}
+          keywords={[`banking`, `fintect`, `virgin`, `money`]}
         />
         <OneCardHeroImg width="100%" height="auto" />
         <Hero

@@ -68,7 +68,13 @@ function School() {
       <Layout>
         <SEO
           title="Tes for schools"
-          keywords={[`education`, `software`, `service`, `subscription`]}
+          keywords={[
+            `education`,
+            `software`,
+            `service`,
+            `subscription`,
+            `SaaS`
+          ]}
         />
         <SchoolImg width="100%" height="auto" />
         <Brief

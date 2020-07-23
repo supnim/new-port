@@ -32,7 +32,15 @@ const Travel = () => {
       <Layout title="Travel">
         <SEO
           title="Travel"
-          keywords={[`travel`, `amazon`, `stop motion`, `facebook`]}
+          keywords={[
+            `travel`,
+            `amazon`,
+            `stop motion`,
+            `facebook`,
+            `animation`,
+            `after effects`,
+            `illustration`
+          ]}
         />
         <TravelHero width="100%" height="auto" />
         <div className="socialwrapper">

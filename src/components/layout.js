@@ -70,9 +70,9 @@ const Layout = props => {
             <p>•</p>
             <a href="/bookwise">bookwise</a>
             <p>•</p>
-            <a href="/knowhere">knowhere</a>
-            <p>•</p>
             <a href="/design-system">design system</a>
+            <p>•</p>
+            <a href="/knowhere">knowhere</a>
             <p>•</p>
             <a href="/pagebuilder">pagebuilder</a>
             <p>•</p>

@@ -24,7 +24,14 @@ const Volvic = () => {
       <Layout title={siteTitle}>
         <SEO
           title="volvic"
-          keywords={[`discography`, `music`, `producer`, `N1M`]}
+          keywords={[
+            `volvic`,
+            `advertisment`,
+            `filming`,
+            `editing`,
+            `sports`,
+            `drink`
+          ]}
         />
         <img src={gif} alt="volvicgif" />
         <Hero
@@ -55,5 +62,3 @@ const Volvic = () => {
 };
 
 export default Volvic;
-
-// gif not working
