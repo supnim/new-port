@@ -79,25 +79,30 @@ const Contact = () => {
             <div className="aboutMe col-6">
               <h3 className="aboutMeTitle">hi, i am nimesh</h3>
               <p>
-                a creative based in London practising product design (UI/UX).
-                Its the process of taking an idea from concept to completion I
-                enjoy most. The enthusiasm for my craft stems not just from
-                within, but those around me, as I thrive in a diverse, social
-                situation as they provide invaluable experiences allowing me to
-                expand my understanding of different disciplines and build out
-                my skill set. I am continually striving to better myself, a
-                drive that is reflected in my work
+                A creative and driven individual who enjoys developing
+                user-focused products from concept through to completion.
+                Empathy, understanding and learning is at the heart of
+                everything I do and I am passionate about championing the user
+                when solving design problems.
               </p>
               <p>
-                In my downtime, I play with different mediums, some including;
-                music, still and motion pictures, and designing and development
-                of websites.
+                Highly proficient in UX, UI, product design, interaction design,
+                user research, AB testing, web development, video creation and
+                branding, I have led and collaborated on projects for global
+                brands such as Amazon, Swisscom and Virgin Money. In my current
+                role as Product Designer at the global education company,{" "}
+                <a href="https://www.tes.com">Tes</a>, I have developed new user
+                experience architecture across the platform; helped develop and
+                define the product direction through user research,
+                experimentation and testing; and established the design
+                direction for the new Tes brand.
               </p>
               <p>
-                Born in Kuwait and brought up in Kerala, India, studied
-                Interactive Media Designer (IMD) at Northumbria University in
-                Newcastle. Now practising at{" "}
-                <a href="https://www.tes.com">Tes</a> in London.
+                In my downtime I play with different mediums, including music,
+                still and motion pictures, and the design and development of
+                websites. Based in London, I was born in Kuwait and brought up
+                in Kerala, India. I studied Interactive Media Designer (IMD) at
+                Northumbria University in Newcastle.
               </p>
               <span className="contactSpan">––––––––––––––––––––––</span>
               <p>
