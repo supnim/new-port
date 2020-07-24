@@ -234,7 +234,11 @@ function Redesign() {
         </section>
         <section>
           <div
-            style={{ maxWidth: "800xp", margin: "4rem", textAlign: "center" }}
+            className="col-6"
+            style={{
+              margin: "4rem auto",
+              textAlign: "center"
+            }}
           >
             <TitleP
               title="Launch"
@@ -242,8 +246,9 @@ function Redesign() {
                 <p>
                   through this redesign, we addressed all issues and
                   better-aligned ourselves for future moves. with a clear
-                  explanation of who we are, what we do and how we can help you.
-                  see live site <a href="https://www.tes.com">here</a>
+                  explanation of <b>who we are</b>, <b>what we do</b> and{" "}
+                  <b>how we can help you</b>. see live site{" "}
+                  <a href="https://www.tes.com">here</a>
                 </p>
               }
             />
