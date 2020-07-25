@@ -8,10 +8,10 @@ import CardRight from "../components/cardRight";
 import TitleP from "../components/TitleP";
 import Brief from "../components/brief";
 import Carousel from "../components/carousel";
+import Img from "gatsby-image";
 
 import InstituteImg from "../../content/assets/heros/institute_hero.svg";
 import course from "../components/gifs/institute/course.gif";
-import pages from "../components/gifs/institute/pages.gif";
 import process from "../components/gifs/institute/process.gif";
 
 function Institute() {
@@ -81,6 +81,38 @@ function Institute() {
         }
       }
       map: file(relativePath: { eq: "projects/institute/sitemap.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      catfinished: file(
+        relativePath: { eq: "projects/institute/courses-cat-finished.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      pagefinished: file(
+        relativePath: { eq: "projects/institute/course-page-finished.png" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      blog: file(relativePath: { eq: "projects/institute/blog.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      end: file(relativePath: { eq: "projects/institute/end.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -210,9 +242,37 @@ function Institute() {
                 <img src={process} alt="process gif" />
               </div>
               <div className="col-6">
-                <img src={pages} alt="pages gif" />
+                <Carousel
+                  style={{ color: "black" }}
+                  one={image.pagefinished.childImageSharp.fluid}
+                  two={image.catfinished.childImageSharp.fluid}
+                  three={image.blog.childImageSharp.fluid}
+                />
               </div>
             </div>
+            <div
+              style={{
+                textAlign: "center",
+                maxWidth: "800px",
+                padding: "8rem 0",
+                margin: "0 auto"
+              }}
+            >
+              <TitleP
+                title="End result"
+                paragraph={
+                  <p>
+                    a coherent user journey with the right amount of information
+                    at each stage to allow the user to make the right decision.
+                    Live site{" "}
+                    <a href="https://www.tes.com/institute">
+                      <b>here</b>
+                    </a>
+                  </p>
+                }
+              />
+            </div>
+            <Img fluid={image.end.childImageSharp.fluid} />
           </div>
         </section>
       </Layout>
