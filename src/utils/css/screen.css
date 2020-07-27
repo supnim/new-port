@@ -347,6 +347,7 @@ p {
     z-index: -1;
     transition: all 0.4s ease-out;
     overflow: hidden;
+    margin-bottom: -2rem;
   }
   .site-head-left,
   .site-head-right {

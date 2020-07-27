@@ -2,10 +2,15 @@ import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../content/assets/supnimLogo.svg";
 import scrollTo from "gatsby-plugin-smoothscroll";
+import useSound from "use-sound";
+import Switch from "../../content/assets/sounds/switch.mp3";
+import Pop from "../../content/assets/sounds/pop.mp3";
 
 const Layout = props => {
   const { children } = props;
   const [toggleNav, setToggleNav] = React.useState(false);
+  const [play] = useSound(Switch);
+  const [close] = useSound(Pop);
 
   return (
     <div className={`site-wrapper ${toggleNav ? `site-head-open` : ``}`}>
@@ -17,6 +22,7 @@ const Layout = props => {
             onClick={() => setToggleNav(!toggleNav)}
           >
             <div
+              onClick={close}
               className="hamburger hamburger--collapse"
               aria-label="nav"
               role="navigation"
@@ -28,30 +34,38 @@ const Layout = props => {
             </div>
           </a>
           <nav className="site-head-left">
-            <Link className="site-head-logo" aria-label="supnim logo" to={`/`}>
+            <Link
+              onClick={play}
+              className="site-head-logo"
+              aria-label="supnim logo"
+              to={`/`}
+            >
               <Logo />
             </Link>
           </nav>
           <div className="site-head-right" role="menu">
             <ul className="nav" role="menubar" aria-label="menu">
-              <li role="menuitem" className="nav-home">
+              <li role="menuitem">
                 <Link to={`/`}>home</Link>
               </li>
-              <li role="menuitem" className="nav-work">
+              <li role="menuitem">
                 <Link to={`/`} onClick={() => scrollTo("#jobs")}>
                   work
                 </Link>
               </li>
-              <li role="menuitem" className="nav-photo">
+              <li role="menuitem">
                 <Link to={`/photo`}>photo</Link>
               </li>
-              <li role="menuitem" className="nav-video">
+              <li role="menuitem">
                 <Link to={`/video`}>video</Link>
               </li>
-              <li role="menuitem" className="nav-audio">
+              <li role="menuitem">
                 <Link to={`/audio`}>audio</Link>
               </li>
-              <li role="menuitem" className="nav-contact">
+              <li role="menuitem">
+                <Link to={`/playground`}>playground</Link>
+              </li>
+              <li role="menuitem">
                 <Link to={`/contact`}>contact</Link>
               </li>
             </ul>
@@ -91,6 +105,7 @@ const Layout = props => {
           <ul className="actions fit">
             <li>
               <a
+                onClick={play}
                 href="https://www.dropbox.com/s/imn8mlg31tb2wig/Nimesh_CV.pdf?dl=0"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -100,7 +115,11 @@ const Layout = props => {
               </a>
             </li>
             <li>
-              <a href="mailto:hello@supnim.com" className="button large footer">
+              <a
+                onClick={play}
+                href="mailto:hello@supnim.com"
+                className="button large footer"
+              >
                 get in touch
               </a>
             </li>

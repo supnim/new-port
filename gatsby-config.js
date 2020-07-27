@@ -137,6 +137,7 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
