@@ -218,14 +218,12 @@ function Pagebuilder() {
               />
               <div style={{ padding: "2rem" }}>
                 <h3>Output</h3>
+
                 <Carousel
                   style={{ color: "black" }}
                   one={image.example1.childImageSharp.fluid}
-                  oneAlt="One"
                   two={image.example2.childImageSharp.fluid}
-                  twoAlt="Two"
                   three={image.example3.childImageSharp.fluid}
-                  threeAlt="Three"
                 />
               </div>
             </div>
@@ -247,8 +245,8 @@ function Pagebuilder() {
             }}
           >
             <TitleP
-              title="Next in version 2"
-              paragraph="Our aim was to make the shop window amazing for the final user, and once MVP was launched; work with the internal team to arrange and polish in the shop if you will. Below are some of the feature we plan to implement"
+              title="Next in version II"
+              paragraph="Our aim was to make the shop window amazing for the final user, and once MVP was launched; work with the internal team to organise and tidy inside the shop if you will. Below are some of the feature we plan to implement"
             />
           </div>
         </div>
