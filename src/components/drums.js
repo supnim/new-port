@@ -1,7 +1,7 @@
 import React from "react";
 import useSound from "use-sound";
 import soundUrl from "../../content/assets/sounds/drums.mp3";
-import DrumsSvg from "../../content/assets/play/drums-alt.svg";
+import DrumsSvg from "../../content/assets/play/drums.svg";
 // import soundUrl from "../../content/assets/sounds/trap.mp3"
 
 function Drums() {

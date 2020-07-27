@@ -186,7 +186,15 @@ function Pagebuilder() {
                 image={image.design.childImageSharp.fluid}
                 title="Design System"
               />
-              <p style={{ fontSize: "56px", color: "lightgrey" }}>+</p>
+              <p
+                style={{
+                  fontSize: "56px",
+                  color: "lightgrey",
+                  paddingLeft: "4rem"
+                }}
+              >
+                +
+              </p>
               <Card
                 image={image.drupal.childImageSharp.fluid}
                 title="Drupal + Layout"
