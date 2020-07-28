@@ -54,8 +54,8 @@ function Drums() {
       }}
     >
       <div style={{ margin: "0 auto" }}>
-        <h4>drum kit</h4>
-        <div style={{ filter: "invert(1)" }}>
+        <h3>drum kit</h3>
+        <div style={{ filter: "invert(1)", paddingBottom: "2rem" }}>
           <DrumsSvg width="10%" height="auto" />
         </div>
       </div>

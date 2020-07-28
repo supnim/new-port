@@ -7,6 +7,18 @@ function Grounds() {
       <div className="video-page">
         <h3>playground</h3>
         <Drums />
+        <div>
+          <h4
+            style={{
+              color: "grey",
+              textAlign: "center",
+              paddingBottom: "8rem",
+              margin: "0"
+            }}
+          >
+            More soon...
+          </h4>
+        </div>
       </div>
     </Layout>
   );
