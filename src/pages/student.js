@@ -23,6 +23,7 @@ const Student = () => {
         {" "}
         <iframe
           className="iframeloading"
+          loading="lazy"
           title={id}
           src={link}
           width="480"

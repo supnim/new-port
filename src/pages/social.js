@@ -23,6 +23,7 @@ const Social = () => {
         {" "}
         <iframe
           className="iframeloading"
+          loading="lazy"
           title={id}
           src={link}
           width="476"

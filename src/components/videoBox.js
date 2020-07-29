@@ -15,6 +15,7 @@ const videoBox = ({ description, url, style }) => (
       src={url}
       width="100%"
       height="450"
+      loading="lazy"
       frameborder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen="true"
