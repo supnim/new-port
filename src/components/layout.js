@@ -22,7 +22,7 @@ const Layout = props => {
             onClick={() => setToggleNav(!toggleNav)}
           >
             <div
-              onClick={close}
+              onClick={play}
               className="hamburger hamburger--collapse"
               aria-label="nav"
               role="navigation"
@@ -73,7 +73,7 @@ const Layout = props => {
         </div>
       </header>
       <main id="site-main" className="site-main">
-        <div className="transition-fade">{children}</div>
+        <div>{children}</div>
       </main>
       <footer className="site-foot">
         <div className="footer-text">
@@ -104,28 +104,24 @@ const Layout = props => {
           </div>
         </div>
         <div className="footer-buttons">
-          <ul className="actions fit">
-            <li>
-              <a
-                onClick={play}
-                href="https://www.dropbox.com/s/imn8mlg31tb2wig/Nimesh_CV.pdf?dl=0"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cv button large primary"
-              >
-                CV
-              </a>
-            </li>
-            <li>
-              <a
-                onClick={play}
-                href="mailto:hello@supnim.com"
-                className="button large footer"
-              >
-                get in touch
-              </a>
-            </li>
-          </ul>
+          <div className="actions fit">
+            <a
+              onClick={play}
+              href="https://www.dropbox.com/s/imn8mlg31tb2wig/Nimesh_CV.pdf?dl=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cv button large primary"
+            >
+              CV
+            </a>
+            <a
+              onClick={close}
+              href="mailto:hello@supnim.com"
+              className="button large footer"
+            >
+              get in touch
+            </a>
+          </div>
         </div>
       </footer>
     </div>

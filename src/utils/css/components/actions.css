@@ -40,6 +40,9 @@
 .actions.fit {
   width: calc(100% + calc(var(--margin) * 0.5));
 }
+.actions.fit * {
+  margin: 0.5rem;
+}
 
 .actions.fit li {
   flex: 1 1 auto;
