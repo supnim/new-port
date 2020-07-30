@@ -1,8 +1,7 @@
 import React from "react";
 import useSound from "use-sound";
-import soundUrl from "../../content/assets/sounds/drums.mp3";
+import soundUrl from "../../content/assets/sounds/trapdrum.mp3";
 import DrumsSvg from "../../content/assets/play/drums.svg";
-// import soundUrl from "../../content/assets/sounds/trap.mp3"
 
 function Drums() {
   const [play] = useSound(soundUrl, {
@@ -10,12 +9,7 @@ function Drums() {
       kick: [0, 350],
       hihat: [374, 160],
       snare: [666, 290],
-      cowbell: [968, 200]
-      // kick: [0, 150],
-      // hihat: [174, 160],
-      // snare: [468, 100],
-      // clap: [666, 200],
-      // vox: [888, 400],
+      vox: [968, 200]
     }
   });
   const useKeyboardBindings = map => {
@@ -35,20 +29,16 @@ function Drums() {
       };
     }, [map]);
   };
-  // Custom hook that listens for 'keydown',
-  // and calls the appropriate handler function.
   useKeyboardBindings({
     1: () => play({ id: "kick" }),
     2: () => play({ id: "hihat" }),
     3: () => play({ id: "snare" }),
-    4: () => play({ id: "cowbell" })
-    // 5: () => play({ id: "vox" }),
+    4: () => play({ id: "vox" })
   });
 
   return (
     <section
       style={{
-        height: "100vh",
         paddingTop: "8rem",
         textAlign: "center"
       }}
@@ -88,18 +78,11 @@ function Drums() {
         <button
           className="large primary"
           style={{ margin: "2rem" }}
-          aria-label="cowbell"
-          onMouseDown={() => play({ id: "cowbell" })}
-        >
-          rim
-        </button>
-        {/* <button
-          style={{ margin: "2rem" }}
           aria-label="vox"
           onMouseDown={() => play({ id: "vox" })}
         >
           vox
-        </button> */}
+        </button>
         <div
           style={{
             backgroundColor: "black",
@@ -112,7 +95,7 @@ function Drums() {
         >
           <pre style={{ padding: ".5rem" }}>
             <code>
-              you can also use 1 — 5 on your keyboard {"\n"} to trigger each
+              you can also use 1 — 4 on your keyboard {"\n"} to trigger each
               respective sounds{"\n"}
               have fun :){"\n"}
             </code>
