@@ -72,7 +72,7 @@ export default class Game extends Component {
     return (
       <section className="TTTwrapper">
         <div style={{ margin: "0 auto" }}>
-          <h3>drum kit</h3>
+          <h3>tic-tac-toe</h3>
           <div style={{ filter: "invert(1)", paddingBottom: "2rem" }}>
             <TicSvg width="15%" height="auto" />
           </div>
@@ -80,9 +80,9 @@ export default class Game extends Component {
         <div className="instructions">
           <pre style={{ padding: ".5rem" }}>
             <code>
-              click away{"\n"}
               you can go back to a move by clicking on the history on the right
               {"\n"}
+              click away{"\n"}
             </code>
           </pre>
         </div>
