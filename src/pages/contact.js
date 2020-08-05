@@ -108,10 +108,7 @@ const Contact = () => {
               <p>
                 Hope you have enjoyed looking through my work. If you'd like to
                 discuss new projects or opportunities; get in touch or find me
-                on{" "}
-                <a href="https://www.linkedin.com/in/nimeshreghunandanan/">
-                  linkedin.
-                </a>{" "}
+                on <a href="https://www.linkedin.com/in/nimeshnr">linkedin.</a>{" "}
               </p>
             </div>
           </div>
