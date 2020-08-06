@@ -132,7 +132,7 @@ function Pagebuilder() {
         <section
           style={{ maxWidth: "1200px", margin: "0 auto", padding: "4rem 0" }}
         >
-          <div style={{ padding: "2rem" }}>
+          <div style={{ padding: "2rem", textAlign: "center" }}>
             <TitleP
               title="Why"
               paragraph={
@@ -172,7 +172,7 @@ function Pagebuilder() {
             <Autonomy />
             <Consistency />
           </div>
-          <div style={{ padding: "2rem" }}>
+          <div style={{ padding: "2rem", textAlign: "center" }}>
             <h3>How?</h3>
             <div
               style={{
@@ -224,11 +224,11 @@ function Pagebuilder() {
                 title="Structure"
                 description="We worked together with all the stakeholders ( Marketing, Institute & Editorial ) to build a flexible yet structurally sound layout with potential infinity combination — this was important to us to allow all parties to create with as little restriction as possible."
               />
-              <div style={{ padding: "2rem" }}>
+              <div style={{ padding: "2rem", textAlign: "center" }}>
                 <h3>Output</h3>
 
                 <Carousel
-                  style={{ color: "black" }}
+                  style={{ color: "#006AFF", backgroundColor: "#006AFF" }}
                   one={image.example1.childImageSharp.fluid}
                   two={image.example2.childImageSharp.fluid}
                   three={image.example3.childImageSharp.fluid}
@@ -241,7 +241,7 @@ function Pagebuilder() {
         <div
           className="row"
           style={{
-            backgroundColor: "#F5F5F5",
+            backgroundColor: "#006AFF",
             padding: "4rem"
           }}
         >
@@ -249,7 +249,8 @@ function Pagebuilder() {
             style={{
               textAlign: "center",
               margin: "0 auto",
-              width: "70%"
+              width: "70%",
+              color: "white"
             }}
           >
             <TitleP

@@ -118,7 +118,12 @@ function School() {
             </div>
             <div className="row">
               <div
-                style={{ margin: "auto", textAlign: "center", padding: "5rem" }}
+                style={{
+                  margin: "auto",
+                  maxWidth: "888px",
+                  textAlign: "center",
+                  padding: "5rem"
+                }}
               >
                 <TitleP
                   title="Redesign"
@@ -141,17 +146,25 @@ function School() {
             <div className="row">
               {" "}
               <div
-                style={{ margin: "auto", textAlign: "center", padding: "5rem" }}
+                style={{
+                  margin: "auto",
+                  textAlign: "center",
+                  maxWidth: "888px",
+                  padding: "5rem"
+                }}
               >
                 <TitleP
                   title="Conclusion: failed"
                   paragraph={
                     <p>
-                      What we found out that we were using a lot of the same
-                      components in out projects, with that understanding, I
-                      worked closely with the marketing team to create a better
-                      system which led to the creation of the{" "}
-                      <a href="/pagebuilder">CMS (pagebuilder)</a>.
+                      We found that we were using a lot of the same patterns in
+                      out projects, with that understanding, I worked closely
+                      with the marketing team to create a better system which
+                      led to the creation of the <br />
+                      <a href="/pagebuilder">
+                        <b>CMS (pagebuilder)</b>
+                      </a>
+                      .
                     </p>
                   }
                 />
