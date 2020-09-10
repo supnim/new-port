@@ -26,26 +26,21 @@ export default [
   },
   {
     id: 6,
-    description: "pride in london in 360",
-    url: "https://youtube.com/embed/leYpaCHnpCQ"
-  },
-  {
-    id: 7,
     description: "celebrating 3 birthdays in berlin",
     url: "https://youtube.com/embed/yTJ_EMu4eo8/"
   },
   {
-    id: 8,
+    id: 7,
     description: "21st in budapest",
     url: "https://youtube.com/embed/d98ewXubMB0"
   },
   {
-    id: 9,
+    id: 8,
     description: "Dalaro – Empty Apartments",
     url: "https://www.youtube.com/embed/Oap3KIQVWZc"
   },
   {
-    id: 10,
+    id: 9,
     description: "Dalaro – Take my heart ",
     url: "https://www.youtube.com/embed/EEJy-wmabiA"
   }

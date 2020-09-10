@@ -248,7 +248,9 @@ function Redesign() {
                   better-aligned ourselves for future moves. with a clear
                   explanation of <b>who we are</b>, <b>what we do</b> and{" "}
                   <b>how we can help you</b>. see live site{" "}
-                  <a href="https://www.tes.com">here</a>
+                  <b>
+                    <a href="https://www.tes.com">here</a>
+                  </b>
                 </p>
               }
             />
