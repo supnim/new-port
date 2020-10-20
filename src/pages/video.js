@@ -37,26 +37,28 @@ const Video = ({ data }) => {
           Taught me; narration, sound-design, composition, tempo and much more.
           <br />
           <br />
-          <ToolTip toolTipText="some of the videos have copyright music and therefore won't play on-site; click the title beneath to go to youtube :)">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 20 20"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="10"
-                cy="10"
-                r="9"
-                stroke="white"
-                stroke-width="2"
-                stroke-linejoin="round"
-              />
-              <path d="M11.25 7.5V17.5H8.75V7.5H11.25Z" fill="white" />
-              <circle cx="10" cy="5" r="1.25" fill="white" />
-            </svg>
-          </ToolTip>
+          <div style={{ width: "320px", margin: "0 auto" }}>
+            <ToolTip toolTipText="some of the videos have copyright music and therefore won't play on-site; click the title beneath to go to youtube :)">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="10"
+                  cy="10"
+                  r="9"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linejoin="round"
+                />
+                <path d="M11.25 7.5V17.5H8.75V7.5H11.25Z" fill="white" />
+                <circle cx="10" cy="5" r="1.25" fill="white" />
+              </svg>
+            </ToolTip>
+          </div>
         </p>
         <div style={{ maxWidth: "800px", margin: "0 auto" }}>{videoUrl}</div>
       </Layout>

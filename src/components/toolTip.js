@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 const ToolTipText = styled("span")({
   visibility: "hidden",
-  fontSize: "12px",
-  width: "320px",
+  fontSize: "14px",
+  width: "400px",
   backgroundColor: "white",
   color: "black",
   textAlign: "center",
