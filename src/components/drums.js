@@ -39,7 +39,7 @@ function Drums() {
   return (
     <section
       style={{
-        paddingTop: "8rem",
+        paddingTop: "2rem",
         textAlign: "center"
       }}
     >

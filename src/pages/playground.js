@@ -22,7 +22,7 @@ function Grounds() {
     <Layout>
       <div className="video-page">
         <h3>playground</h3>
-        <p style={{ paddingBottom: "8rem" }}>
+        <p style={{ paddingBottom: "2rem" }}>
           View on desktop for best experience, as so, some games are hided on
           mobile.
         </p>
