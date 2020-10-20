@@ -117,9 +117,9 @@ function Redesign() {
             title="Brief"
             paragraph={
               <p>
-                redesign the homepage to better illustrate the new company
-                goals. Which being, higher focus on B2B and
-                internationalisation. <br />
+                Redesign the homepage to better illustrate the new company goals
+                — the full conversion to SaaS business, a higher focus on B2B,
+                and further internationalisation of the business. <br />
                 <br />
                 previously looked like{" "}
                 <a href="https://web.archive.org/web/20200613221639/https://www.tes.com/">
@@ -144,11 +144,11 @@ function Redesign() {
           >
             <h3 style={{ padding: "2rem" }}>Research</h3>
             <p>
-              I started by hypothesising what our users are looking for when
-              landing here and the problems that may face. Then I set out to
-              interview a variety of school leader and teachers, primary and
-              secondary, east to west making sure to cover any edge cases,
-              therefore, allow me to have a solid base to go off.
+              I started by hypothesising, what our users are looking for and the
+              problems that may face. Then I set out to interview a variety of
+              school leaders and teachers, primary and secondary, east to west
+              making sure to cover any edge cases, therefore, allow me to have a
+              solid base to go off.
               <br />
               <br />
               These are the learnings:
@@ -190,7 +190,7 @@ function Redesign() {
           >
             <TitleP
               title="Personas"
-              paragraph="From the research conducted these where some of the personas formed"
+              paragraph="From the research conducted; these where some of the personas formed"
             />
             <Carousel
               one={image.alison.childImageSharp.fluid}
@@ -244,8 +244,8 @@ function Redesign() {
               title="Launch"
               paragraph={
                 <p>
-                  through this redesign, we addressed all issues and
-                  better-aligned ourselves for future moves. with a clear
+                  Through this redesign, we addressed all issues and
+                  better-aligned ourselves for future moves. With a clear
                   explanation of <b>who we are</b>, <b>what we do</b> and{" "}
                   <b>how we can help you</b>. see live site{" "}
                   <b>
