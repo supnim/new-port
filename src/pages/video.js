@@ -39,17 +39,22 @@ const Video = ({ data }) => {
           <br />
           <ToolTip toolTipText="some of the videos have copyright music and therefore won't play on-site; click the title beneath to go to youtube :)">
             <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <circle cx="12" cy="12" r="11" stroke="white" stroke-width="2" />
-              <path
-                d="M13.578 10.194V19.527H10.788V10.194H13.578ZM13.866 7.638C13.866 7.86 13.821 8.07 13.731 8.268C13.641 8.46 13.518 8.631 13.362 8.781C13.206 8.925 13.023 9.042 12.813 9.132C12.609 9.216 12.39 9.258 12.156 9.258C11.928 9.258 11.715 9.216 11.517 9.132C11.319 9.042 11.142 8.925 10.986 8.781C10.836 8.631 10.716 8.46 10.626 8.268C10.542 8.07 10.5 7.86 10.5 7.638C10.5 7.41 10.542 7.197 10.626 6.999C10.716 6.801 10.836 6.627 10.986 6.477C11.142 6.327 11.319 6.21 11.517 6.126C11.715 6.042 11.928 6 12.156 6C12.39 6 12.609 6.042 12.813 6.126C13.023 6.21 13.206 6.327 13.362 6.477C13.518 6.627 13.641 6.801 13.731 6.999C13.821 7.197 13.866 7.41 13.866 7.638Z"
-                fill="white"
+              <circle
+                cx="10"
+                cy="10"
+                r="9"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="round"
               />
+              <path d="M11.25 7.5V17.5H8.75V7.5H11.25Z" fill="white" />
+              <circle cx="10" cy="5" r="1.25" fill="white" />
             </svg>
           </ToolTip>
         </p>
