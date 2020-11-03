@@ -3,12 +3,12 @@ import styled from "styled-components";
 const ToolTipText = styled("span")({
   visibility: "hidden",
   fontSize: "14px",
-  width: "400px",
+  width: "420px",
   backgroundColor: "white",
   color: "black",
   textAlign: "center",
   borderRadius: "4px",
-  padding: "8px",
+  padding: "16px",
   position: "absolute",
   zIndex: 1,
   bottom: "150%",
@@ -25,7 +25,6 @@ const ToolTipText = styled("span")({
 const ToolTip = styled("div")({
   position: "relative",
   display: "inline-block",
-  borderBottom: "1px dotted black",
   ":hover span": {
     visibility: "visible"
   }

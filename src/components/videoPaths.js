@@ -4,7 +4,12 @@ export default [
   {
     id: 1,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/EY3lnnKp8JU">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://www.youtube.com/watch_popup?v=EY3lnnKp8JU"
+      >
         through the lockdown lens
       </a>
     ),
@@ -13,7 +18,12 @@ export default [
   {
     id: 2,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/rTwD6_4KZIk">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=rTwD6_4KZIk"
+      >
         dubrovnik, croatia
       </a>
     ),
@@ -22,7 +32,12 @@ export default [
   {
     id: 3,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/zWqSU2Fe_rk">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=zWqSU2Fe_rk"
+      >
         a day in oxford in 3 second clips
       </a>
     ),
@@ -31,7 +46,12 @@ export default [
   {
     id: 4,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/UWNQKA1omRY">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=UWNQKA1omRY"
+      >
         a little camping trip in the lake district
       </a>
     ),
@@ -40,7 +60,12 @@ export default [
   {
     id: 5,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/4H8Q9R_UbHE">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=4H8Q9R_UbHE"
+      >
         how to kill 17 hours in dubai
       </a>
     ),
@@ -49,7 +74,12 @@ export default [
   {
     id: 6,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/yTJ_EMu4eo8">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=yTJ_EMu4eo8"
+      >
         celebrating 3 birthdays in berlin
       </a>
     ),
@@ -58,7 +88,12 @@ export default [
   {
     id: 7,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/d98ewXubMB0">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=d98ewXubMB0"
+      >
         21st in budapest
       </a>
     ),
@@ -67,7 +102,12 @@ export default [
   {
     id: 8,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/Oap3KIQVWZc">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=Oap3KIQVWZc"
+      >
         Dalaro – Empty Apartments
       </a>
     ),
@@ -76,7 +116,12 @@ export default [
   {
     id: 9,
     description: (
-      <a style={{ color: "white" }} href="https://youtu.be/EEJy-wmabiA">
+      <a
+        style={{ color: "white" }}
+        target="_blank"
+        rel="noopener noreferrer"
+        href="https://youtube.com/watch_popup?v=EEJy-wmabiA"
+      >
         Dalaro – Take my heart{" "}
       </a>
     ),

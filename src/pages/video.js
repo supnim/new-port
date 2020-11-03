@@ -37,7 +37,7 @@ const Video = ({ data }) => {
           Taught me; narration, sound-design, composition, tempo and much more.
           <br />
           <br />
-          <div style={{ width: "320px", margin: "0 auto" }}>
+          <div className="tooltip" style={{ width: "320px", margin: "0 auto" }}>
             <ToolTip toolTipText="some of the videos have copyright music and therefore won't play on-site; click the title beneath to go to youtube :)">
               <svg
                 width="20"
