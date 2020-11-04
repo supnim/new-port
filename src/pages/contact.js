@@ -9,6 +9,8 @@ import LogoBox from "../components//logobox";
 import "../utils/normalize.css";
 import "../utils/css/screen.css";
 
+import Skill from "../../content/assets/skill.svg";
+
 const Contact = () => {
   const image = useStaticQuery(graphql`
     query {
@@ -97,6 +99,16 @@ const Contact = () => {
                 experimentation and testing; and established the design
                 direction for the new Tes brand.
               </p>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center"
+                }}
+              >
+                <Skill width="400px" />
+                <br />
+              </div>
               <p>
                 In my downtime I play with different mediums, including music,
                 still and motion pictures, and the design and development of
