@@ -20,6 +20,10 @@ import Password from "../components/gifs/design-system/password.gif";
 import Component from "../components/gifs/design-system/component.gif";
 import Content from "../components/gifs/design-system/content.gif";
 
+import Language from "../../content/assets/projects/design-system/language.svg";
+import Percent from "../../content/assets/projects/design-system/percent.svg";
+import ClockTwo from "../../content/assets/projects/design-system/clockTwo.svg";
+
 function DesignSystem() {
   const image = useStaticQuery(graphql`
     query {
@@ -225,6 +229,47 @@ function DesignSystem() {
                 <img src={Component} alt="more components" />
               </div>
             </div>
+            <section
+              style={{
+                margin: "0 auto",
+                padding: "2rem",
+                backgroundColor: "#F5F5F5"
+              }}
+            >
+              <h3 style={{ textAlign: "center", padding: "2rem" }}>Result</h3>
+              <div
+                style={{
+                  maxWidth: "1200px",
+                  margin: "0 auto",
+                  padding: "4rem 0",
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  flexWrap: "wrap",
+                  alignItems: "baseline"
+                }}
+              >
+                <CardIcon
+                  icon={<Percent />}
+                  title=""
+                  description={
+                    <p>
+                      Reduction in complexity. <br />
+                      Over a 120 components down to 32
+                    </p>
+                  }
+                />
+                <CardIcon
+                  icon={<Language />}
+                  title=""
+                  description="Unified 7 internal teams and 3 external sister company under one language"
+                />
+                <CardIcon
+                  icon={<ClockTwo />}
+                  title=""
+                  description="Ability to mockup design at a much faster rate"
+                />
+              </div>
+            </section>
             <div>
               <Img fluid={image.more.childImageSharp.fluid} />
             </div>

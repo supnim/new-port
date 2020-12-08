@@ -14,6 +14,10 @@ import Two from "../../content/assets/projects/design-system/two.svg";
 import Three from "../../content/assets/projects/design-system/three.svg";
 import Content from "../../content/assets/projects/redesign/content.svg";
 
+import Double from "../../content/assets/projects/redesign/double.svg";
+import Overal from "../../content/assets/projects/redesign/overal.svg";
+import Twenty from "../../content/assets/projects/redesign/twenty.svg";
+
 function Redesign() {
   const image = useStaticQuery(graphql`
     query {
@@ -236,7 +240,7 @@ function Redesign() {
           <div
             className="col-6"
             style={{
-              margin: "4rem auto",
+              margin: "6rem auto",
               textAlign: "center"
             }}
           >
@@ -256,6 +260,46 @@ function Redesign() {
             />
           </div>
           <Img fluid={image.live.childImageSharp.fluid} />
+        </section>
+        <section style={{ backgroundColor: "#F5F5F5", padding: "2rem" }}>
+          <div
+            style={{
+              maxWidth: "800px",
+              margin: "0 auto",
+              textAlign: "center"
+            }}
+          >
+            <h3 style={{ padding: "2rem" }}>Result</h3>
+            <p>
+              The project was received really well internally and externally. To
+              wrap up I regrouped with the original user testers to close the
+              loop and double-check we address all the problems they pointed
+              out. Great response all-round and they felt like they were heard.
+              As of writing, the impact of this project...
+            </p>
+          </div>
+
+          <div
+            style={{
+              maxWidth: "1200px",
+              margin: "0 auto",
+              padding: "4rem 0",
+              display: "flex",
+              justifyContent: "space-evenly",
+              flexWrap: "wrap",
+              alignItems: "baseline"
+            }}
+          >
+            <CardIcon icon={<Double />} description=" lead generation" />
+            <CardIcon
+              icon={<Twenty />}
+              description="increase in new registeration"
+            />
+            <CardIcon
+              icon={<Overal />}
+              description="increased clickthrough, reducted bouce rate "
+            />
+          </div>
         </section>
       </Layout>
     </div>

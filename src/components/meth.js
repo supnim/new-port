@@ -3,8 +3,8 @@ import "../utils/css/components/meth.scss";
 import MethodologyCard from "../components/methCard";
 import MethodologyData from "../components/methData";
 import { motion } from "framer-motion";
-import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
+// import { graphql, useStaticQuery } from "gatsby";
+// import Img from "gatsby-image";
 
 const defaultBackground = " ";
 

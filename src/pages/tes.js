@@ -29,7 +29,7 @@ function TesPage() {
       />
       <div className={"jobHero"}>
         <Tes width="70%" height="70%" className={"amazonLogo"} />
-        <p className={"amazonParagraphy"}>
+        <p className="amazonParagraphy" style={{ maxWidth: "800px" }}>
           A 100-year-old publication originally started as Times Educational
           Supplement. Currently in the transformation into a SaaS business. I
           head up the production and implementation of the design system,

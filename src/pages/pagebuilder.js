@@ -16,6 +16,11 @@ import Time from "../../content/assets/projects/pagebuilder/time.svg";
 import Autonomy from "../../content/assets/projects/pagebuilder/autonomy.svg";
 import Consistency from "../../content/assets/projects/pagebuilder/consistency.svg";
 
+import CardIcon from "../components/cardIcon";
+import Clipboard from "../../content/assets/projects/design-system/clipboard.svg";
+import Hundred from "../../content/assets/projects/pagebuilder/hundred.svg";
+import ClockTwo from "../../content/assets/projects/design-system/clockTwo.svg";
+
 function Pagebuilder() {
   const image = useStaticQuery(graphql`
     query {
@@ -130,7 +135,10 @@ function Pagebuilder() {
           />
         </div>
         <section
-          style={{ maxWidth: "1200px", margin: "0 auto", padding: "4rem 0" }}
+          style={{
+            margin: "0 auto",
+            padding: "4rem 0"
+          }}
         >
           <div style={{ padding: "2rem", textAlign: "center" }}>
             <TitleP
@@ -172,35 +180,45 @@ function Pagebuilder() {
             <Autonomy />
             <Consistency />
           </div>
-          <div style={{ padding: "2rem", textAlign: "center" }}>
-            <h3>How?</h3>
+          <section style={{ backgroundColor: "#f4f4f4", margin: "2rem 0" }}>
             <div
               style={{
-                display: "flex",
+                padding: "2rem",
+                textAlign: "center",
+                maxWidth: "1000px",
 
-                justifyContent: "space-evenly",
-                alignItems: "center"
+                margin: "0 auto"
               }}
             >
-              <Card
-                image={image.design.childImageSharp.fluid}
-                title="Design System"
-              />
-              <p
+              <h3>How?</h3>
+              <div
                 style={{
-                  fontSize: "56px",
-                  color: "lightgrey",
-                  paddingLeft: "4rem"
+                  display: "flex",
+
+                  justifyContent: "space-evenly",
+                  alignItems: "center"
                 }}
               >
-                +
-              </p>
-              <Card
-                image={image.drupal.childImageSharp.fluid}
-                title="Drupal + Layout"
-              />
+                <Card
+                  image={image.design.childImageSharp.fluid}
+                  title="Design System"
+                />
+                <p
+                  style={{
+                    fontSize: "56px",
+                    color: "lightgrey",
+                    paddingLeft: "4rem"
+                  }}
+                >
+                  +
+                </p>
+                <Card
+                  image={image.drupal.childImageSharp.fluid}
+                  title="Drupal + Layout"
+                />
+              </div>
             </div>
-          </div>
+          </section>
           <section className="row full">
             <div className="col-12">
               <CardLeft
@@ -224,7 +242,7 @@ function Pagebuilder() {
                 title="Structure"
                 description="We worked together with all the stakeholders ( Marketing, Institute & Editorial ) to build a flexible yet structurally sound layout with potential infinity combination — this was important to us to allow all parties to create with as little restriction as possible."
               />
-              <div style={{ padding: "2rem", textAlign: "center" }}>
+              <div style={{ padding: "8rem", textAlign: "center" }}>
                 <h3>Output</h3>
 
                 <Carousel
@@ -237,7 +255,42 @@ function Pagebuilder() {
             </div>
           </section>
         </section>
-        <br />
+        <section
+          style={{
+            margin: "0 auto",
+            padding: "2rem",
+            backgroundColor: "#F5F5F5"
+          }}
+        >
+          <h3 style={{ textAlign: "center", padding: "2rem" }}>Result</h3>
+          <div
+            style={{
+              maxWidth: "1000px",
+              margin: "0 auto",
+              padding: "4rem 0",
+              display: "flex",
+              justifyContent: "space-evenly",
+              flexWrap: "wrap",
+              alignItems: "baseline"
+            }}
+          >
+            <CardIcon
+              icon={<Clipboard />}
+              title=""
+              description="Consistent and up-to-date across the whole site"
+            />
+            <CardIcon
+              icon={<Hundred />}
+              title=""
+              description="Autonomy of the process of building and pulishing a page on site"
+            />
+            <CardIcon
+              icon={<ClockTwo height="5rem" width="5rem" />}
+              title=""
+              description="Regained engineering time. Building products not pages."
+            />
+          </div>
+        </section>
         <div
           className="row"
           style={{

@@ -20,7 +20,7 @@ function AmazonPage() {
       />
       <div className="jobHero">
         <Amazon width="100%" height="100%" className="amazonLogo" />
-        <p className="amazonParagraphy">
+        <p className="amazonParagraphy" style={{ maxWidth: "800px" }}>
           An international technology company that focuses on e-commerce, cloud
           computing, digital streaming, and artificial intelligence. During my
           time there I've learnt a great deal; from new skills to different

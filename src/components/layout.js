@@ -25,7 +25,6 @@ const Layout = props => {
               onClick={play}
               className="hamburger hamburger--collapse"
               aria-label="nav"
-              role="navigation"
               aria-controls="navigation"
             >
               <div className="hamburger-box">
@@ -44,28 +43,28 @@ const Layout = props => {
             </Link>
           </nav>
           <div className="site-head-right" role="menu">
-            <ul className="nav" role="menubar" aria-label="menu">
-              <li role="menuitem">
+            <ul className="nav" aria-label="menu">
+              <li>
                 <Link to={`/`}>home</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/`} onClick={() => scrollTo("#jobs")}>
                   work
                 </Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/photo`}>photo</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/video`}>video</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/audio`}>audio</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/playground`}>playground</Link>
               </li>
-              <li role="menuitem">
+              <li>
                 <Link to={`/contact`}>contact</Link>
               </li>
             </ul>
