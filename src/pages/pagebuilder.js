@@ -282,12 +282,12 @@ function Pagebuilder() {
             <CardIcon
               icon={<Hundred />}
               title=""
-              description="Autonomy of the process of building and pulishing a page on site"
+              description="Autonomy of the process of building and publishing a page on site"
             />
             <CardIcon
               icon={<ClockTwo height="5rem" width="5rem" />}
               title=""
-              description="Regained engineering time. Building products not pages."
+              description="Regained engineering time. Building products not pages"
             />
           </div>
         </section>

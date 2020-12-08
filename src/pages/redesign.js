@@ -290,14 +290,14 @@ function Redesign() {
               alignItems: "baseline"
             }}
           >
-            <CardIcon icon={<Double />} description=" lead generation" />
+            <CardIcon icon={<Double />} description="lead generation" />
             <CardIcon
               icon={<Twenty />}
-              description="increase in new registeration"
+              description="increase in new registration"
             />
             <CardIcon
               icon={<Overal />}
-              description="increased clickthrough, reducted bouce rate "
+              description="increase click through, reduced bounce rate"
             />
           </div>
         </section>
