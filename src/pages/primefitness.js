@@ -208,6 +208,41 @@ eco-system."
               />
             </div>
           </section>
+          <div
+            style={{
+              backgroundColor: "#F2F3F4",
+              borderRadius: "8px",
+              padding: "32px 80px 80px 80px",
+              margin: "16px",
+              border: "1px solid lightgrey",
+              fontSize: "24px"
+            }}
+            className="row full"
+          >
+            <h4>Prototype</h4>
+            <p>
+              Since the conception of this idea in 2017, I've started learning
+              coding and currently know enough to slowly realise the idea. V0.1
+              looks like{" "}
+              <a href="https://lovfq.csb.app">
+                <u>this</u>:
+              </a>
+              <br />
+            </p>
+            <iframe
+              src="https://codesandbox.io/embed/recipe-app-lovfq?fontsize=14&hidenavigation=1&theme=dark&view=preview"
+              style={{
+                width: "100%",
+                height: "500px",
+                border: "0",
+                borderRadius: "4px",
+                overflow: "hidden"
+              }}
+              title="Recipe App"
+              allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+              sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+            ></iframe>
+          </div>
         </section>
       </Layout>
     </div>
