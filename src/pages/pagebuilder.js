@@ -21,6 +21,10 @@ import Clipboard from "../../content/assets/projects/design-system/clipboard.svg
 import Hundred from "../../content/assets/projects/pagebuilder/hundred.svg";
 import ClockTwo from "../../content/assets/projects/design-system/clockTwo.svg";
 
+import One from "../../content/assets/projects/design-system/one.svg";
+import Two from "../../content/assets/projects/design-system/two.svg";
+import Three from "../../content/assets/projects/design-system/three.svg";
+
 function Pagebuilder() {
   const image = useStaticQuery(graphql`
     query {
@@ -99,6 +103,24 @@ function Pagebuilder() {
           }
         }
       }
+      CMSstructure: file(
+        relativePath: { eq: "projects/pagebuilder/CMS_structure.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      design_sprint: file(
+        relativePath: { eq: "projects/pagebuilder/Design_Sprint.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -124,7 +146,7 @@ function Pagebuilder() {
             title="Aim"
             paragraph={
               <p>
-                to build a cms which in turn removes dependency and create
+                to build a CMS which in turn removes dependency and create
                 autonomy – basing it of the{" "}
                 <a href="/design-system">
                   <b>design system </b>
@@ -140,7 +162,14 @@ function Pagebuilder() {
             padding: "4rem 0"
           }}
         >
-          <div style={{ padding: "2rem", textAlign: "center" }}>
+          <div
+            style={{
+              padding: "2rem",
+              textAlign: "center",
+              maxWidth: "800px",
+              margin: "0 auto"
+            }}
+          >
             <TitleP
               title="Why"
               paragraph={
@@ -167,7 +196,6 @@ function Pagebuilder() {
               }
             />
           </div>
-
           <div
             style={{
               padding: "4rem 0",
@@ -180,21 +208,101 @@ function Pagebuilder() {
             <Autonomy />
             <Consistency />
           </div>
-          <section style={{ backgroundColor: "#f4f4f4", margin: "2rem 0" }}>
+          <div
+            style={{
+              textAlign: "center",
+              marginTop: "8rem"
+            }}
+          >
+            <b
+              className="title"
+              style={{
+                fontSize: "32px",
+                textAlign: "center"
+              }}
+            >
+              Who
+            </b>
+            <br />
+            <br />
+            <Img fluid={image.CMSstructure.childImageSharp.fluid} />
+          </div>
+          <section style={{ backgroundColor: "#f4f4f4" }}>
             <div
               style={{
                 padding: "2rem",
                 textAlign: "center",
                 maxWidth: "1000px",
-
                 margin: "0 auto"
               }}
             >
               <h3>How?</h3>
               <div
                 style={{
+                  textAlign: "left",
+                  maxWidth: "800px",
+                  margin: "0 auto"
+                }}
+              >
+                <p style={{ margin: "2rem 0" }}>
+                  <One />
+                  <br />
+                  <br />
+                  Discovery: My product manager and I ran a workshop with all
+                  the stakeholder (editorial, marketing & institute). This was a
+                  sticky note exercise whereby we asked them to write down
+                  everything they wanted from this tool and one by one we as a
+                  collective categorise them into either; must-have, should-have
+                  or nice-to-have.
+                  <br />
+                  <br /> must = essential for day-to-day
+                  <br /> should = tool that is missing that would add value
+                  <br />
+                  nice = bonuses and improved quality of life
+                </p>
+                <p style={{ margin: "4rem 0" }}>
+                  <Two />
+                  <br />
+                  <br />
+                  Prioritisation: Once the loose prioritisation was defined by
+                  the stakeholders, we (PE, PM and I) went off and further
+                  grouped and prioritised into small chunks of work. Accounting
+                  for what pieces needed to be done, in what order to allow for
+                  a smooth unobstructed build.
+                </p>
+                <p style={{ margin: "2rem 0" }}>
+                  <Three />
+                  <br />
+                  <br />
+                  Design sprint: Finally, once the groups of components were
+                  signed off. I started designing, in total there were about 6/7
+                  sets and each set made up of 5 to 8 pieces and each sprint
+                  lasted about one week. <br />
+                  <br />
+                  Stage 1: design + design team sign off
+                  <br />
+                  Stage 2: engineering sign off <br />
+                  Stage 3: stakeholder sign off
+                  <br />
+                  Stage 4: build <br />
+                  Stage 5: demo <br />
+                  <br />
+                  Below is a rough timeline:
+                </p>
+                <Img fluid={image.design_sprint.childImageSharp.fluid} />
+              </div>
+              <hr
+                style={{
+                  backgroundColor: "grey",
+                  width: "400px",
+                  margin: "4rem auto"
+                }}
+              />
+              <h3>Stack</h3>
+              <div
+                style={{
                   display: "flex",
-
+                  marginTop: "4rem",
                   justifyContent: "space-evenly",
                   alignItems: "center"
                 }}
@@ -220,6 +328,11 @@ function Pagebuilder() {
             </div>
           </section>
           <section className="row full">
+            <h3
+              style={{ textAlign: "center", margin: "0 auto", padding: "4rem" }}
+            >
+              What
+            </h3>
             <div className="col-12">
               <CardLeft
                 key="1"

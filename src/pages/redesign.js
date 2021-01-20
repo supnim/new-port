@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery, Link } from "gatsby";
 import Img from "gatsby-image";
 import TitleP from "../components/TitleP";
 import Carousel from "../components/carousel";
@@ -70,7 +70,9 @@ function Redesign() {
           }
         }
       }
-      wireframe: file(relativePath: { eq: "projects/redesign/wireframe.png" }) {
+      wireframe: file(
+        relativePath: { eq: "projects/redesign/wireframe.jpeg" }
+      ) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid
@@ -98,6 +100,31 @@ function Redesign() {
           }
         }
       }
+      audience: file(relativePath: { eq: "projects/redesign/audience.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      redesign_journey: file(
+        relativePath: { eq: "projects/redesign/redesign_journey.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      redesign_structure: file(
+        relativePath: { eq: "projects/redesign/redesign_structure.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -116,7 +143,7 @@ function Redesign() {
           ]}
         />
         <RedesignHero width="100%" height="auto" />
-        <div className="col-6" style={{ margin: "0 auto", padding: "2rem" }}>
+        <div className="col-8" style={{ margin: "0 auto", padding: "2rem" }}>
           <TitleP
             title="Brief"
             paragraph={
@@ -132,6 +159,14 @@ function Redesign() {
               </p>
             }
           />
+        </div>{" "}
+        <div style={{ textAlign: "center" }}>
+          <h3>Structure</h3>
+          <p style={{ padding: "2rem" }}>
+            We worked in a crossfunctional team, I connecting all limbs of the
+            business.
+          </p>
+          <Img fluid={image.redesign_structure.childImageSharp.fluid} />
         </div>
         <div style={{ textAlign: "center", padding: "4rem" }}>
           <h3>Timeline</h3>
@@ -153,12 +188,72 @@ function Redesign() {
               school leaders and teachers, primary and secondary, east to west
               making sure to cover any edge cases, therefore, allow me to have a
               solid base to go off.
-              <br />
-              <br />
-              These are the learnings:
+              <br /> <br /> <br />
+              <b style={{ fontSize: "24px", margin: "2rem" }}>My hypothesis:</b>
+              <ol>
+                <br />
+                1. International schools do not know who we are (brand) <br />
+                or the products and services we offer (value)
+                <br />
+                2. We are a recruiting company
+                <br />
+                3. We come across as a UK centric business
+                <br />
+                4. We are too expensive for the independent schools
+              </ol>
             </p>
           </div>
-
+          <hr
+            style={{
+              backgroundColor: "darkgrey",
+              margin: "2rem auto 8rem auto",
+              width: "400px"
+            }}
+          />
+          <section style={{ width: "80%", display: "flex", margin: "0 auto" }}>
+            <div style={{ width: "50%", textAlign: "center" }}>
+              <b
+                style={{
+                  padding: "2rem",
+                  fontSize: "24px",
+                  color: "#4C4C4C"
+                }}
+              >
+                Qualitative
+              </b>
+              <br /> <br />
+              <p style={{ fontSize: "14px", padding: "0 4rem" }}>
+                I <b>interviewed</b> a total of 7 people, whereby I created a
+                loose script/questionnaire as a base to pry open these users
+                and, to gain a better understanding of what they loved, hated
+                and expected from tes.com.
+                <br /> <br />+ <b>Competitive research </b>
+                <br />
+                <br />+ ongoing <b>Stakeholder meetings</b> as the business was
+                defining the strategy/offerings in parallel so the designs had
+                to reflect those.
+              </p>
+            </div>
+            <div style={{ width: "50%", textAlign: "center" }}>
+              <b
+                style={{
+                  padding: "2rem",
+                  fontSize: "24px",
+                  color: "#4C4C4C"
+                }}
+              >
+                Quantitative
+              </b>
+              <br /> <br />
+              <p style={{ fontSize: "14px", padding: "0 4rem" }}>
+                Worked very closely with the heads of the sales teams, who had a
+                combine experience/user knowledge of <b>25+ years</b>.<br />
+                <br /> This was a wonderful insight, as they had “interviewed”{" "}
+                <b>100’s of thousands of customers</b> and has a clear
+                understanding of there pain points and expectations.
+              </p>
+            </div>
+          </section>{" "}
           <div
             style={{
               maxWidth: "1200px",
@@ -182,6 +277,86 @@ function Redesign() {
               icon={<Three />}
               description="no proof of how we have/could help"
             />
+          </div>
+          <div
+            style={{
+              background: "white",
+              margin: "0 auto",
+              width: "80%",
+              textAlign: "center",
+              paddingTop: "4rem"
+            }}
+          >
+            <b style={{ fontSize: "24px" }}>Note worthy</b>
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                width: "100%",
+                margin: "0 auto",
+                padding: "2rem"
+              }}
+            >
+              <ul
+                style={{
+                  width: "50%",
+                  margin: "0 auto",
+                  textAlign: "center",
+                  fontSize: "14px"
+                }}
+              >
+                <li style={{ padding: "1rem 0" }}>
+                  Easy navigation into other areas of the site
+                </li>
+                <li style={{ padding: "1rem 0" }}>
+                  Login box unnessessary <br />
+                  (feels like a must/gated )
+                </li>
+
+                <li style={{ padding: "1rem 0" }}>
+                  Homepage: recommend pop up = <br /> annoying, 1-10 scale too
+                  big 5 would be <br />
+                  enough + usually ignored
+                </li>
+              </ul>
+              <ul
+                style={{ width: "50%", textAlign: "center", fontSize: "14px" }}
+              >
+                <li style={{ padding: "1rem 0" }}>
+                  Categorise steams / teacher <br />
+                  schools and aspirating teachers
+                </li>
+                <li style={{ padding: "1rem 0" }}>
+                  Expects latest education news / <br /> current affairs and
+                  range of articles
+                </li>
+                <li style={{ padding: "1rem 0" }}>
+                  Imagery lacks diversity / seems stocky - <br /> illustrations
+                  suggested
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            style={{
+              margin: "0 auto",
+              width: "80%",
+              textAlign: "center",
+              padding: "4rem",
+              display: "flex",
+              justifyContent: "center"
+            }}
+          >
+            <p style={{ padding: "2rem", textDecoration: "underline" }}>
+              <a href="https://www.dropbox.com/s/sd3d5mguvovjdka/questions.png?dl=0">
+                interview questions
+              </a>
+            </p>
+            <p style={{ padding: "2rem", textDecoration: "underline" }}>
+              <a href="https://www.dropbox.com/s/fajw3bip7meguxp/cliffnotes.jpg?dl=0">
+                interview cliffnotes
+              </a>
+            </p>
           </div>
         </section>
         <section>
@@ -212,33 +387,73 @@ function Redesign() {
               textAlign: "center"
             }}
           >
-            <TitleP
-              title="UX"
-              paragraph="Plotting the journey and structure."
-            />
+            <div style={{ margin: "0 auto", width: "80%" }}>
+              <TitleP
+                title="UX"
+                paragraph="Plotting the journey and structure. At this stage, there were many iterations and card sorting exercises to define the best user journey that balances the business goals and customer needs. It was important to NOT alienate our core customer base with B2B offerings."
+              />
+            </div>
             <Img fluid={image.journey.childImageSharp.fluid} />
             <Img fluid={image.wireframe.childImageSharp.fluid} />
+            <Img fluid={image.audience.childImageSharp.fluid} />
+            <Img fluid={image.redesign_journey.childImageSharp.fluid} />
             <div style={{ maxWidth: "800xp", margin: "4rem" }}>
               <Img fluid={image.structure.childImageSharp.fluid} />
             </div>
           </div>
         </section>
         <section>
+          <p
+            style={{
+              textAlign: "center",
+              margin: "0 auto",
+              width: "60%",
+              padding: "2rem",
+              fontSize: "18px"
+            }}
+          >
+            I worked closely with marketing to get the look and feel right, and
+            copywriters to get the tone of voice down — so the final prototype
+            put in front of the board was as close to the end result as
+            possible.
+          </p>
           <Content width="100%" height="auto" />
 
           <div
-            style={{ maxWidth: "800xp", margin: "4rem", textAlign: "center" }}
+            style={{
+              maxWidth: "1000px",
+              margin: "4rem auto",
+              textAlign: "center"
+            }}
           >
             <TitleP
               title="UI"
-              paragraph="Adding art direction and life to the skeleton"
+              paragraph={
+                <p>
+                  Adding art direction and life to the skeleton.
+                  <br />
+                  This was relatively straightforward as this project was built
+                  on the{" "}
+                  <Link to="/pagebuilder">
+                    <b>CMS</b>
+                  </Link>
+                  , which was built using the
+                  <Link to="/design-system">
+                    {" "}
+                    <b>design system</b>
+                  </Link>
+                  . So most of the UI was sorted and we only need to focus on
+                  the art direction and implementing slight changes to the CMS
+                  to facilitate the designs
+                </p>
+              }
             />
             <Img fluid={image.mood.childImageSharp.fluid} />
           </div>
         </section>
         <section>
           <div
-            className="col-6"
+            className="col-8"
             style={{
               margin: "6rem auto",
               textAlign: "center"
@@ -271,11 +486,11 @@ function Redesign() {
           >
             <h3 style={{ padding: "2rem" }}>Result</h3>
             <p>
-              The project was received really well internally and externally. To
-              wrap up I regrouped with the original user testers to close the
-              loop and double-check we address all the problems they pointed
-              out. Great response all-round and they felt like they were heard.
-              As of writing, the impact of this project...
+              The project was recieved really well internally and externally.
+              Regrouped with the original user testers and sales team to close
+              the loop and double check we’re address all the problem they had
+              pointed out. They believed we had. As of writting the impact of
+              this project...
             </p>
           </div>
 
@@ -297,10 +512,60 @@ function Redesign() {
             />
             <CardIcon
               icon={<Overal />}
-              description="increase click through, reduced bounce rate"
+              description="increased click through, reduced bounce rate"
             />
           </div>
         </section>
+        <div
+          style={{
+            textAlign: "center",
+            width: "80%",
+            margin: "0 auto",
+            padding: "4rem"
+          }}
+        >
+          <b style={{ fontSize: "32px" }}>Postscript</b>
+          <p style={{ padding: "4rem", width: "800px", margin: "0 auto" }}>
+            We have revisited this project to refine copy, modify illustrations
+            and A/B test different structure, with each iteration moving the
+            needle in the right direction. If I was to do this again:
+            <br />
+            <br />
+            <li
+              style={{
+                fontSize: "14px",
+                padding: "1rem",
+                margin: "0 8rem"
+              }}
+            >
+              I'd have the business strategy/offering finalised so I could use
+              to influence my layout and inturn the user.
+            </li>
+            <li
+              style={{
+                fontSize: "14px",
+                padding: "1rem",
+                margin: "0 8rem"
+              }}
+            >
+              I'd want to work closely with marketing; in this project, I
+              defined the art direction and they adapted it. Moving forward it
+              should be more of a collaborative effort throughout.
+            </li>
+            <li
+              style={{
+                fontSize: "14px",
+                padding: "1rem",
+                margin: "0 8rem"
+              }}
+            >
+              Ways of working: At that stage, we were using excel and sketch
+              which; created some friction regarding transparency and things
+              being out of date. We've moved to Figma and I want to start using
+              Notion.
+            </li>
+          </p>
+        </div>
       </Layout>
     </div>
   );

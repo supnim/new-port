@@ -73,6 +73,15 @@ function DesignSystem() {
           }
         }
       }
+      structure: file(
+        relativePath: { eq: "projects/design-system/DS_structure.jpg" }
+      ) {
+        childImageSharp {
+          fluid(maxWidth: 1000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `);
 
@@ -131,6 +140,10 @@ function DesignSystem() {
             />
           </div>
         </section>
+        <div>
+          <h3 style={{ textAlign: "center", padding: "2rem" }}>Team</h3>
+          <Img fluid={image.structure.childImageSharp.fluid} />
+        </div>
         <section style={{ backgroundColor: "#F5F5F5", padding: "2rem" }}>
           <h3 style={{ textAlign: "center", padding: "2rem" }}>How ?</h3>
           <div
@@ -156,6 +169,19 @@ function DesignSystem() {
               icon={<Three />}
               description="efficiency and consistency leads to building faster products"
             />
+            <p style={{ margin: "4rem" }} className="paragraph">
+              Extended: <br /> Firstly, we auditioned over 150 component down to
+              a manageable 35~. By means of merging similar ones and deprecating
+              un-used one. This gave me a starting point to build from. I went
+              about breaking our library into Core, Elements and Components to
+              create a multi-layered system.
+              <br />
+              <br /> Once signed off by all squads, I worked closely with the
+              Front-end champion to cut and merge, refine and build the new
+              components into the live system. <br />
+              <br /> Now we have a single source of truth, used by designers and
+              engineers across all of our companies under Tes Global.
+            </p>
           </div>
         </section>
         <section>
@@ -253,8 +279,8 @@ function DesignSystem() {
                   title=""
                   description={
                     <p>
-                      Reduction in complexity. <br />
-                      Over a 120 components down to 32
+                      Reduction in complexity — <br />
+                      Over 150 components down to 35~
                     </p>
                   }
                 />
