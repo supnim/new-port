@@ -203,13 +203,6 @@ function Redesign() {
               </ol>
             </p>
           </div>
-          <hr
-            style={{
-              backgroundColor: "darkgrey",
-              margin: "2rem auto 8rem auto",
-              width: "400px"
-            }}
-          />
           <section style={{ width: "80%", display: "flex", margin: "0 auto" }}>
             <div style={{ width: "50%", textAlign: "center" }}>
               <b
@@ -254,6 +247,25 @@ function Redesign() {
               </p>
             </div>
           </section>{" "}
+          <hr
+            style={{
+              backgroundColor: "darkgrey",
+              margin: "8rem auto ",
+              width: "400px"
+            }}
+          />
+          <div
+            style={{
+              textAlign: "center",
+              margin: "2rem auto",
+              maxWidth: "600px"
+            }}
+          >
+            <TitleP
+              title="Findings"
+              paragraph="There was some crossover in my hypnosis and finding, which was great to know. But also some new areas of concern were discovered — jotted down below."
+            />
+          </div>
           <div
             style={{
               maxWidth: "1200px",
@@ -287,7 +299,7 @@ function Redesign() {
               paddingTop: "4rem"
             }}
           >
-            <b style={{ fontSize: "24px" }}>Note worthy</b>
+            <b style={{ fontSize: "24px" }}>Note worthy findings</b>
             <div
               style={{
                 display: "flex",
@@ -369,7 +381,7 @@ function Redesign() {
           >
             <TitleP
               title="Personas"
-              paragraph="From the research conducted; these where some of the personas formed"
+              paragraph="From the research conducted; these where some of the personas formed. As these were created based on real people I interviewed, it was much easier to put myself in their shoes. Of course, the personas embodied 100's of thousands of leaders and staff added from the Sales teams on the job experience, but something about having a true source of reference is interesting."
             />
             <Carousel
               one={image.alison.childImageSharp.fluid}
@@ -397,7 +409,29 @@ function Redesign() {
             <Img fluid={image.wireframe.childImageSharp.fluid} />
             <Img fluid={image.audience.childImageSharp.fluid} />
             <Img fluid={image.redesign_journey.childImageSharp.fluid} />
-            <div style={{ maxWidth: "800xp", margin: "4rem" }}>
+            <div
+              style={{ width: "800px", margin: "4rem auto", textAlign: "left" }}
+            >
+              <TitleP title="Pre-UI" />
+              <p>
+                At this stage, I was trying out many a different layouts.
+                Restained by the CMS functionality and inturn time. In a
+                previous project, we created a CMS and in each project I use it,
+                I try to improve it in whatever ways I can. SO for all projects
+                at the design stage, there are three versions: <br />
+                <br /> 1. easy = can build out the box <br /> 2. ideal = some
+                enhancements need to be done to realise the design <br /> 3.
+                aspiration = building new features, making big changes creating
+                for the future.
+                <br /> <br /> With these designs, the Engineers and I battle it
+                out. <br />
+                <br />
+                This battle I left with:
+                <br /> Sticky hero / CTA (UX) <br /> Implementation of SVGs
+                (performance improvement) <br /> Icons in card (UI)
+                <br /> Full-width pages (previously had a left nav)
+                <br /> And some other minor improvements.
+              </p>
               <Img fluid={image.structure.childImageSharp.fluid} />
             </div>
           </div>
