@@ -33,7 +33,7 @@ export default [
     title: "plan",
     background: " ",
     standfirst:
-      "choose the best, wirefrime idea and project the products coming journey"
+      "choose the best, wireframe ideas and project the products coming journey"
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export default [
     title: "test",
     background: " ",
     standfirst:
-      "show prototypes to users outside of co. learn what doesn’t work "
+      "show prototypes to users in & outside of co. learn what doesn’t work"
   },
   {
     id: 6,

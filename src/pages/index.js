@@ -143,7 +143,7 @@ const Index = ({ data }, location) => {
           >
             <Deadnice width="20%" height="20%" />
             <br />
-            <p>WIP — eCommerce</p>
+            <p>WIP | Personal Project</p>
           </a>
         </div>
       </section>
