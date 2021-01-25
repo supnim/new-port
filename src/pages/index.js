@@ -21,6 +21,7 @@ import Bookwise from "../../content/assets/thumbnails/bookwise.svg";
 import OneCard from "../../content/assets/thumbnails/one_card.svg";
 import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
 import Volvic from "../../content/assets/thumbnails/volvic.svg";
+import Deadnice from "../../content/assets/thumbnails/deadnice.svg";
 
 import Methodogly from "../components/meth";
 
@@ -129,6 +130,21 @@ const Index = ({ data }, location) => {
           <Link aria-label="watch videos" className="col-4 watch" to={`/video`}>
             <p>WATCH</p>
           </Link>
+        </div>
+        <div>
+          <a
+            className="col-12 deadnice"
+            href="https://www.deadnice.co"
+            style={{
+              textDecoration: "none",
+              justifyContent: "center",
+              padding: "4rem 0 2rem 0"
+            }}
+          >
+            <Deadnice width="20%" height="20%" />
+            <br />
+            <p>WIP — eCommerce</p>
+          </a>
         </div>
       </section>
     </Layout>

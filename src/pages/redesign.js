@@ -152,10 +152,26 @@ function Redesign() {
                 — the full conversion to SaaS business, a higher focus on B2B,
                 and further internationalisation of the business. <br />
                 <br />
-                previously looked like{" "}
-                <a href="https://web.archive.org/web/20200613221639/https://www.tes.com/">
-                  <b>this</b>
-                </a>
+                <div
+                  style={{
+                    backgroundColor: "#f4f4f4",
+                    borderRadius: "4px",
+                    padding: "2rem"
+                  }}
+                >
+                  <p style={{ margin: "0", fontSize: "18px" }}>
+                    The detailed written version{" "}
+                    <b>
+                      <a
+                        href="https://www.notion.so/Process-0eec3b01c9a64cd192e219a8aa5583c3"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        here
+                      </a>
+                    </b>
+                  </p>
+                </div>
               </p>
             }
           />

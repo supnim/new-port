@@ -61,6 +61,15 @@
   fill: white;
 }
 
+.deadnice {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 32vh;
+  fill: rgb(0, 0, 0);
+}
+
 .bookwise {
   background-color: #efece9;
   display: flex;
@@ -175,6 +184,7 @@
 .watch:hover,
 .look:hover,
 .listen:hover,
+.deadnice:hover,
 .redesign:hover {
   filter: invert(1);
   transition: 0.2s ease-in-out;
