@@ -59,6 +59,9 @@ const Layout = props => {
                 <Link to={`/video`}>video</Link>
               </li>
               <li>
+                <Link to={`/words`}>words</Link>
+              </li>
+              <li>
                 <Link to={`/audio`}>audio</Link>
               </li>
               <li>
