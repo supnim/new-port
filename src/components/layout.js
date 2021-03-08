@@ -48,21 +48,16 @@ const Layout = props => {
                 <Link to={`/`}>home</Link>
               </li>
               <li>
-                <Link to={`/`} onClick={() => scrollTo("#jobs")}>
-                  work
-                </Link>
-              </li>
-              <li>
                 <Link to={`/photo`}>photo</Link>
               </li>
               <li>
                 <Link to={`/video`}>video</Link>
               </li>
               <li>
-                <Link to={`/words`}>words</Link>
+                <Link to={`/audio`}>audio</Link>
               </li>
               <li>
-                <Link to={`/audio`}>audio</Link>
+                <Link to={`/words`}>words</Link>
               </li>
               <li>
                 <Link to={`/playground`}>playground</Link>

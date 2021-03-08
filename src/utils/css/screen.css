@@ -198,6 +198,7 @@ p {
   align-items: center;
   margin-right: 10px;
   white-space: nowrap;
+  padding: 1rem;
 }
 
 .nav {
@@ -776,21 +777,18 @@ p {
 /* Audio, Photo, Video Page
 /* ---------------------------------------------------------- */
 
-.video-page,
-.audio-page,
-.photo-page {
+.hub-page {
   text-align: center;
   background-color: black;
   color: white;
+  padding-top: 4rem;
 }
 
-.video-page p,
-.audio-page p,
-.photo-page p {
+.hub-page p {
   padding: 8px;
 }
 
-.video-page iframe {
+.hub-page iframe {
   border-radius: 2px;
 }
 

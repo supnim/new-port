@@ -24,7 +24,7 @@ const Video = ({ data }) => {
     />
   ));
   return (
-    <div className="video-page">
+    <div className="hub-page">
       <Layout title={siteTitle}>
         <SEO
           title="videography"

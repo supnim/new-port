@@ -16,7 +16,7 @@ const Photo = () => {
   `);
 
   return (
-    <div className="photo-page">
+    <div className="hub-page">
       <Layout title={siteTitle}>
         <SEO
           title="photography"

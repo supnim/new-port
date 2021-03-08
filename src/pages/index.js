@@ -76,7 +76,7 @@ const Index = ({ data }, location) => {
             className="col-5 amazon"
             to={`/amazon`}
           >
-            <Amazon width="100%" height="100%" />
+            <Amazon width="80%" height="80%" />
           </Link>
         </div>
         <div className="row jobs">

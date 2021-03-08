@@ -4,6 +4,7 @@ import Drums from "../components/drums";
 import Game from "../components/tic-tac-toe/game";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import SEO from "../components/seo";
 
 function Grounds() {
   const image = useStaticQuery(graphql`
@@ -19,10 +20,14 @@ function Grounds() {
   `);
 
   return (
-    <Layout>
-      <div className="video-page">
+    <div className="hub-page">
+      <Layout>
+        <SEO
+          title="discography"
+          keywords={[`discography`, `music`, `producer`, `N1M`]}
+        />
         <h3>playground</h3>
-        <p style={{ paddingBottom: "2rem" }}>
+        <p>
           View on desktop for best experience, as so, some games are hided on
           mobile.
         </p>
@@ -106,8 +111,8 @@ function Grounds() {
             More soon...
           </h4>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 }
 

@@ -23,7 +23,7 @@ const Words = () => {
     }
   `);
   return (
-    <div className="audio-page">
+    <div className="hub-page">
       <Layout title={siteTitle}>
         <SEO
           title="discography"

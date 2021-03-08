@@ -44,7 +44,12 @@ function PhotoGallery() {
 
   return (
     <div>
-      <Gallery photos={photos} direction={"column"} onClick={openLightbox} />
+      <Gallery
+        photos={photos}
+        direction={"column"}
+        onClick={openLightbox}
+        key="0"
+      />
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>

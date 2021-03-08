@@ -50,6 +50,8 @@
   flex-direction: column;
   height: 32vh;
   fill: white;
+  justify-content: center;
+  align-items: center;
 }
 
 .tes {
@@ -68,6 +70,7 @@
   align-items: center;
   height: 32vh;
   fill: rgb(0, 0, 0);
+  justify-content: center;
 }
 
 .bookwise {
@@ -185,7 +188,9 @@
 .look:hover,
 .listen:hover,
 .deadnice:hover,
-.redesign:hover {
+.redesign:hover,
+.alexa:hover,
+.primeday:hover {
   filter: invert(1);
   transition: 0.2s ease-in-out;
 }
@@ -193,25 +198,25 @@
 //secondart pages
 
 .jobHero {
-  height: 80vh;
+  height: 60vh;
   width: 100%;
-  background-color: red;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: black;
   * {
     display: flex;
   }
 }
 .amazonLogo {
-  height: 50%;
+  height: 30%;
   fill: white;
   margin: 0 auto;
 }
 .amazonParagraphy {
   width: 70vw;
   margin: 0 auto;
-  font-size: large;
+  font-size: 18px;
   font-weight: 700;
   color: white;
   letter-spacing: 0.2px;
@@ -227,19 +232,19 @@
 
 .amazonJobs {
   .connect {
-    background-color: #49640b;
+    background-color: #f2ffee;
   }
   .student {
-    background-color: #ffe4c4;
+    background-color: #fff5ea;
   }
   .travel {
-    background-color: #e2e6e7;
+    background-color: #e9f7f0;
   }
   .music {
-    background-color: #0084ff;
+    background-color: #f5f3fd;
   }
   .social {
-    background-color: whitesmoke;
+    background-color: #fff3f3;
     height: 32vh;
     display: flex;
     justify-self: center;
@@ -248,6 +253,12 @@
       color: white;
     }
   }
+  .alexa {
+    background-color: #fbfbfb;
+  }
+  .primeday {
+    background-color: #d2ebf1;
+  }
 }
 
 .tesJobs {
@@ -255,16 +266,16 @@
     background-color: white;
   }
   .design {
-    background-color: #ef426f;
+    background-color: #f2e1e5;
   }
   .pagebuilder {
-    background-color: #006aff;
+    background-color: #dae5f3;
   }
   .institute {
-    background-color: #870af3;
+    background-color: #e7dbf2;
   }
   .school {
-    background-color: #f5f5f5;
+    background-color: #fffee5;
   }
 }
 .connect,
@@ -276,7 +287,9 @@
 .pagebuilder,
 .institute,
 .school,
-.redesign {
+.redesign,
+.alexa,
+.primeday {
   display: flex;
   text-align: center;
   justify-content: center;
