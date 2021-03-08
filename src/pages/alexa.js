@@ -13,7 +13,7 @@ import engage from "../components/gifs/doodle/engage.gif";
 import euro from "../components/gifs/doodle/euro.gif";
 import grandad from "../components/gifs/doodle/grandad.gif";
 import kettle from "../components/gifs/doodle/kettle.gif";
-import light from "../components/gifs/doodle/light.gif";
+// import light from "../components/gifs/doodle/light.gif";
 import moon from "../components/gifs/doodle/moon.gif";
 import radio from "../components/gifs/doodle/radio.gif";
 import santa_hat from "../components/gifs/doodle/santa_hat.gif";

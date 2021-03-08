@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
 import Logo from "../../content/assets/supnimLogo.svg";
-import scrollTo from "gatsby-plugin-smoothscroll";
 import useSound from "use-sound";
 import Switch from "../../content/assets/sounds/switch.mp3";
 import Pop from "../../content/assets/sounds/pop.mp3";
