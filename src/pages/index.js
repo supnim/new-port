@@ -138,12 +138,11 @@ const Index = ({ data }, location) => {
             style={{
               textDecoration: "none",
               justifyContent: "center",
-              padding: "4rem 0 2rem 0"
+              padding: "6rem 0 2rem 0"
             }}
           >
-            <Deadnice width="20%" height="20%" />
-            <br />
-            <p>WIP | Personal Project</p>
+            <Deadnice width="15%" height="15%" />
+            <p style={{ padding: "1rem" }}>WIP | Personal Project</p>
           </a>
         </div>
       </section>

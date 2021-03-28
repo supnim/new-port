@@ -31,14 +31,13 @@ const Words = () => {
         />
         <h3>writting</h3>
         <p style={{ paddingBottom: "8rem" }}>
-          Practicing my hand at creating some design related content, earlier
-          stages so keep that in mind.
+          Practicing my hand at creating some design related content
         </p>
         <div className="discography row">
           <a href="https://www.notion.so/Process-0eec3b01c9a64cd192e219a8aa5583c3">
             <div style={{ width: "80vh" }}>
               <Img fluid={siteTitle.steps.childImageSharp.fluid} />
-              <p style={{ color: "white", fontSize: "18px" }}>
+              <p style={{ color: "white", fontSize: "16px" }}>
                 case study: tes.com redesign
               </p>
             </div>
