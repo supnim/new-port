@@ -39,10 +39,11 @@ const Video = ({ data }) => {
           <br />
           <div
             style={{
-              backgroundColor: "#f4f4f4",
-              color: "black",
+              // backgroundColor: "#f4f4f4",
+              color: "grey",
               margin: "0 20%",
-              borderRadius: "2px"
+              border: "2px solid grey",
+              borderRadius: "8px"
             }}
           >
             <p style={{ fontSize: "1.4rem" }}>

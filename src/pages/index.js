@@ -46,9 +46,10 @@ const Index = ({ data }, location) => {
       {data.site.siteMetadata.description && (
         <header className="page-head">
           <div src="../script/typing.js">
-            <h1 className="page-head-title">Nimesh</h1>
+            <h1 className="page-head-title">nimesh</h1>
             <h2 className="page-head-sub">
-              {data.site.siteMetadata.description}
+              {/* {data.site.siteMetadata.description} */}
+              multi-disciplinary creative practising product design
             </h2>
             <br />
             <a onClick={() => scrollTo("#jobs")}>
