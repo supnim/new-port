@@ -169,6 +169,15 @@
   }
 }
 
+.littlecook {
+  color: #7f9c30;
+  background-color: #f1f6d1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .amazon:hover,
 .tes:hover,
 .bookwise:hover,
@@ -190,7 +199,8 @@
 .deadnice:hover,
 .redesign:hover,
 .alexa:hover,
-.primeday:hover {
+.primeday:hover,
+.littlecook:hover {
   filter: invert(1);
   transition: 0.2s ease-in-out;
 }

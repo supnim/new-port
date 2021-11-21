@@ -22,6 +22,7 @@ import OneCard from "../../content/assets/thumbnails/one_card.svg";
 import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
 import Volvic from "../../content/assets/thumbnails/volvic.svg";
 import Deadnice from "../../content/assets/thumbnails/deadnice.svg";
+import Littlecook from "../../content/assets/thumbnails/littlecook_logo_bg.svg";
 
 import Methodogly from "../components/meth";
 
@@ -68,6 +69,23 @@ const Index = ({ data }, location) => {
         </header>
       )}
       <section className="jobwrapper">
+        <div>
+          <a
+            className="col-12 deadnice"
+            href="https://www.deadnice.co"
+            style={{
+              textDecoration: "none",
+              justifyContent: "center",
+              padding: "6rem 0 2rem 0"
+            }}
+          >
+            <Deadnice width="15%" height="15%" />
+            <p style={{ padding: "1rem" }}>
+              {" "}
+              design—led, eco—friendly, clothing co.
+            </p>
+          </a>
+        </div>
         <div className="row jobs" id="jobs">
           <Link aria-label="tes projects" className="col-7 tes" to={`/tes`}>
             <Tes width="100%" height="80%" />
@@ -134,16 +152,24 @@ const Index = ({ data }, location) => {
         </div>
         <div>
           <a
-            className="col-12 deadnice"
-            href="https://www.deadnice.co"
+            className="col-12 littlecook"
+            href="https://www.littlecook.io"
             style={{
               textDecoration: "none",
               justifyContent: "center",
-              padding: "6rem 0 2rem 0"
+              padding: "6rem 0 0rem 0"
             }}
           >
-            <Deadnice width="15%" height="15%" />
-            <p style={{ padding: "1rem" }}>WIP | Personal Project</p>
+            <Littlecook />
+            <p
+              style={{
+                padding: "1rem",
+                fontSize: "26px",
+                fontWeight: "bold"
+              }}
+            >
+              littlecook
+            </p>
           </a>
         </div>
       </section>
