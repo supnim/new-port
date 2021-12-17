@@ -1,223 +1,231 @@
 // Base
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import "../utils/normalize.css";
-import "../utils/css/screen.css";
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import "../utils/normalize.css"
+import "../utils/css/screen.css"
 
 // Skelton
-import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Layout from "../components/layout"
+import SEO from "../components/seo"
 // import PostCard from "../components/postCard" // article card
-import { Link } from "gatsby";
-import scrollTo from "gatsby-plugin-smoothscroll";
+import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 // Component + theme
-import "../script/typing";
-import "../utils/css/components/theme.scss";
-import ScrollIcon from "../../content/assets/scrollIcon.svg";
-import Amazon from "../../content/assets/thumbnails/amazon_logo.svg";
-import Tes from "../../content/assets/thumbnails/tes.svg";
-import Bookwise from "../../content/assets/thumbnails/bookwise.svg";
-import OneCard from "../../content/assets/thumbnails/one_card.svg";
-import Knowhere from "../../content/assets/thumbnails/knowhere.svg";
-import Volvic from "../../content/assets/thumbnails/volvic.svg";
-import Deadnice from "../../content/assets/thumbnails/deadnice.svg";
-import Littlecook from "../../content/assets/thumbnails/littlecook_logo_bg.svg";
+import "../script/typing"
+import "../utils/css/components/theme.scss"
+import ScrollIcon from "../../content/assets/scrollIcon.svg"
+import Amazon from "../../content/assets/thumbnails/amazon_logo.svg"
+import Tes from "../../content/assets/thumbnails/tes.svg"
+import Pollen from "../../content/assets/thumbnails/pollen-high.svg"
+import Bookwise from "../../content/assets/thumbnails/bookwise.svg"
+import OneCard from "../../content/assets/thumbnails/one_card.svg"
+import Knowhere from "../../content/assets/thumbnails/knowhere.svg"
+import Volvic from "../../content/assets/thumbnails/volvic.svg"
+import Deadnice from "../../content/assets/thumbnails/deadnice.svg"
+import Littlecook from "../../content/assets/thumbnails/littlecook_logo_bg.svg"
 
-import Methodogly from "../components/meth";
+import Methodogly from "../components/meth"
 
 // import OnLoad from "../components/onLoad"
 
 //TODO: switch to staticQuery, get rid of comments, remove unnecessary components, export as draft template
 const Index = ({ data }, location) => {
-  const siteTitle = data.site.siteMetadata.title;
-  //article vvv
-  // const posts = data.allMarkdownRemark.edges
-  // let postCounter = 0
+	const siteTitle = data.site.siteMetadata.title
+	//article vvv
+	// const posts = data.allMarkdownRemark.edges
+	// let postCounter = 0
 
-  return (
-    <Layout title={siteTitle}>
-      <SEO
-        title="Product Designer"
-        keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
-      />
+	return (
+		<Layout title={siteTitle}>
+			<SEO
+				title="Product Designer"
+				keywords={[`product`, `designer`, `london`, `nimesh`, `reghunandanan`]}
+			/>
 
-      {/* onLoad hero component */}
-      {/* <OnLoad /> */}
-      {data.site.siteMetadata.description && (
-        <header className="page-head">
-          <div src="../script/typing.js">
-            <h1 className="page-head-title">nimesh</h1>
-            <h2 className="page-head-sub">
-              {/* {data.site.siteMetadata.description} */}
-              multi-disciplinary creative practising product design
-            </h2>
-            <br />
-            <a onClick={() => scrollTo("#jobs")}>
-              <ScrollIcon
-                alt="scrollicon"
-                style={{
-                  fill: "white",
-                  marginTop: "8rem",
-                  height: "40px",
-                  width: "40px",
-                  paddingTop: "1rem"
-                }}
-              />
-            </a>
-          </div>
-        </header>
-      )}
-      <section className="jobwrapper">
-        <div>
-          <a
-            className="col-12 deadnice"
-            href="https://www.deadnice.co"
-            style={{
-              textDecoration: "none",
-              justifyContent: "center",
-              padding: "6rem 0 2rem 0"
-            }}
-          >
-            <Deadnice width="15%" height="15%" />
-            <p style={{ padding: "1rem" }}>
-              {" "}
-              design—led, eco—friendly, clothing co.
-            </p>
-          </a>
-        </div>
-        <div className="row jobs" id="jobs">
-          <Link aria-label="tes projects" className="col-7 tes" to={`/tes`}>
-            <Tes width="100%" height="80%" />
-          </Link>
-          <Link
-            aria-label="amazon projects"
-            className="col-5 amazon"
-            to={`/amazon`}
-          >
-            <Amazon width="80%" height="80%" />
-          </Link>
-        </div>
-        <div className="row jobs">
-          <Link
-            aria-label="onecard project"
-            className="col-5 one-card"
-            to={`/one-card`}
-          >
-            <OneCard width="100%" height="100%" />
-          </Link>
-          <Link
-            aria-label="bookwise project"
-            className="col-7 bookwise"
-            to={`/bookwise`}
-          >
-            <Bookwise width="100%" height="100%" />
-          </Link>
-        </div>
-        <div className="row jobs">
-          <Link
-            aria-label="knowhere project"
-            className="col-7 knowhere"
-            to={`/knowhere`}
-          >
-            <Knowhere width="100%" height="100%" />
-          </Link>
-          <Link
-            aria-label="volvic project"
-            className="col-5 volvic"
-            to={`/volvic`}
-          >
-            <Volvic width="100%" height="100%" />
-          </Link>
-        </div>
-        <Methodogly />
-        <div className="graphy row">
-          <Link
-            aria-label="look at pictures"
-            className="col-4 look"
-            to={`/photo`}
-          >
-            <p>LOOK</p>
-          </Link>
-          <Link
-            aria-label="listen to music"
-            className="col-4 listen"
-            to={`/audio`}
-          >
-            <p>LISTEN</p>
-          </Link>
-          <Link aria-label="watch videos" className="col-4 watch" to={`/video`}>
-            <p>WATCH</p>
-          </Link>
-        </div>
-        <div>
-          <a
-            className="col-12 littlecook"
-            href="https://www.littlecook.io"
-            style={{
-              textDecoration: "none",
-              justifyContent: "center",
-              padding: "6rem 0 0rem 0"
-            }}
-          >
-            <Littlecook />
-            <p
-              style={{
-                padding: "1rem",
-                fontSize: "26px",
-                fontWeight: "bold"
-              }}
-            >
-              littlecook
-            </p>
-          </a>
-        </div>
-      </section>
-    </Layout>
-  );
-};
+			{/* onLoad hero component */}
+			{/* <OnLoad /> */}
+			{data.site.siteMetadata.description && (
+				<header className="page-head">
+					<div src="../script/typing.js">
+						<h1 className="page-head-title">nimesh</h1>
+						<h2 className="page-head-sub">
+							{/* {data.site.siteMetadata.description} */}
+							multi-disciplinary creative practising product design
+						</h2>
+						<br />
+						<a onClick={() => scrollTo("#jobs")}>
+							<ScrollIcon
+								alt="scrollicon"
+								style={{
+									fill: "white",
+									marginTop: "8rem",
+									height: "40px",
+									width: "40px",
+									paddingTop: "1rem",
+								}}
+							/>
+						</a>
+					</div>
+				</header>
+			)}
+			<section className="jobwrapper">
+				<div className="row jobs">
+					<Link
+						aria-label="tes projects"
+						className="col-5 pollen"
+						to={`/pollen`}
+					>
+						<Pollen width="100%" height="80%" />
+					</Link>
+					<a
+						className="col-7 deadnice"
+						href="https://www.deadnice.co"
+						style={{
+							textDecoration: "none",
+							justifyContent: "center",
+							padding: "6rem 0 2rem 0",
+						}}
+					>
+						<Deadnice width="24%" height="24%" />
+						<p style={{ padding: "1rem" }}>
+							{" "}
+							designed, built and run a sustainable fashion house
+						</p>
+					</a>
+				</div>
+				<div className="row jobs" id="jobs">
+					<Link aria-label="tes projects" className="col-7 tes" to={`/tes`}>
+						<Tes width="100%" height="80%" />
+					</Link>
+					<Link
+						aria-label="amazon projects"
+						className="col-5 amazon"
+						to={`/amazon`}
+					>
+						<Amazon width="80%" height="80%" />
+					</Link>
+				</div>
+				<div className="row jobs">
+					<Link
+						aria-label="onecard project"
+						className="col-5 one-card"
+						to={`/one-card`}
+					>
+						<OneCard width="100%" height="100%" />
+					</Link>
+					<Link
+						aria-label="bookwise project"
+						className="col-7 bookwise"
+						to={`/bookwise`}
+					>
+						<Bookwise width="100%" height="100%" />
+					</Link>
+				</div>
+				<div className="row jobs">
+					<Link
+						aria-label="knowhere project"
+						className="col-7 knowhere"
+						to={`/knowhere`}
+					>
+						<Knowhere width="100%" height="100%" />
+					</Link>
+					<Link
+						aria-label="volvic project"
+						className="col-5 volvic"
+						to={`/volvic`}
+					>
+						<Volvic width="100%" height="100%" />
+					</Link>
+				</div>
+				<Methodogly />
+				<div className="graphy row">
+					<Link
+						aria-label="look at pictures"
+						className="col-4 look"
+						to={`/photo`}
+					>
+						<p>LOOK</p>
+					</Link>
+					<Link
+						aria-label="listen to music"
+						className="col-4 listen"
+						to={`/audio`}
+					>
+						<p>LISTEN</p>
+					</Link>
+					<Link aria-label="watch videos" className="col-4 watch" to={`/video`}>
+						<p>WATCH</p>
+					</Link>
+				</div>
+				<div>
+					<a
+						className="col-12 littlecook"
+						href="https://www.littlecook.io"
+						style={{
+							textDecoration: "none",
+							justifyContent: "center",
+							padding: "6rem 0 0rem 0",
+						}}
+					>
+						<Littlecook />
+						<p
+							style={{
+								padding: "1rem",
+								fontSize: "26px",
+								fontWeight: "bold",
+							}}
+						>
+							littlecook
+						</p>
+					</a>
+				</div>
+			</section>
+		</Layout>
+	)
+}
 
 const indexQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-        description
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-            thumbnail {
-              childImageSharp {
-                fluid(maxWidth: 1360) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-`;
+	query {
+		site {
+			siteMetadata {
+				title
+				description
+			}
+		}
+		allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+			edges {
+				node {
+					excerpt
+					fields {
+						slug
+					}
+					frontmatter {
+						date(formatString: "MMMM DD, YYYY")
+						title
+						description
+						thumbnail {
+							childImageSharp {
+								fluid(maxWidth: 1360) {
+									...GatsbyImageSharpFluid
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+`
 
-export default props => (
-  <StaticQuery
-    query={indexQuery}
-    render={data => (
-      <Index location={props.location} props data={data} {...props} />
-    )}
-  />
-);
+export default (props) => (
+	<StaticQuery
+		query={indexQuery}
+		render={(data) => (
+			<Index location={props.location} props data={data} {...props} />
+		)}
+	/>
+)
 
 /*
       //blog posts

@@ -1,181 +1,223 @@
 // Base styling
 
 .page-head {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 8vw 4vw;
-  margin: auto;
-  text-align: center;
-  height: 100vh;
-  background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 8vw 4vw;
+	margin: auto;
+	text-align: center;
+	height: 100vh;
+	background-color: black;
 }
 
 .page-head-title {
-  font-size: 64pt;
-  color: white;
-  margin-bottom: 8px;
-  letter-spacing: 2px;
+	font-size: 64pt;
+	color: white;
+	margin-bottom: 8px;
+	letter-spacing: 2px;
 }
 
 .page-head-sub {
-  margin: 0;
-  font-size: 16pt;
-  font-weight: 500;
-  line-height: 24pt;
-  letter-spacing: 0.4pt;
-  color: white;
+	margin: 0;
+	font-size: 16pt;
+	font-weight: 500;
+	line-height: 24pt;
+	letter-spacing: 0.4pt;
+	color: white;
 }
 
 // Jobs section ----------------------------------------------->
 .page-wrapper {
-  height: auto;
-  @media (max-width: 800px) {
-    margin-bottom: 1000px;
-  }
+	height: auto;
+	@media (max-width: 800px) {
+		margin-bottom: 1000px;
+	}
 }
 
 .jobs {
-  height: 32vh;
-  width: 100%;
-  @media (max-width: 600px) {
-    height: inherit;
-  }
+	height: 32vh;
+	width: 100%;
+	@media (max-width: 600px) {
+		height: inherit;
+	}
 }
 
 .amazon {
-  background-color: #ffa500;
-  display: flex;
-  flex-direction: column;
-  height: 32vh;
-  fill: white;
-  justify-content: center;
-  align-items: center;
+	background-color: #ffa500;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	justify-content: center;
+	align-items: center;
 }
 
 .tes {
-  background-color: #003456;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 32vh;
-  fill: white;
+	background-color: #003456;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 32vh;
+	fill: white;
 }
 
 .deadnice {
-  background-color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 32vh;
-  fill: rgb(0, 0, 0);
-  justify-content: center;
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 32vh;
+	fill: rgb(0, 0, 0);
+	justify-content: center;
 }
 
 .bookwise {
-  background-color: #efece9;
-  display: flex;
-  flex-direction: column;
-  height: 32vh;
-  fill: white;
-  align-items: center;
+	background-color: #efece9;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
 }
 .one-card {
-  background-color: #bf2828;
-  display: flex;
-  flex-direction: column;
-  height: 32vh;
-  fill: white;
-  align-items: center;
+	background-color: #bf2828;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
 }
 
 .knowhere {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  height: 32vh;
-  fill: white;
-  align-items: center;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
 }
 .volvic {
-  background-color: #004b27;
-  display: flex;
-  flex-direction: column;
-  height: 32vh;
-  fill: white;
-  align-items: center;
+	background-color: #004b27;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
 }
 .graphy {
-  height: 24vh;
-  a {
-    text-decoration: none;
-  }
-  @media (max-width: 600px) {
-    height: 20vh;
-    margin-bottom: 40vh;
-  }
-  @media (min-width: 601px) and (max-width: 800px) {
-    margin-bottom: 20vh;
-  }
+	height: 24vh;
+	a {
+		text-decoration: none;
+	}
+	@media (max-width: 600px) {
+		height: 20vh;
+		margin-bottom: 40vh;
+	}
+	@media (min-width: 601px) and (max-width: 800px) {
+		margin-bottom: 20vh;
+	}
 }
 
 .watch {
-  height: 100%;
-  background-color: #ff0000;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: 3px;
-  }
-  @media (min-width: 601px) and (max-width: 800px) {
-    max-width: 100%;
-    flex-basis: 100%;
-  }
+	height: 100%;
+	background-color: #ff0000;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p {
+		font-size: 4rem;
+		font-weight: 600;
+		margin: 0;
+		letter-spacing: 3px;
+	}
+	@media (min-width: 601px) and (max-width: 800px) {
+		max-width: 100%;
+		flex-basis: 100%;
+	}
 }
 
 .look {
-  height: 100%;
-  background-color: #ccf0f9;
-  color: red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: 3px;
-  }
+	height: 100%;
+	background-color: #ccf0f9;
+	color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p {
+		font-size: 4rem;
+		font-weight: 600;
+		margin: 0;
+		letter-spacing: 3px;
+	}
 }
 
 .listen {
-  height: 100%;
-  background-color: oldlace;
-  color: #cd4f00;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  p {
-    font-size: 4rem;
-    font-weight: 600;
-    margin: 0;
-    letter-spacing: 3px;
-  }
+	height: 100%;
+	background-color: oldlace;
+	color: #cd4f00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	p {
+		font-size: 4rem;
+		font-weight: 600;
+		margin: 0;
+		letter-spacing: 3px;
+	}
 }
 
 .littlecook {
-  color: #7f9c30;
-  background-color: #f1f6d1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	color: #7f9c30;
+	background-color: #f1f6d1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.campaign {
+	background-color: #f0f4e7;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
+}
+.zendesk {
+	background-color: #e6ebec;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
+}
+.UI {
+	background-color: #101212;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
+}
+
+.pollen-ds {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
+}
+.pollen {
+	background-color: #1b2330;
+	display: flex;
+	flex-direction: column;
+	height: 32vh;
+	fill: white;
+	align-items: center;
+	justify-content: center;
 }
 
 .amazon:hover,
@@ -200,93 +242,98 @@
 .redesign:hover,
 .alexa:hover,
 .primeday:hover,
-.littlecook:hover {
-  filter: invert(1);
-  transition: 0.2s ease-in-out;
+.littlecook:hover,
+.campaign:hover,
+.zendesk:hover,
+.UI:hover,
+.pollen-ds:hover,
+.pollen:hover {
+	filter: invert(1);
+	transition: 0.2s ease-in-out;
 }
 
 //secondart pages
 
 .jobHero {
-  height: 60vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: black;
-  * {
-    display: flex;
-  }
+	height: 60vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	* {
+		display: flex;
+	}
 }
 .amazonLogo {
-  height: 30%;
-  fill: white;
-  margin: 0 auto;
+	height: 30%;
+	fill: white;
+	margin: 0 auto;
 }
 .amazonParagraphy {
-  width: 70vw;
-  margin: 0 auto;
-  font-size: 18px;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 0.2px;
-  line-height: 3.2rem;
-  text-align: center;
-  padding-bottom: 4rem;
-  @media (max-width: 800px) {
-    font-size: small;
-    line-height: 2.2rem;
-    width: 88vw;
-  }
+	width: 70vw;
+	margin: 0 auto;
+	font-size: 18px;
+	font-weight: 700;
+	color: white;
+	letter-spacing: 0.2px;
+	line-height: 3.2rem;
+	text-align: center;
+	padding-bottom: 4rem;
+	@media (max-width: 800px) {
+		font-size: small;
+		line-height: 2.2rem;
+		width: 88vw;
+	}
 }
 
 .amazonJobs {
-  .connect {
-    background-color: #f2ffee;
-  }
-  .student {
-    background-color: #fff5ea;
-  }
-  .travel {
-    background-color: #e9f7f0;
-  }
-  .music {
-    background-color: #f5f3fd;
-  }
-  .social {
-    background-color: #fff3f3;
-    height: 32vh;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    * {
-      color: white;
-    }
-  }
-  .alexa {
-    background-color: #fbfbfb;
-  }
-  .primeday {
-    background-color: #d2ebf1;
-  }
+	.connect {
+		background-color: #f2ffee;
+	}
+	.student {
+		background-color: #fff5ea;
+	}
+	.travel {
+		background-color: #e9f7f0;
+	}
+	.music {
+		background-color: #f5f3fd;
+	}
+	.social {
+		background-color: #fff3f3;
+		height: 32vh;
+		display: flex;
+		justify-self: center;
+		align-items: center;
+		* {
+			color: white;
+		}
+	}
+	.alexa {
+		background-color: #fbfbfb;
+	}
+	.primeday {
+		background-color: #d2ebf1;
+	}
 }
 
 .tesJobs {
-  .redesign {
-    background-color: white;
-  }
-  .design {
-    background-color: #f2e1e5;
-  }
-  .pagebuilder {
-    background-color: #dae5f3;
-  }
-  .institute {
-    background-color: #e7dbf2;
-  }
-  .school {
-    background-color: #fffee5;
-  }
+	.redesign {
+		background-color: white;
+	}
+	.design {
+		background-color: #f2e1e5;
+	}
+	.pagebuilder {
+		background-color: #dae5f3;
+	}
+	.institute {
+		background-color: #e7dbf2;
+	}
+	.school {
+		background-color: #fffee5;
+	}
 }
 .connect,
 .student,
@@ -300,28 +347,28 @@
 .redesign,
 .alexa,
 .primeday {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  width: 100%;
-  text-decoration: none !important;
-  height: 32vh;
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+	text-decoration: none !important;
+	height: 32vh;
 }
 
 //logobox
 
 .logobox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  div {
-    margin: 2rem;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	div {
+		margin: 2rem;
+	}
 }
 
 .iframeloading {
-  background-color: whitesmoke;
-  border: 8px solid black;
-  box-shadow: inset 0px 0px 0px 16px black;
-  box-sizing: border-box;
+	background-color: whitesmoke;
+	border: 8px solid black;
+	box-shadow: inset 0px 0px 0px 16px black;
+	box-sizing: border-box;
 }
