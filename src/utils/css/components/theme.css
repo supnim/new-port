@@ -1,5 +1,3 @@
-// Base styling
-
 .page-head {
 	display: flex;
 	flex-direction: column;
@@ -28,18 +26,21 @@
 	color: white;
 }
 
-// Jobs section ----------------------------------------------->
 .page-wrapper {
 	height: auto;
 	@media (max-width: 800px) {
-		margin-bottom: 1000px;
+		.page-wrapper {
+			margin-bottom: 1000px;
+		}
 	}
 }
 
 .jobs {
 	height: 32vh;
 	width: 100%;
-	@media (max-width: 600px) {
+}
+@media (max-width: 600px) {
+	.jobs {
 		height: inherit;
 	}
 }
@@ -108,14 +109,18 @@
 }
 .graphy {
 	height: 24vh;
-	a {
-		text-decoration: none;
-	}
-	@media (max-width: 600px) {
+}
+.graphy a {
+	text-decoration: none;
+}
+@media (max-width: 600px) {
+	.graphy {
 		height: 20vh;
 		margin-bottom: 40vh;
 	}
-	@media (min-width: 601px) and (max-width: 800px) {
+}
+@media (min-width: 601px) and (max-width: 800px) {
+	.graphy {
 		margin-bottom: 20vh;
 	}
 }
@@ -127,13 +132,16 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	p {
-		font-size: 4rem;
-		font-weight: 600;
-		margin: 0;
-		letter-spacing: 3px;
-	}
-	@media (min-width: 601px) and (max-width: 800px) {
+}
+.watch p {
+	font-size: 4rem;
+	font-weight: 600;
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+	.watch {
 		max-width: 100%;
 		flex-basis: 100%;
 	}
@@ -146,12 +154,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	p {
-		font-size: 4rem;
-		font-weight: 600;
-		margin: 0;
-		letter-spacing: 3px;
-	}
+}
+.look p {
+	font-size: 4rem;
+	font-weight: 600;
+	margin: 0;
+	letter-spacing: 3px;
 }
 
 .listen {
@@ -161,12 +169,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	p {
-		font-size: 4rem;
-		font-weight: 600;
-		margin: 0;
-		letter-spacing: 3px;
-	}
+}
+.listen p {
+	font-size: 4rem;
+	font-weight: 600;
+	margin: 0;
+	letter-spacing: 3px;
 }
 
 .littlecook {
@@ -252,8 +260,6 @@
 	transition: 0.2s ease-in-out;
 }
 
-//secondart pages
-
 .jobHero {
 	height: 60vh;
 	width: 100%;
@@ -261,10 +267,11 @@
 	flex-direction: column;
 	justify-content: center;
 	background-color: black;
-	* {
-		display: flex;
-	}
 }
+.jobHero * {
+	display: flex;
+}
+
 .amazonLogo {
 	height: 30%;
 	fill: white;
@@ -280,61 +287,60 @@
 	line-height: 3.2rem;
 	text-align: center;
 	padding-bottom: 4rem;
-	@media (max-width: 800px) {
+}
+
+@media (max-width: 800px) {
+	.amazonParagraphy {
 		font-size: small;
 		line-height: 2.2rem;
 		width: 88vw;
 	}
 }
-
-.amazonJobs {
-	.connect {
-		background-color: #f2ffee;
-	}
-	.student {
-		background-color: #fff5ea;
-	}
-	.travel {
-		background-color: #e9f7f0;
-	}
-	.music {
-		background-color: #f5f3fd;
-	}
-	.social {
-		background-color: #fff3f3;
-		height: 32vh;
-		display: flex;
-		justify-self: center;
-		align-items: center;
-		* {
-			color: white;
-		}
-	}
-	.alexa {
-		background-color: #fbfbfb;
-	}
-	.primeday {
-		background-color: #d2ebf1;
-	}
+.connect {
+	background-color: #f2ffee;
+}
+.student {
+	background-color: #fff5ea;
+}
+.travel {
+	background-color: #e9f7f0;
+}
+.music {
+	background-color: #f5f3fd;
+}
+.social {
+	background-color: #fff3f3;
+	height: 32vh;
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
+.social * {
+	color: white;
+}
+.alexa {
+	background-color: #fbfbfb;
+}
+.primeday {
+	background-color: #d2ebf1;
 }
 
-.tesJobs {
-	.redesign {
-		background-color: white;
-	}
-	.design {
-		background-color: #f2e1e5;
-	}
-	.pagebuilder {
-		background-color: #dae5f3;
-	}
-	.institute {
-		background-color: #e7dbf2;
-	}
-	.school {
-		background-color: #fffee5;
-	}
+.redesign {
+	background-color: white;
 }
+.design {
+	background-color: #f2e1e5;
+}
+.pagebuilder {
+	background-color: #dae5f3;
+}
+.institute {
+	background-color: #e7dbf2;
+}
+.school {
+	background-color: #fffee5;
+}
+
 .connect,
 .student,
 .travel,
@@ -355,15 +361,13 @@
 	height: 32vh;
 }
 
-//logobox
-
 .logobox {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	div {
-		margin: 2rem;
-	}
+}
+.logobox div {
+	margin: 2rem;
 }
 
 .iframeloading {
