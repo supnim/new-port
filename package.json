@@ -67,6 +67,9 @@
 		"url-loader": "^4.1.1",
 		"use-sound": "^2.0.1"
 	},
+	"optionalDependencies": {
+		"uws": "^99.0.0"
+	},
 	"devDependencies": {
 		"autoprefixer": "^10.2.5",
 		"file-loader": "^6.2.0",
