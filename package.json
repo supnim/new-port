@@ -4,18 +4,15 @@
 	"description": "Product designer based in London",
 	"version": "1.0.0",
 	"author": "Nimesh Reghunandanan <hello@supnim.com>",
-	"bugs": {
-		"url": "https://github.com/ImedAdel/gatsby-london/issues"
-	},
 	"dependencies": {
 		"@babel/core": "^7.13.8",
-		"acorn": "^8.0.5",
+		"acorn": "^6.0.0",
 		"acorn-dynamic-import": "^4.0.0",
 		"bootstrap": "^4.6.0",
-		"core-js": "^3.9.1",
+		"core-js": "^3.20.0",
 		"framer": "^1.2.26",
 		"framer-motion": "^3.10.0",
-		"gatsby": "^3.0.3",
+		"gatsby": "^4.4.0",
 		"gatsby-image": "^2.4.12",
 		"gatsby-plugin-feed": "^3.0.0",
 		"gatsby-plugin-google-analytics": "^3.0.0",
@@ -44,14 +41,15 @@
 		"ink": "^3.0.8",
 		"jquery": "^3.6.0",
 		"jshint": "^2.12.0",
-		"motion": "^5.0.0-beta26",
-		"node-sass": "^5.0.0",
+		"motion": "^10.4.0",
+		"netlify": "^10.0.0",
+		"node": "^16.13.1",
 		"open": "^8.0.2",
 		"path": "^0.12.7",
 		"prismjs": "^1.23.0",
-		"react": "^17.0.1",
+		"react": "^16.12.0",
 		"react-bootstrap": "^1.5.1",
-		"react-dom": "^17.0.1",
+		"react-dom": "^17.0.2",
 		"react-helmet": "^6.1.0",
 		"react-icons": "^4.2.0",
 		"react-images": "^1.1.7",
@@ -64,6 +62,7 @@
 		"typeface-lato": "1.1.13",
 		"typeface-open-sans": "1.1.13",
 		"typescript": "^4.2.3",
+		"update-notifier": "^5.1.0",
 		"url-join": "^4.0.1",
 		"url-loader": "^4.1.1",
 		"use-sound": "^2.0.1"
@@ -90,8 +89,7 @@
 	"license": "MIT",
 	"main": "n/a",
 	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ImedAdel/gatsby-london.git"
+		"type": "git"
 	},
 	"scripts": {
 		"build": "gatsby build",
