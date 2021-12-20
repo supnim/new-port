@@ -29,7 +29,9 @@
 .page-wrapper {
 	height: auto;
 	@media (max-width: 800px) {
-		margin-bottom: 1000px;
+		.page-wrapper {
+			margin-bottom: 1000px;
+		}
 	}
 }
 
@@ -137,6 +139,10 @@
 	margin: 0;
 	letter-spacing: 3px;
 }
+<<<<<<< HEAD:src/utils/css/components/theme.css
+=======
+
+>>>>>>> 27a850ad5c87d9dc9e4a21be9ca2c49c684e2bc8:src/utils/css/components/theme.scss
 @media (min-width: 601px) and (max-width: 800px) {
 	.watch {
 		max-width: 100%;
@@ -216,7 +222,7 @@
 	align-items: center;
 }
 .pollen {
-	background-color: #1b2330;
+	background-color: #11171f;
 	display: flex;
 	flex-direction: column;
 	height: 32vh;
@@ -264,10 +270,17 @@
 	flex-direction: column;
 	justify-content: center;
 	background-color: black;
+<<<<<<< HEAD:src/utils/css/components/theme.css
 }
 .jobHero a {
 	display: flex;
+=======
+>>>>>>> 27a850ad5c87d9dc9e4a21be9ca2c49c684e2bc8:src/utils/css/components/theme.scss
 }
+.jobHero * {
+	display: flex;
+}
+
 .amazonLogo {
 	height: 30%;
 	fill: white;
@@ -284,6 +297,10 @@
 	text-align: center;
 	padding-bottom: 4rem;
 }
+<<<<<<< HEAD:src/utils/css/components/theme.css
+=======
+
+>>>>>>> 27a850ad5c87d9dc9e4a21be9ca2c49c684e2bc8:src/utils/css/components/theme.scss
 @media (max-width: 800px) {
 	.amazonParagraphy {
 		font-size: small;
@@ -291,7 +308,10 @@
 		width: 88vw;
 	}
 }
+<<<<<<< HEAD:src/utils/css/components/theme.css
 
+=======
+>>>>>>> 27a850ad5c87d9dc9e4a21be9ca2c49c684e2bc8:src/utils/css/components/theme.scss
 .connect {
 	background-color: #f2ffee;
 }
@@ -310,9 +330,21 @@
 	display: flex;
 	justify-self: center;
 	align-items: center;
+<<<<<<< HEAD:src/utils/css/components/theme.css
 	* {
 		color: white;
 	}
+=======
+}
+.social * {
+	color: white;
+}
+.alexa {
+	background-color: #fbfbfb;
+}
+.primeday {
+	background-color: #d2ebf1;
+>>>>>>> 27a850ad5c87d9dc9e4a21be9ca2c49c684e2bc8:src/utils/css/components/theme.scss
 }
 .alexa {
 	background-color: #fbfbfb;
