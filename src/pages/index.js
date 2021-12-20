@@ -13,7 +13,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 // Component + theme
 import "../script/typing"
-import "../utils/css/components/theme.scss"
+import "../utils/css/components/theme.css"
 import ScrollIcon from "../../content/assets/scrollIcon.svg"
 import Amazon from "../../content/assets/thumbnails/amazon_logo.svg"
 import Tes from "../../content/assets/thumbnails/tes.svg"

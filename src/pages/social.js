@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql, useStaticQuery } from "gatsby"
-import "../../src/utils/css/project.scss"
+import "../../src/utils/css/project.css"
 import Brief from "../components/brief"
 
 import SocialHero from "../../content/assets/heros/social_hero.svg"
